@@ -1,0 +1,4 @@
+# Tested with the existing MuJoCo 3.17.0 webcam runtime. No automatic upgrades.
+mink==1.3.0
+qpsolvers==4.13.0
+daqp==0.10.3

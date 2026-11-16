@@ -1,0 +1,62 @@
+{
+  "snapshot_unix_s": 1793869075.1877596,
+  "files": {
+    "holomotion-motion-8765.jsonl": {
+      "bytes": 514361,
+      "mtime": 1793868823.130127
+    }
+  },
+  "current_status": {
+    "ready": true,
+    "stage": "\u5df2\u590d\u4f4d\uff0c\u8bf7\u6821\u51c6\u540e\u5f00\u59cb",
+    "error": null,
+    "running": false,
+    "calibrated": false,
+    "last_pose": 143276.083356941,
+    "pose_time": 376.218099999994,
+    "pose_source_clock": true,
+    "sequence": 1846,
+    "reset": false,
+    "calibrate": false,
+    "steps": 1620,
+    "policy_hz": 0.0,
+    "inference_ms": 19.4,
+    "fallen": false,
+    "robot_enabled": false,
+    "auto_calibrated": false,
+    "align": false,
+    "cancel_alignment": false,
+    "alignment_status": "idle",
+    "alignment_error_deg": 1.61,
+    "alignment_speed_deg_s": 0.62,
+    "alignment_observed_settled": true,
+    "backend": "g1ra",
+    "tracking_enabled": true,
+    "g1ra_control_mode": "arm_sdk",
+    "dds_pairs": 1984,
+    "link_action": true,
+    "link_state": true,
+    "action_sent": 1984,
+    "state_seq": 19596,
+    "state_valid": true,
+    "robot_state": 4,
+    "state_age_ms": 167.7,
+    "gpu": "CPUExecutionProvider",
+    "bridge_flags": 53,
+    "pose_link": {
+      "ok": true,
+      "age_ms": 182.6,
+      "hz": 526.9,
+      "seq": 401649,
+      "mode_machine": 5,
+      "matched_joints": 29,
+      "total_joints": 29,
+      "error": null
+    },
+    "pelvis_height": 0.757,
+    "reference_delta": 1.182,
+    "left_shoulder_reference": 0.368,
+    "left_shoulder_actual": 0.611,
+    "pose_age_ms": 577
+  }
+}

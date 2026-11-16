@@ -1,0 +1,6 @@
+{
+  "upstream": "https://github.com/unitreerobotics/unitree_sdk2_python",
+  "package": "unitree_sdk2py==1.0.1",
+  "original_tar_sha256": "6434e45f7ee479ebed21f7c0a62ba7f0f0de52b2e6d47aed71fca29678d03441",
+  "note": "Vendored source snapshot; upstream LICENSE retained."
+}

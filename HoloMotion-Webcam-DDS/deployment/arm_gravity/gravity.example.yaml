@@ -1,0 +1,12 @@
+# Gravity feedforward is opt-in. Paths resolve relative to this config file.
+# No KP/KD changes; only arm motor_cmd.tau is affected when explicitly enabled.
+gravity:
+  enabled: false
+  full_model: ../models/gravity/g1_dex3.urdf
+  nominal_model: ../models/gravity/g1_rubber.urdf
+  scale: 1.0
+  max_torque_fraction: 0.3
+  torque_rate_nm_s: 3.0
+  compute_hz: 50.0
+  body_timeout_s: 0.1
+  hand_timeout_s: 0.25

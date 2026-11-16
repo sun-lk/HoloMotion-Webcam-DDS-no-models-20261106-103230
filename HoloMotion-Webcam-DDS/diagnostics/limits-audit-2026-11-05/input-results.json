@@ -1,0 +1,57 @@
+{
+  "depth_illustrations": [
+    {
+      "illustrative_elbow_depth_error_m": 0,
+      "apparent_2d_bend_deg": 0.0,
+      "input_3d_bend_deg": 0.0,
+      "ik_bend_deg": 1.0111801765836095,
+      "note": "illustration, not measured MediaPipe error"
+    },
+    {
+      "illustrative_elbow_depth_error_m": 0.04,
+      "apparent_2d_bend_deg": 0.0,
+      "input_3d_bend_deg": 17.51724594230301,
+      "ik_bend_deg": 17.761590353912467,
+      "note": "illustration, not measured MediaPipe error"
+    },
+    {
+      "illustrative_elbow_depth_error_m": 0.08,
+      "apparent_2d_bend_deg": 0.0,
+      "input_3d_bend_deg": 34.24903300681195,
+      "ik_bend_deg": 34.53762386058451,
+      "note": "illustration, not measured MediaPipe error"
+    }
+  ],
+  "one_wrist_visibility_049": {
+    "held_elapsed_s": [
+      0.05,
+      0.1,
+      0.15,
+      0.2,
+      0.25
+    ],
+    "errors": [
+      {
+        "elapsed_s": 0.3,
+        "error": "\u4eba\u4f53\u5173\u952e\u70b9\u6301\u7eed\u4e0d\u53ef\u9760\uff0c\u8bf7\u6062\u590d\u80a9\u8098\u8155\u9acb\u53ef\u89c1\u540e\u91cd\u65b0\u5f00\u59cb"
+      },
+      {
+        "elapsed_s": 0.35,
+        "error": "\u4eba\u4f53\u5173\u952e\u70b9\u6301\u7eed\u4e0d\u53ef\u9760\uff0c\u8bf7\u6062\u590d\u80a9\u8098\u8155\u9acb\u53ef\u89c1\u540e\u91cd\u65b0\u5f00\u59cb"
+      },
+      {
+        "elapsed_s": 0.4,
+        "error": "\u4eba\u4f53\u5173\u952e\u70b9\u6301\u7eed\u4e0d\u53ef\u9760\uff0c\u8bf7\u6062\u590d\u80a9\u8098\u8155\u9acb\u53ef\u89c1\u540e\u91cd\u65b0\u5f00\u59cb"
+      },
+      {
+        "elapsed_s": 0.45,
+        "error": "\u4eba\u4f53\u5173\u952e\u70b9\u6301\u7eed\u4e0d\u53ef\u9760\uff0c\u8bf7\u6062\u590d\u80a9\u8098\u8155\u9acb\u53ef\u89c1\u540e\u91cd\u65b0\u5f00\u59cb"
+      },
+      {
+        "elapsed_s": 0.5,
+        "error": "\u4eba\u4f53\u5173\u952e\u70b9\u6301\u7eed\u4e0d\u53ef\u9760\uff0c\u8bf7\u6062\u590d\u80a9\u8098\u8155\u9acb\u53ef\u89c1\u540e\u91cd\u65b0\u5f00\u59cb"
+      }
+    ]
+  },
+  "changing_hand_landmarks_only_max_reference_change_deg": 0.0
+}

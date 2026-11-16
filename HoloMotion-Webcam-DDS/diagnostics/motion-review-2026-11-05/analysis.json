@@ -1,0 +1,208 @@
+{
+  "local_total_records": 136,
+  "enabled_records": 46,
+  "following_records": 38,
+  "following_duration_monotonic_s": 37.42304007301573,
+  "joint_metrics": {
+    "left_shoulder_pitch_joint": {
+      "reference_range_deg": 28.741838154801044,
+      "upstream_command_range_deg": 36.656537567833105,
+      "actual_range_deg": 36.23153902520856,
+      "upstream_command_vs_actual_max_difference_deg": 30.845111826858517,
+      "sampled_actual_speed_max_deg_s": 94.57031430456549
+    },
+    "left_shoulder_roll_joint": {
+      "reference_range_deg": 10.946932012981613,
+      "upstream_command_range_deg": 24.017497904967122,
+      "actual_range_deg": 31.429825805487354,
+      "upstream_command_vs_actual_max_difference_deg": 29.60461825924694,
+      "sampled_actual_speed_max_deg_s": 94.04297588931631
+    },
+    "left_shoulder_yaw_joint": {
+      "reference_range_deg": 74.30986269785413,
+      "upstream_command_range_deg": 66.53093634646451,
+      "actual_range_deg": 68.16055459563243,
+      "upstream_command_vs_actual_max_difference_deg": 26.140575977327316,
+      "sampled_actual_speed_max_deg_s": 128.05664859744115
+    },
+    "left_elbow_joint": {
+      "reference_range_deg": 65.00176456677808,
+      "upstream_command_range_deg": 64.66166724988834,
+      "actual_range_deg": 51.80534390159862,
+      "upstream_command_vs_actual_max_difference_deg": 25.558916213835385,
+      "sampled_actual_speed_max_deg_s": 112.67578658662445
+    },
+    "left_wrist_roll_joint": {
+      "reference_range_deg": 0.0,
+      "upstream_command_range_deg": 23.222676475215557,
+      "actual_range_deg": 26.692658460392153,
+      "upstream_command_vs_actual_max_difference_deg": 10.562209228262773,
+      "sampled_actual_speed_max_deg_s": 47.63672064924164
+    },
+    "left_wrist_pitch_joint": {
+      "reference_range_deg": 0.0,
+      "upstream_command_range_deg": 13.494039274712742,
+      "actual_range_deg": 12.080566897502365,
+      "upstream_command_vs_actual_max_difference_deg": 5.539046067806682,
+      "sampled_actual_speed_max_deg_s": 28.68750143863265
+    },
+    "left_wrist_yaw_joint": {
+      "reference_range_deg": 0.0,
+      "upstream_command_range_deg": 13.360287148651821,
+      "actual_range_deg": 15.234961913069228,
+      "upstream_command_vs_actual_max_difference_deg": 7.84507246463296,
+      "sampled_actual_speed_max_deg_s": 39.43125239927931
+    },
+    "right_shoulder_pitch_joint": {
+      "reference_range_deg": 24.98571820095145,
+      "upstream_command_range_deg": 45.246273968047646,
+      "actual_range_deg": 49.97818035993465,
+      "upstream_command_vs_actual_max_difference_deg": 26.374057456367744,
+      "sampled_actual_speed_max_deg_s": 130.07812504457647
+    },
+    "right_shoulder_roll_joint": {
+      "reference_range_deg": 20.80817984418031,
+      "upstream_command_range_deg": 36.31619607168054,
+      "actual_range_deg": 38.81057774147462,
+      "upstream_command_vs_actual_max_difference_deg": 23.130377567640235,
+      "sampled_actual_speed_max_deg_s": 115.04882653071866
+    },
+    "right_shoulder_yaw_joint": {
+      "reference_range_deg": 94.06754066466627,
+      "upstream_command_range_deg": 96.1573838902988,
+      "actual_range_deg": 97.84904757788713,
+      "upstream_command_vs_actual_max_difference_deg": 17.008011146599664,
+      "sampled_actual_speed_max_deg_s": 166.81641485413274
+    },
+    "right_elbow_joint": {
+      "reference_range_deg": 52.84192158457009,
+      "upstream_command_range_deg": 56.98456962751351,
+      "actual_range_deg": 61.537857181094566,
+      "upstream_command_vs_actual_max_difference_deg": 20.11177204885852,
+      "sampled_actual_speed_max_deg_s": 111.88476871846693
+    },
+    "right_wrist_roll_joint": {
+      "reference_range_deg": 0.0,
+      "upstream_command_range_deg": 23.82423599485432,
+      "actual_range_deg": 23.043823702930542,
+      "upstream_command_vs_actual_max_difference_deg": 12.803213077964173,
+      "sampled_actual_speed_max_deg_s": 96.94336107884885
+    },
+    "right_wrist_pitch_joint": {
+      "reference_range_deg": 0.0,
+      "upstream_command_range_deg": 17.86996010240094,
+      "actual_range_deg": 13.997461622500559,
+      "upstream_command_vs_actual_max_difference_deg": 7.361592188148317,
+      "sampled_actual_speed_max_deg_s": 55.40625549052248
+    },
+    "right_wrist_yaw_joint": {
+      "reference_range_deg": 0.0,
+      "upstream_command_range_deg": 23.478551583223513,
+      "actual_range_deg": 21.879493307949517,
+      "upstream_command_vs_actual_max_difference_deg": 10.299954937013435,
+      "sampled_actual_speed_max_deg_s": 60.58125759820937
+    }
+  },
+  "quiet_reference_joint_window": {
+    "joint": "right_elbow_joint",
+    "start_s": 23.26840622801683,
+    "end_s": 27.29769483100972,
+    "reference_range_deg": 0.9449635018604354,
+    "upstream_command_range_deg": 18.587082580814915,
+    "actual_range_deg": 14.968871830270693
+  },
+  "robot_records": 445,
+  "gravity_reason_counts": {
+    "inactive/unspecified": 405,
+    "full": 6,
+    "delta": 34
+  },
+  "sampled_stale_during_delta": [
+    {
+      "robot_t_s": 160.8,
+      "last_action_seq": 538,
+      "target_nm": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "tau_nm": [
+        -1.2581,
+        0.5507,
+        0.5012,
+        -0.9194,
+        -0.0834,
+        -0.4418,
+        0.2034,
+        -1.1837,
+        -1.3704,
+        -0.2314,
+        -1.2719,
+        0.0703,
+        -0.6639,
+        -0.0344
+      ]
+    },
+    {
+      "robot_t_s": 176.8,
+      "last_action_seq": 1228,
+      "target_nm": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "tau_nm": [
+        -1.1466,
+        0.7669,
+        0.6349,
+        -0.6865,
+        0.0,
+        -0.2677,
+        0.1878,
+        -1.2257,
+        -1.0885,
+        -0.5529,
+        -0.6334,
+        0.0,
+        -0.2439,
+        -0.1922
+      ]
+    }
+  ],
+  "sampled_gravity_clipped_count": 0,
+  "sampled_invalid_gravity_state_count": 0,
+  "max_local_feedback_age_ms": 280.75049800099805,
+  "wall_clock_offset_steps_s": [
+    -1.8988771438598633
+  ],
+  "limitations": [
+    "1 Hz snapshots cannot resolve high frequency oscillation.",
+    "command_q_rad is upstream of the robot bridge filter/slew, not final motor q.",
+    "Human immobility is not established by these logs.",
+    "Local wall clock stepped backwards; elapsed-time analysis uses monotonic_s.",
+    "Robot t is relative to its own process; no exact cross-host alignment claimed.",
+    "Timeout snapshots do not establish network, scheduling, or operator pause as the cause."
+  ]
+}

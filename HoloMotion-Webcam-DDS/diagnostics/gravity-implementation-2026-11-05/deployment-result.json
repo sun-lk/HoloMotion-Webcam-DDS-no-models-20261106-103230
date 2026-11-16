@@ -1,0 +1,97 @@
+{
+  "backup": "/home/unitree/dev/g1-remote-action/gravity-backup-20261105-ub9cx2xj",
+  "root": "/home/unitree/dev/g1-remote-action",
+  "gravity_enabled": false,
+  "arm_config": {
+    "kp_high": 30,
+    "kd_high": 0.91,
+    "kp_wrist": 30,
+    "kd_wrist": 0.91,
+    "waist_kp": 120,
+    "waist_kd": 2,
+    "filter_weights": [
+      0.4,
+      0.3,
+      0.2,
+      0.1
+    ],
+    "deadband_rad": 0.0,
+    "reset_on_stale": false,
+    "weight_ramp_sec": 1.2,
+    "max_slew_rad_s": null
+  },
+  "files": {
+    "src/g1_remote_action/arm_backend.py": "99dce92a86efa2c7f6651a6908db62e4bdddb660a8f4cb1400689b776c7c74cf",
+    "src/g1_remote_action/core.py": "a5e7656833d85d7f387ac35d4831342751f7624f4929d681c19f9b9194e6187a",
+    "src/g1_remote_action/protocol.py": "b4c37af044efec55068d338bdf2f407eddac249c4562311e6f4a8ccbda21b12f",
+    "src/g1_remote_action/gravity_compensation.py": "a3287dadfb94434e0a8a423dd5dd19d1045eaacb347d1ae88d06788d3da5a7cb",
+    "models/gravity/g1_dex3.urdf": "8bbf006633fc50b616f665c7a970780cc296577a0adfd7d28b049e751c238735",
+    "models/gravity/g1_rubber.urdf": "58c6bf2b1f4d2ecf10e853dfb4f3377234bed6329019382a3b5e28fd27ec56e9",
+    "tests/test_gravity.py": "44e1ee49e9a1d90761257fc83ec4b04eda64f9c6d566ad48fbfcaf422827aff2",
+    "tests/test_arm_gravity.py": "896ab0e89c60bf4e56a037fb06266b9013feb64a0032e9bde29ec00ac8812900",
+    "tests/gravity_fixture/state.json": "92d0e4005625b8fe8ee6586eefcff4bbd9ea3cbad662ec069bec37fa02d2de4b",
+    "tests/gravity_fixture/audit.json": "732b7a4b4b2d8eee2241827800cef566f3220549f2c33c37855ab1c04ca246e8"
+  },
+  "staged_tests": 53,
+  "robot_started": false,
+  "model_compute_benchmark_ms": {
+    "n": 1000,
+    "mean": 0.25981464603137283,
+    "p95": 0.4120992505704633,
+    "max": 0.8890909994079266,
+    "scope": "two static models only; no DDS or control-loop timing claim"
+  },
+  "installed_preflight": {
+    "no_robot_io": true,
+    "configured_enabled": false,
+    "names": [
+      "left_shoulder_pitch_joint",
+      "left_shoulder_roll_joint",
+      "left_shoulder_yaw_joint",
+      "left_elbow_joint",
+      "left_wrist_roll_joint",
+      "left_wrist_pitch_joint",
+      "left_wrist_yaw_joint",
+      "right_shoulder_pitch_joint",
+      "right_shoulder_roll_joint",
+      "right_shoulder_yaw_joint",
+      "right_elbow_joint",
+      "right_wrist_roll_joint",
+      "right_wrist_pitch_joint",
+      "right_wrist_yaw_joint"
+    ],
+    "full_nm": [
+      -0.130525447631762,
+      2.071222544442349,
+      0.6129626142145624,
+      -1.2416134031658326,
+      -0.024256404731455915,
+      -0.484506077618728,
+      0.1273833225288683,
+      -0.19786724041741047,
+      -2.164035131774597,
+      -0.6758964964219869,
+      -1.3054972186507239,
+      0.025500861979926636,
+      -0.5097135957527099,
+      -0.136848072538149
+    ],
+    "delta_nm": [
+      -0.4014722085775275,
+      0.4662077032636385,
+      0.24603847006636598,
+      -0.5783905581036721,
+      -0.02386265007086676,
+      -0.3225188963836235,
+      0.08321714814976092,
+      -0.43528071298315796,
+      -0.47864374329498194,
+      -0.2729463612636003,
+      -0.6079796754181579,
+      0.025208975703204767,
+      -0.3403551412136626,
+      -0.09090796945402785
+    ]
+  },
+  "local_non_actuating_tests": 39
+}

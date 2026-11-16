@@ -1,0 +1,18 @@
+{
+  "ready": true,
+  "feedback_source": "simulation",
+  "feedback_pending": false,
+  "display_source": "simulation",
+  "render_source": "simulation",
+  "render_available": true,
+  "robot_enabled": false,
+  "running": false,
+  "action_sent": 0,
+  "local_simulation": {
+    "steps": 0,
+    "error": null,
+    "pelvis_height": 0.757,
+    "fallen": false
+  },
+  "error": null
+}

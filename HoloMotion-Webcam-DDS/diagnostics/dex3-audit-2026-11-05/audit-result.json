@@ -1,0 +1,291 @@
+{
+  "scope": "software models and one measured pose; not hardware mass identification",
+  "source_state_stamp": 1793855654.0622237,
+  "mode_machine": 5,
+  "models": {
+    "holomotion_rubber": {
+      "sha256": "58c6bf2b1f4d2ecf10e853dfb4f3377234bed6329019382a3b5e28fd27ec56e9",
+      "hands": {
+        "left": {
+          "mass_kg": 0.17,
+          "com_in_wrist_yaw_m": [
+            0.09511310808000005,
+            4.0947599999993645e-05,
+            0.00215413091000001
+          ],
+          "inertia_at_group_com_in_wrist_axes_kg_m2": [
+            [
+              0.00010099485234748013,
+              3.618590790516e-05,
+              -7.430151864199783e-07
+            ],
+            [
+              3.618590790516e-05,
+              0.00028135871571621004,
+              3.3018974328600282e-06
+            ],
+            [
+              -7.430151864199789e-07,
+              3.3018974328600397e-06,
+              0.00021894770413514005
+            ]
+          ]
+        },
+        "right": {
+          "mass_kg": 0.17,
+          "com_in_wrist_yaw_m": [
+            0.09511310808000002,
+            -4.094760000000752e-05,
+            0.0021541309099999822
+          ],
+          "inertia_at_group_com_in_wrist_axes_kg_m2": [
+            [
+              0.00010099485234748005,
+              -3.6185907905159995e-05,
+              -7.430151864200408e-07
+            ],
+            [
+              -3.618590790515999e-05,
+              0.00028135871571621004,
+              -3.301897432859984e-06
+            ],
+            [
+              -7.430151864200368e-07,
+              -3.3018974328600007e-06,
+              0.00021894770413513994
+            ]
+          ]
+        }
+      },
+      "measured_angles_outside_model_limits": [],
+      "gravity_derivative_check_max_error_nm": 7.912025257184041e-09
+    },
+    "robot_xr_dex3": {
+      "sha256": "8bbf006633fc50b616f665c7a970780cc296577a0adfd7d28b049e751c238735",
+      "hands": {
+        "left": {
+          "mass_kg": 0.69654599,
+          "com_in_wrist_yaw_m": [
+            0.10590399593480387,
+            -0.009396726197460738,
+            -0.00011873725426264636
+          ],
+          "inertia_at_group_com_in_wrist_axes_kg_m2": [
+            [
+              0.000645592955407704,
+              4.0317121596102125e-05,
+              7.436281203468512e-05
+            ],
+            [
+              4.031712159610207e-05,
+              0.001082095876247232,
+              4.109522672336472e-05
+            ],
+            [
+              7.436281203468513e-05,
+              4.1095226723364704e-05,
+              0.0010111828597147289
+            ]
+          ]
+        },
+        "right": {
+          "mass_kg": 0.69654599,
+          "com_in_wrist_yaw_m": [
+            0.10705199564590913,
+            0.009525072167864659,
+            -0.00015736748618540297
+          ],
+          "inertia_at_group_com_in_wrist_axes_kg_m2": [
+            [
+              0.0007471104104789713,
+              2.098178512692679e-05,
+              -3.908875819082541e-05
+            ],
+            [
+              2.098178512692682e-05,
+              0.0011917419674099428,
+              4.787099401961216e-05
+            ],
+            [
+              -3.908875819082541e-05,
+              4.787099401961214e-05,
+              0.0012223557911616092
+            ]
+          ]
+        }
+      },
+      "measured_angles_outside_model_limits": [
+        {
+          "joint": "left_hand_index_1_joint",
+          "angle_rad": -1.8010917901992798,
+          "lower": -1.74532925,
+          "upper": 0.0
+        }
+      ],
+      "gravity_derivative_check_max_error_nm": 1.0261276661704954e-08
+    }
+  },
+  "arm_gravity_at_saved_pose_nm": {
+    "left_shoulder_pitch_joint": {
+      "rubber": 0.27094676094576586,
+      "dex3": -0.13052544763176196,
+      "difference": -0.40147220857752786
+    },
+    "left_shoulder_roll_joint": {
+      "rubber": 1.6050148411787093,
+      "dex3": 2.0712225444423478,
+      "difference": 0.4662077032636385
+    },
+    "left_shoulder_yaw_joint": {
+      "rubber": 0.3669241441481963,
+      "dex3": 0.6129626142145621,
+      "difference": 0.2460384700663658
+    },
+    "left_elbow_joint": {
+      "rubber": -0.6632228450621599,
+      "dex3": -1.2416134031658317,
+      "difference": -0.5783905581036718
+    },
+    "left_wrist_roll_joint": {
+      "rubber": -0.00039375466058912817,
+      "dex3": -0.024256404731455863,
+      "difference": -0.023862650070866735
+    },
+    "left_wrist_pitch_joint": {
+      "rubber": -0.16198718123510433,
+      "dex3": -0.4845060776187277,
+      "difference": -0.3225188963836234
+    },
+    "left_wrist_yaw_joint": {
+      "rubber": 0.04416617437910742,
+      "dex3": 0.12738332252886836,
+      "difference": 0.08321714814976094
+    },
+    "right_shoulder_pitch_joint": {
+      "rubber": 0.23741347256574638,
+      "dex3": -0.19786724041741127,
+      "difference": -0.4352807129831576
+    },
+    "right_shoulder_roll_joint": {
+      "rubber": -1.685391388479614,
+      "dex3": -2.1640351317745954,
+      "difference": -0.4786437432949815
+    },
+    "right_shoulder_yaw_joint": {
+      "rubber": -0.40295013515838646,
+      "dex3": -0.6758964964219865,
+      "difference": -0.2729463612636
+    },
+    "right_elbow_joint": {
+      "rubber": -0.6975175432325662,
+      "dex3": -1.3054972186507239,
+      "difference": -0.6079796754181577
+    },
+    "right_wrist_roll_joint": {
+      "rubber": 0.00029188627672191436,
+      "dex3": 0.02550086197992675,
+      "difference": 0.025208975703204836
+    },
+    "right_wrist_pitch_joint": {
+      "rubber": -0.1693584545390473,
+      "dex3": -0.5097135957527099,
+      "difference": -0.3403551412136626
+    },
+    "right_wrist_yaw_joint": {
+      "rubber": -0.04594010308412114,
+      "dex3": -0.13684807253814885,
+      "difference": -0.09090796945402771
+    }
+  },
+  "mounts": {
+    "left": {
+      "holomotion_rubber": {
+        "parent": "left_wrist_yaw_link",
+        "child": "left_rubber_hand",
+        "xyz": [
+          0.0415,
+          0.003,
+          0.0
+        ],
+        "rpy": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "robot_xr_dex3": {
+        "parent": "left_wrist_yaw_link",
+        "child": "left_hand_palm_link",
+        "xyz": [
+          0.0415,
+          0.003,
+          0.0
+        ],
+        "rpy": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      }
+    },
+    "right": {
+      "holomotion_rubber": {
+        "parent": "right_wrist_yaw_link",
+        "child": "right_rubber_hand",
+        "xyz": [
+          0.0415,
+          -0.003,
+          0.0
+        ],
+        "rpy": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "robot_xr_dex3": {
+        "parent": "right_wrist_yaw_link",
+        "child": "right_hand_palm_link",
+        "xyz": [
+          0.0415,
+          -0.003,
+          0.0
+        ],
+        "rpy": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      }
+    }
+  },
+  "standalone_hand_check": {
+    "left": {
+      "sha256": "569e4d8ca55b1b76e51cd41df3cd6f655c5475a3e02e908f673f999759c51bd0",
+      "mass_kg": 0.69654599,
+      "common_link_inertial_differences": {},
+      "common_joint_geometry_differences": []
+    },
+    "right": {
+      "sha256": "4e36e939466d386524d38079f8e2ff84d9dd4d3a7f8db6319374067970ad7075",
+      "mass_kg": 0.69654599,
+      "common_link_inertial_differences": {
+        "right_hand_palm_link": {
+          "inertial_origin_rpy": {
+            "standalone": [
+              -1.57,
+              1.57,
+              0.0
+            ],
+            "full_robot": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          }
+        }
+      },
+      "common_joint_geometry_differences": []
+    }
+  }
+}

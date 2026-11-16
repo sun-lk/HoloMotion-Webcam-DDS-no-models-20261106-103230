@@ -1,0 +1,76 @@
+# 摄像头 → G1 上半身映射参数。改完重启服务生效（--retarget-config 可指定别的文件）。
+#
+# 映射使用关键点绝对方向。calibration 中站姿门限仅用于 strict 校准；
+# G1RA 当前冻结姿态对齐使用非 strict 校准，不要求人先摆成默认站姿。
+# tracking 只处理人体参考信号，不调整电机 PD，也不增加到位验收门槛。
+
+calibration:
+  # 肩/肘/腕/髋关键点的可见度下限（0-1）
+  min_visibility: 0.5
+
+  # 上臂相对「躯干向下方向」的允许夹角（度）。自然下垂≈0，叉腰/抱臂/举手都会超限。
+  max_upper_arm_dev_deg: 35.0
+
+  # 前臂相对上臂的允许弯曲（度）。直臂≈0，弯肘托举会变大。
+  max_elbow_bend_deg: 30.0
+
+  # 躯干相对世界竖直方向的允许倾斜（度）。驼背、侧身、后仰会超限。
+  max_torso_tilt_deg: 15.0
+
+  # 左右上臂夹角之差（度）。用来发现侧身、单侧抬肩这类不对称姿态。
+  max_arm_asymmetry_deg: 20.0
+
+  # 校准试算：用当前姿态算一遍关节目标，与机器人站姿的肩/腰最大偏差（弧度）。
+  # 这是最后一道闸，直接对应「初始姿态与机器人差距太大」。
+  # 只比较肩与腰：肘部存在人机固有差异（人自然直臂 vs 机器人站姿微弯肘约 34°），
+  # 计入会让正常站姿也通不过。0.45 rad ≈ 26°，正常站姿实测约 12°。
+  max_nominal_delta_rad: 0.45
+
+mapping:
+  # 腰部 pitch / roll 限幅（弧度）
+  waist_pitch_limit_rad: 0.18
+  waist_roll_limit_rad: 0.18
+
+  # 参考角平滑系数（0-1）：越小越稳但跟手越迟钝
+  smoothing: 0.8
+
+  # 参考角最大变化率（弧度/秒）
+  max_rate_rad_s: 4.0
+
+  # Mink/DAQP：常规迭代次数、QP 阻尼、单次内部更新限幅（弧度）。
+  # 内部步长不是实机速度；最终参考仍受上面的 max_rate_rad_s 限制。
+  ik_iterations: 5
+  ik_damping: 0.004
+  ik_step_limit_rad: 0.2
+
+  # 距机械关节限位保留的余量（弧度）
+  joint_margin_rad: 0.02
+
+  # 肘部位置残差权重（腕部固定为 1.0）
+  elbow_weight: 0.5
+
+  # Mink PostureTask 的残差权重；保持接近上一参考解，0 可关闭。
+  # 与旧 DLS 正则系数的数值意义不同。
+  ik_continuity_weight: 0.002
+
+  # 肘/腕误差超过 3 cm 时尝试三个固定初始分支；不放宽真实关节限位。
+  ik_recovery_error_m: 0.03
+  ik_recovery_iterations: 25
+
+tracking:
+  # 只对新骨架帧处理；0 可关闭滤波和小变化保持，便于对照。
+  enabled: 1
+  # One Euro：坐标单位米，时间单位秒。静止低通、运动时提高响应。
+  min_cutoff_hz: 2.0
+  beta: 3.0
+  derivative_cutoff_hz: 1.0
+  # 单帧跳点拒绝；连续三帧一致的新位置可恢复接受。
+  max_landmark_speed_m_s: 3.0
+  jump_margin_m: 0.03
+  # 低可信数据短暂保持参考；持续低可信仍走原有暂停逻辑。
+  confidence_hold_s: 0.25
+  reset_gap_s: 0.5
+  # 参考角静止保持：约0.29度内稳定0.25秒后锁定，偏离约0.86度后释放。
+  hold_enter_rad: 0.005
+  hold_exit_rad: 0.015
+  hold_settle_s: 0.25

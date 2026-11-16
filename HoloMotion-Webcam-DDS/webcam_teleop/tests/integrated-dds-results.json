@@ -1,0 +1,10 @@
+{
+  "backend": "dds",
+  "dds_pairs": 1792,
+  "steps": 448,
+  "reset_requires_calibration": true,
+  "jpeg_render": true,
+  "synthetic_http_test": true,
+  "dds_disconnect_stops": true,
+  "real_camera_tested": false
+}

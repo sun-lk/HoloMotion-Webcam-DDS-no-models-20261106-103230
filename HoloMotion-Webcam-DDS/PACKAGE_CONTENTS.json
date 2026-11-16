@@ -1,0 +1,5425 @@
+{
+  "created_at": "2026-11-06T10:32:30.577720+08:00",
+  "source_git_commit": "3cf849ffe19fc231b6859122a50c06dd8eed2fc4",
+  "includes_working_tree_changes": true,
+  "scope": "Project source, configuration, docs, diagnostics, robot URDF/MJCF/meshes and runtime JS/WASM; learned model weights excluded.",
+  "external_dependencies": "Sibling g1-remote-action and Python virtual environments are not bundled; the project contains the deployment overlay.",
+  "excluded": [
+    {
+      "path": ".git/",
+      "reason": "environment/cache/generated output or git history"
+    },
+    {
+      "path": "holomotion.egg-info/",
+      "reason": "environment/cache/generated output or git history"
+    },
+    {
+      "path": "assets/smpl/",
+      "reason": "SMPL/SMPL-X model parameters"
+    },
+    {
+      "path": "assets/smplx/",
+      "reason": "SMPL/SMPL-X model parameters"
+    },
+    {
+      "path": "checkpoints/.cache/",
+      "reason": "environment/cache/generated output or git history"
+    },
+    {
+      "path": "checkpoints/HoloMotion_motion_tracking_model_v2.0.0/exported/model_10500.onnx",
+      "reason": "model/checkpoint or serialized model/data payload"
+    },
+    {
+      "path": "data/first-demo/.cache/",
+      "reason": "environment/cache/generated output or git history"
+    },
+    {
+      "path": "deployment/arm_gravity/overlay/src/g1_remote_action/core.py",
+      "reason": "generated cache/log/lock/core dump"
+    },
+    {
+      "path": "deployment/unitree_g1_ros2_29dof/src/models/HoloMotion_motion_tracking_model_v2.0.0/exported/model_10500.onnx",
+      "reason": "model/checkpoint or serialized model/data payload"
+    },
+    {
+      "path": "diagnostics/dex3-audit-2026-11-05/__pycache__/",
+      "reason": "environment/cache/generated output or git history"
+    },
+    {
+      "path": "diagnostics/gravity-implementation-2026-11-05/remote-before/core.py",
+      "reason": "generated cache/log/lock/core dump"
+    },
+    {
+      "path": "diagnostics/motion-review-2026-11-05/robot-arm.log",
+      "reason": "generated cache/log/lock/core dump"
+    },
+    {
+      "path": "holoboxing/evaluation/docker/build-requirements.lock",
+      "reason": "generated cache/log/lock/core dump"
+    },
+    {
+      "path": "holoboxing/evaluation/docker/requirements.lock",
+      "reason": "generated cache/log/lock/core dump"
+    },
+    {
+      "path": "holomotion/src/evaluation/__pycache__/",
+      "reason": "environment/cache/generated output or git history"
+    },
+    {
+      "path": "holomotion/src/evaluation/obs/__pycache__/",
+      "reason": "environment/cache/generated output or git history"
+    },
+    {
+      "path": "holomotion/src/motion_retargeting/__pycache__/",
+      "reason": "environment/cache/generated output or git history"
+    },
+    {
+      "path": "holomotion/src/motion_retargeting/utils/__pycache__/",
+      "reason": "environment/cache/generated output or git history"
+    },
+    {
+      "path": "holomotion/src/motion_tracking/__pycache__/",
+      "reason": "environment/cache/generated output or git history"
+    },
+    {
+      "path": "holomotion/src/training/__pycache__/",
+      "reason": "environment/cache/generated output or git history"
+    },
+    {
+      "path": "holomotion/src/utils/__pycache__/",
+      "reason": "environment/cache/generated output or git history"
+    },
+    {
+      "path": "holosmpl/core/",
+      "reason": "generated runtime file"
+    },
+    {
+      "path": "webcam_teleop/__pycache__/",
+      "reason": "environment/cache/generated output or git history"
+    },
+    {
+      "path": "webcam_teleop/tests/integrated-dds.log",
+      "reason": "generated cache/log/lock/core dump"
+    },
+    {
+      "path": "webcam_teleop/vendor/unitree_sdk2_python/unitree_sdk2py/core/",
+      "reason": "generated runtime file"
+    },
+    {
+      "path": "webcam_teleop/web/vendor/pose_landmarker_lite.task",
+      "reason": "model/checkpoint or serialized model/data payload"
+    }
+  ],
+  "symlinks": [
+    {
+      "path": "CLAUDE.md",
+      "target": "AGENTS.md",
+      "target_exists_in_source": true
+    },
+    {
+      "path": ".claude/skills",
+      "target": "../.agents/skills",
+      "target_exists_in_source": true
+    },
+    {
+      "path": "assets/robots/unitree/G1/meshes",
+      "target": "../../../../thirdparties/HoloMotion_assets/assets/robots/unitree/G1/meshes",
+      "target_exists_in_source": false
+    },
+    {
+      "path": "holoboxing/assets",
+      "target": "../thirdparties/HoloMotion_assets/holoboxing",
+      "target_exists_in_source": false
+    }
+  ],
+  "files": [
+    {
+      "path": ".agents/skills/benchmark-holomotion-latency/SKILL.md",
+      "bytes": 2305
+    },
+    {
+      "path": ".agents/skills/benchmark-holomotion-latency/agents/openai.yaml",
+      "bytes": 273
+    },
+    {
+      "path": ".agents/skills/deploy-offline-motion/SKILL.md",
+      "bytes": 2698
+    },
+    {
+      "path": ".agents/skills/diagnose-holomotion/SKILL.md",
+      "bytes": 6658
+    },
+    {
+      "path": ".agents/skills/holomotion-train-interpreter/SKILL.md",
+      "bytes": 2002
+    },
+    {
+      "path": ".agents/skills/isaaclab-source-lookup/SKILL.md",
+      "bytes": 1273
+    },
+    {
+      "path": ".agents/skills/prepare-motion-data/SKILL.md",
+      "bytes": 4485
+    },
+    {
+      "path": ".agents/skills/ruff-format/SKILL.md",
+      "bytes": 1450
+    },
+    {
+      "path": ".agents/skills/run-live-teleoperation/SKILL.md",
+      "bytes": 3120
+    },
+    {
+      "path": ".agents/skills/train-motion-policy/SKILL.md",
+      "bytes": 9030
+    },
+    {
+      "path": ".gitattributes",
+      "bytes": 1602
+    },
+    {
+      "path": ".githooks/README.md",
+      "bytes": 703
+    },
+    {
+      "path": ".githooks/pre-commit",
+      "bytes": 647
+    },
+    {
+      "path": ".gitignore",
+      "bytes": 1751
+    },
+    {
+      "path": ".gitlab-ci.yml",
+      "bytes": 146
+    },
+    {
+      "path": ".gitmodules",
+      "bytes": 1475
+    },
+    {
+      "path": ".vscode/tasks.json",
+      "bytes": 592
+    },
+    {
+      "path": "AGENTS.md",
+      "bytes": 2035
+    },
+    {
+      "path": "LICENSE",
+      "bytes": 11346
+    },
+    {
+      "path": "Makefile",
+      "bytes": 1409
+    },
+    {
+      "path": "NOTICE",
+      "bytes": 3395
+    },
+    {
+      "path": "README-upstream.md",
+      "bytes": 9897
+    },
+    {
+      "path": "README-分享与安装.md",
+      "bytes": 126
+    },
+    {
+      "path": "README.md",
+      "bytes": 4412
+    },
+    {
+      "path": "SOURCE-PROVENANCE.json",
+      "bytes": 307
+    },
+    {
+      "path": "assets/media/g1_modular_configurations.jpg",
+      "bytes": 344813
+    },
+    {
+      "path": "assets/media/holoboxing_highlights.webp",
+      "bytes": 775802
+    },
+    {
+      "path": "assets/media/holomotion_logo_text.jpg",
+      "bytes": 111911
+    },
+    {
+      "path": "assets/media/holomotion_overview.jpg",
+      "bytes": 104489
+    },
+    {
+      "path": "assets/media/holomotion_pipeline.jpg",
+      "bytes": 124896
+    },
+    {
+      "path": "assets/media/holomotion_roadmap.jpg",
+      "bytes": 150484
+    },
+    {
+      "path": "assets/media/holosmpl_capture_sources.jpg",
+      "bytes": 182449
+    },
+    {
+      "path": "assets/media/qr_codes.jpg",
+      "bytes": 193554
+    },
+    {
+      "path": "assets/robots/unitree/G1/29dof/L_hand_base_link.STL",
+      "bytes": 1448084
+    },
+    {
+      "path": "assets/robots/unitree/G1/29dof/Link11_L.STL",
+      "bytes": 46584
+    },
+    {
+      "path": "assets/robots/unitree/G1/29dof/Link11_R.STL",
+      "bytes": 46884
+    },
+    {
+      "path": "assets/robots/unitree/G1/29dof/Link12_L.STL",
+      "bytes": 917284
+    },
+    {
+      "path": "assets/robots/unitree/G1/29dof/Link12_R.STL",
+      "bytes": 921984
+    },
+    {
+      "path": "assets/robots/unitree/G1/29dof/Link13_L.STL",
+      "bytes": 488584
+    },
+    {
+      "path": "assets/robots/unitree/G1/29dof/Link13_R.STL",
+      "bytes": 483284
+    },
+    {
+      "path": "assets/robots/unitree/G1/29dof/Link14_L.STL",
+      "bytes": 155184
+    },
+    {
+      "path": "assets/robots/unitree/G1/29dof/Link14_R.STL",
+      "bytes": 155584
+    },
+    {
+      "path": "assets/robots/unitree/G1/29dof/Link15_L.STL",
+      "bytes": 407184
+    },
+    {
+      "path": "assets/robots/unitree/G1/29dof/Link15_R.STL",
+      "bytes": 411884
+    },
+    {
+      "path": "assets/robots/unitree/G1/29dof/Link16_L.STL",
+      "bytes": 329384
+    },
+    {
+      "path": "assets/robots/unitree/G1/29dof/Link16_R.STL",
+      "bytes": 335484
+    },
+    {
+      "path": "assets/robots/unitree/G1/29dof/Link17_L.STL",
+      "bytes": 407184
+    },
+    {
+      "path": "assets/robots/unitree/G1/29dof/Link17_R.STL",
+      "bytes": 411884
+    },
+    {
+      "path": "assets/robots/unitree/G1/29dof/Link18_L.STL",
+      "bytes": 182684
+    },
+    {
+      "path": "assets/robots/unitree/G1/29dof/Link18_R.STL",
+      "bytes": 182984
+    },
+    {
+      "path": "assets/robots/unitree/G1/29dof/Link19_L.STL",
+      "bytes": 407184
+    },
+    {
+      "path": "assets/robots/unitree/G1/29dof/Link19_R.STL",
+      "bytes": 411884
+    },
+    {
+      "path": "assets/robots/unitree/G1/29dof/Link20_L.STL",
+      "bytes": 329484
+    },
+    {
+      "path": "assets/robots/unitree/G1/29dof/Link20_R.STL",
+      "bytes": 334784
+    },
+    {
+      "path": "assets/robots/unitree/G1/29dof/Link21_L.STL",
+      "bytes": 407184
+    },
+    {
+      "path": "assets/robots/unitree/G1/29dof/Link21_R.STL",
+      "bytes": 411884
+    },
+    {
+      "path": "assets/robots/unitree/G1/29dof/Link22_L.STL",
+      "bytes": 413384
+    },
+    {
+      "path": "assets/robots/unitree/G1/29dof/Link22_R.STL",
+      "bytes": 416484
+    },
+    {
+      "path": "assets/robots/unitree/G1/29dof/R_hand_base_link.STL",
+      "bytes": 1472384
+    },
+    {
+      "path": "assets/robots/unitree/G1/29dof/d455_link.STL",
+      "bytes": 1972684
+    },
+    {
+      "path": "assets/robots/unitree/G1/29dof/g1_29dof.xml",
+      "bytes": 35827
+    },
+    {
+      "path": "assets/robots/unitree/G1/29dof/g1_29dof_rev_1_0.urdf",
+      "bytes": 34567
+    },
+    {
+      "path": "assets/robots/unitree/G1/29dof/g1_29dof_rev_1_0.xml",
+      "bytes": 26975
+    },
+    {
+      "path": "assets/robots/unitree/G1/29dof/g1_29dof_rev_1_0_s100.urdf",
+      "bytes": 35881
+    },
+    {
+      "path": "assets/robots/unitree/G1/29dof/head_link.STL",
+      "bytes": 932784
+    },
+    {
+      "path": "assets/robots/unitree/G1/29dof/head_servo_link.STL",
+      "bytes": 656184
+    },
+    {
+      "path": "assets/robots/unitree/G1/29dof/left_ankle_pitch_link.STL",
+      "bytes": 71184
+    },
+    {
+      "path": "assets/robots/unitree/G1/29dof/left_ankle_roll_link.STL",
+      "bytes": 653384
+    },
+    {
+      "path": "assets/robots/unitree/G1/29dof/left_base_link.STL",
+      "bytes": 3224784
+    },
+    {
+      "path": "assets/robots/unitree/G1/29dof/left_elbow_link.STL",
+      "bytes": 88784
+    },
+    {
+      "path": "assets/robots/unitree/G1/29dof/left_hand_palm_link.STL",
+      "bytes": 2140184
+    },
+    {
+      "path": "assets/robots/unitree/G1/29dof/left_hip_pitch_link.STL",
+      "bytes": 181684
+    },
+    {
+      "path": "assets/robots/unitree/G1/29dof/left_hip_roll_link.STL",
+      "bytes": 192184
+    },
+    {
+      "path": "assets/robots/unitree/G1/29dof/left_hip_yaw_link.STL",
+      "bytes": 296284
+    },
+    {
+      "path": "assets/robots/unitree/G1/29dof/left_index_1.STL",
+      "bytes": 769484
+    },
+    {
+      "path": "assets/robots/unitree/G1/29dof/left_index_2.STL",
+      "bytes": 370184
+    },
+    {
+      "path": "assets/robots/unitree/G1/29dof/left_index_force_sensor_1.STL",
+      "bytes": 360484
+    },
+    {
+      "path": "assets/robots/unitree/G1/29dof/left_index_force_sensor_2.STL",
+      "bytes": 371784
+    },
+    {
+      "path": "assets/robots/unitree/G1/29dof/left_index_force_sensor_3.STL",
+      "bytes": 86684
+    },
+    {
+      "path": "assets/robots/unitree/G1/29dof/left_knee_link.STL",
+      "bytes": 854884
+    },
+    {
+      "path": "assets/robots/unitree/G1/29dof/left_little_1.STL",
+      "bytes": 769484
+    },
+    {
+      "path": "assets/robots/unitree/G1/29dof/left_little_2.STL",
+      "bytes": 381484
+    },
+    {
+      "path": "assets/robots/unitree/G1/29dof/left_little_force_sensor_1.STL",
+      "bytes": 360484
+    },
+    {
+      "path": "assets/robots/unitree/G1/29dof/left_little_force_sensor_2.STL",
+      "bytes": 397784
+    },
+    {
+      "path": "assets/robots/unitree/G1/29dof/left_little_force_sensor_3.STL",
+      "bytes": 81784
+    },
+    {
+      "path": "assets/robots/unitree/G1/29dof/left_middle_1.STL",
+      "bytes": 769484
+    },
+    {
+      "path": "assets/robots/unitree/G1/29dof/left_middle_2.STL",
+      "bytes": 362384
+    },
+    {
+      "path": "assets/robots/unitree/G1/29dof/left_middle_force_sensor_1.STL",
+      "bytes": 360484
+    },
+    {
+      "path": "assets/robots/unitree/G1/29dof/left_middle_force_sensor_2.STL",
+      "bytes": 326984
+    },
+    {
+      "path": "assets/robots/unitree/G1/29dof/left_middle_force_sensor_3.STL",
+      "bytes": 80584
+    },
+    {
+      "path": "assets/robots/unitree/G1/29dof/left_palm_force_sensor.STL",
+      "bytes": 1614284
+    },
+    {
+      "path": "assets/robots/unitree/G1/29dof/left_ring_1.STL",
+      "bytes": 769484
+    },
+    {
+      "path": "assets/robots/unitree/G1/29dof/left_ring_2.STL",
+      "bytes": 370184
+    },
+    {
+      "path": "assets/robots/unitree/G1/29dof/left_ring_force_sensor_1.STL",
+      "bytes": 360484
+    },
+    {
+      "path": "assets/robots/unitree/G1/29dof/left_ring_force_sensor_2.STL",
+      "bytes": 371784
+    },
+    {
+      "path": "assets/robots/unitree/G1/29dof/left_ring_force_sensor_3.STL",
+      "bytes": 86684
+    },
+    {
+      "path": "assets/robots/unitree/G1/29dof/left_rubber_hand.STL",
+      "bytes": 2287484
+    },
+    {
+      "path": "assets/robots/unitree/G1/29dof/left_shoulder_pitch_link.STL",
+      "bytes": 176784
+    },
+    {
+      "path": "assets/robots/unitree/G1/29dof/left_shoulder_roll_link.STL",
+      "bytes": 400284
+    },
+    {
+      "path": "assets/robots/unitree/G1/29dof/left_shoulder_yaw_link.STL",
+      "bytes": 249184
+    },
+    {
+      "path": "assets/robots/unitree/G1/29dof/left_thumb_1.STL",
+      "bytes": 32184
+    },
+    {
+      "path": "assets/robots/unitree/G1/29dof/left_thumb_2.STL",
+      "bytes": 576384
+    },
+    {
+      "path": "assets/robots/unitree/G1/29dof/left_thumb_3.STL",
+      "bytes": 424484
+    },
+    {
+      "path": "assets/robots/unitree/G1/29dof/left_thumb_4.STL",
+      "bytes": 547784
+    },
+    {
+      "path": "assets/robots/unitree/G1/29dof/left_thumb_force_sensor_1.STL",
+      "bytes": 359684
+    },
+    {
+      "path": "assets/robots/unitree/G1/29dof/left_thumb_force_sensor_2.STL",
+      "bytes": 127484
+    },
+    {
+      "path": "assets/robots/unitree/G1/29dof/left_thumb_force_sensor_3.STL",
+      "bytes": 294484
+    },
+    {
+      "path": "assets/robots/unitree/G1/29dof/left_thumb_force_sensor_4.STL",
+      "bytes": 64584
+    },
+    {
+      "path": "assets/robots/unitree/G1/29dof/left_thumb_swing.STL",
+      "bytes": 28284
+    },
+    {
+      "path": "assets/robots/unitree/G1/29dof/left_wrist_pitch_link.STL",
+      "bytes": 85984
+    },
+    {
+      "path": "assets/robots/unitree/G1/29dof/left_wrist_pitch_link_5010.STL",
+      "bytes": 91784
+    },
+    {
+      "path": "assets/robots/unitree/G1/29dof/left_wrist_roll_link.STL",
+      "bytes": 356184
+    },
+    {
+      "path": "assets/robots/unitree/G1/29dof/left_wrist_roll_link_5010.STL",
+      "bytes": 899184
+    },
+    {
+      "path": "assets/robots/unitree/G1/29dof/left_wrist_roll_rubber_hand.STL",
+      "bytes": 3484884
+    },
+    {
+      "path": "assets/robots/unitree/G1/29dof/left_wrist_yaw_link.STL",
+      "bytes": 318684
+    },
+    {
+      "path": "assets/robots/unitree/G1/29dof/left_wrist_yaw_link_5010.STL",
+      "bytes": 682184
+    },
+    {
+      "path": "assets/robots/unitree/G1/29dof/logo_link.STL",
+      "bytes": 243384
+    },
+    {
+      "path": "assets/robots/unitree/G1/29dof/pelvis.STL",
+      "bytes": 1060884
+    },
+    {
+      "path": "assets/robots/unitree/G1/29dof/pelvis_contour_link.STL",
+      "bytes": 1805184
+    },
+    {
+      "path": "assets/robots/unitree/G1/29dof/right_ankle_pitch_link.STL",
+      "bytes": 71184
+    },
+    {
+      "path": "assets/robots/unitree/G1/29dof/right_ankle_roll_link.STL",
+      "bytes": 653784
+    },
+    {
+      "path": "assets/robots/unitree/G1/29dof/right_base_link.STL",
+      "bytes": 4517284
+    },
+    {
+      "path": "assets/robots/unitree/G1/29dof/right_elbow_link.STL",
+      "bytes": 88784
+    },
+    {
+      "path": "assets/robots/unitree/G1/29dof/right_hand_palm_link.STL",
+      "bytes": 2140184
+    },
+    {
+      "path": "assets/robots/unitree/G1/29dof/right_hip_pitch_link.STL",
+      "bytes": 181284
+    },
+    {
+      "path": "assets/robots/unitree/G1/29dof/right_hip_roll_link.STL",
+      "bytes": 192684
+    },
+    {
+      "path": "assets/robots/unitree/G1/29dof/right_hip_yaw_link.STL",
+      "bytes": 296284
+    },
+    {
+      "path": "assets/robots/unitree/G1/29dof/right_index_1.STL",
+      "bytes": 772784
+    },
+    {
+      "path": "assets/robots/unitree/G1/29dof/right_index_2.STL",
+      "bytes": 372484
+    },
+    {
+      "path": "assets/robots/unitree/G1/29dof/right_index_force_sensor_1.STL",
+      "bytes": 359084
+    },
+    {
+      "path": "assets/robots/unitree/G1/29dof/right_index_force_sensor_2.STL",
+      "bytes": 371084
+    },
+    {
+      "path": "assets/robots/unitree/G1/29dof/right_index_force_sensor_3.STL",
+      "bytes": 87284
+    },
+    {
+      "path": "assets/robots/unitree/G1/29dof/right_knee_link.STL",
+      "bytes": 852284
+    },
+    {
+      "path": "assets/robots/unitree/G1/29dof/right_little_1.STL",
+      "bytes": 772784
+    },
+    {
+      "path": "assets/robots/unitree/G1/29dof/right_little_2.STL",
+      "bytes": 380384
+    },
+    {
+      "path": "assets/robots/unitree/G1/29dof/right_little_force_sensor_1.STL",
+      "bytes": 359084
+    },
+    {
+      "path": "assets/robots/unitree/G1/29dof/right_little_force_sensor_2.STL",
+      "bytes": 397084
+    },
+    {
+      "path": "assets/robots/unitree/G1/29dof/right_little_force_sensor_3.STL",
+      "bytes": 81784
+    },
+    {
+      "path": "assets/robots/unitree/G1/29dof/right_middle_1.STL",
+      "bytes": 772784
+    },
+    {
+      "path": "assets/robots/unitree/G1/29dof/right_middle_2.STL",
+      "bytes": 363384
+    },
+    {
+      "path": "assets/robots/unitree/G1/29dof/right_middle_force_sensor_1.STL",
+      "bytes": 359084
+    },
+    {
+      "path": "assets/robots/unitree/G1/29dof/right_middle_force_sensor_2.STL",
+      "bytes": 326984
+    },
+    {
+      "path": "assets/robots/unitree/G1/29dof/right_middle_force_sensor_3.STL",
+      "bytes": 80384
+    },
+    {
+      "path": "assets/robots/unitree/G1/29dof/right_palm_force_sensor.STL",
+      "bytes": 1584484
+    },
+    {
+      "path": "assets/robots/unitree/G1/29dof/right_ring_1.STL",
+      "bytes": 772784
+    },
+    {
+      "path": "assets/robots/unitree/G1/29dof/right_ring_2.STL",
+      "bytes": 372484
+    },
+    {
+      "path": "assets/robots/unitree/G1/29dof/right_ring_force_sensor_1.STL",
+      "bytes": 359084
+    },
+    {
+      "path": "assets/robots/unitree/G1/29dof/right_ring_force_sensor_2.STL",
+      "bytes": 371084
+    },
+    {
+      "path": "assets/robots/unitree/G1/29dof/right_ring_force_sensor_3.STL",
+      "bytes": 87284
+    },
+    {
+      "path": "assets/robots/unitree/G1/29dof/right_rubber_hand.STL",
+      "bytes": 2192684
+    },
+    {
+      "path": "assets/robots/unitree/G1/29dof/right_shoulder_pitch_link.STL",
+      "bytes": 176784
+    },
+    {
+      "path": "assets/robots/unitree/G1/29dof/right_shoulder_roll_link.STL",
+      "bytes": 401884
+    },
+    {
+      "path": "assets/robots/unitree/G1/29dof/right_shoulder_yaw_link.STL",
+      "bytes": 249984
+    },
+    {
+      "path": "assets/robots/unitree/G1/29dof/right_thumb_1.STL",
+      "bytes": 32184
+    },
+    {
+      "path": "assets/robots/unitree/G1/29dof/right_thumb_2.STL",
+      "bytes": 579884
+    },
+    {
+      "path": "assets/robots/unitree/G1/29dof/right_thumb_3.STL",
+      "bytes": 424684
+    },
+    {
+      "path": "assets/robots/unitree/G1/29dof/right_thumb_4.STL",
+      "bytes": 547584
+    },
+    {
+      "path": "assets/robots/unitree/G1/29dof/right_thumb_force_sensor_1.STL",
+      "bytes": 359884
+    },
+    {
+      "path": "assets/robots/unitree/G1/29dof/right_thumb_force_sensor_2.STL",
+      "bytes": 126684
+    },
+    {
+      "path": "assets/robots/unitree/G1/29dof/right_thumb_force_sensor_3.STL",
+      "bytes": 294384
+    },
+    {
+      "path": "assets/robots/unitree/G1/29dof/right_thumb_force_sensor_4.STL",
+      "bytes": 64584
+    },
+    {
+      "path": "assets/robots/unitree/G1/29dof/right_wrist_pitch_link.STL",
+      "bytes": 79584
+    },
+    {
+      "path": "assets/robots/unitree/G1/29dof/right_wrist_pitch_link_5010.STL",
+      "bytes": 91784
+    },
+    {
+      "path": "assets/robots/unitree/G1/29dof/right_wrist_roll_link.STL",
+      "bytes": 356084
+    },
+    {
+      "path": "assets/robots/unitree/G1/29dof/right_wrist_roll_link_5010.STL",
+      "bytes": 899184
+    },
+    {
+      "path": "assets/robots/unitree/G1/29dof/right_wrist_roll_rubber_hand.STL",
+      "bytes": 3481584
+    },
+    {
+      "path": "assets/robots/unitree/G1/29dof/right_wrist_yaw_link.STL",
+      "bytes": 341484
+    },
+    {
+      "path": "assets/robots/unitree/G1/29dof/right_wrist_yaw_link_5010.STL",
+      "bytes": 682184
+    },
+    {
+      "path": "assets/robots/unitree/G1/29dof/scene_29dof.xml",
+      "bytes": 1597
+    },
+    {
+      "path": "assets/robots/unitree/G1/29dof/torso_constraint_L_link.STL",
+      "bytes": 203584
+    },
+    {
+      "path": "assets/robots/unitree/G1/29dof/torso_constraint_L_rod_link.STL",
+      "bytes": 74884
+    },
+    {
+      "path": "assets/robots/unitree/G1/29dof/torso_constraint_R_link.STL",
+      "bytes": 203584
+    },
+    {
+      "path": "assets/robots/unitree/G1/29dof/torso_constraint_R_rod_link.STL",
+      "bytes": 74884
+    },
+    {
+      "path": "assets/robots/unitree/G1/29dof/torso_link.STL",
+      "bytes": 2232984
+    },
+    {
+      "path": "assets/robots/unitree/G1/29dof/torso_link_23dof_rev_1_0.STL",
+      "bytes": 7825434
+    },
+    {
+      "path": "assets/robots/unitree/G1/29dof/torso_link_rev_1_0.STL",
+      "bytes": 2570584
+    },
+    {
+      "path": "assets/robots/unitree/G1/29dof/waist_constraint_L.STL",
+      "bytes": 114684
+    },
+    {
+      "path": "assets/robots/unitree/G1/29dof/waist_constraint_R.STL",
+      "bytes": 114684
+    },
+    {
+      "path": "assets/robots/unitree/G1/29dof/waist_roll_link.STL",
+      "bytes": 24184
+    },
+    {
+      "path": "assets/robots/unitree/G1/29dof/waist_roll_link_rev_1_0.STL",
+      "bytes": 85884
+    },
+    {
+      "path": "assets/robots/unitree/G1/29dof/waist_support_link.STL",
+      "bytes": 150484
+    },
+    {
+      "path": "assets/robots/unitree/G1/29dof/waist_yaw_link.STL",
+      "bytes": 336284
+    },
+    {
+      "path": "assets/robots/unitree/G1/29dof/waist_yaw_link_rev_1_0.STL",
+      "bytes": 619984
+    },
+    {
+      "path": "assets/robots/unitree/G1/29dof/xl330_link.STL",
+      "bytes": 414984
+    },
+    {
+      "path": "assets/robots/unitree/G1/modular/README.md",
+      "bytes": 1360
+    },
+    {
+      "path": "assets/robots/unitree/G1/modular/g1_urdf_composer.py",
+      "bytes": 32063
+    },
+    {
+      "path": "assets/robots/unitree/G1/modular/manifest.json",
+      "bytes": 16620
+    },
+    {
+      "path": "assets/test_data/motion_retargeting/ACCAD/Male1Walking_c3d/Walk_B10_-_Walk_turn_left_45_stageii.npz",
+      "bytes": 5876184
+    },
+    {
+      "path": "checkpoints/HoloMotion_motion_tracking_model_v2.0.0/config.yaml",
+      "bytes": 24553
+    },
+    {
+      "path": "checkpoints/HoloMotion_motion_tracking_model_v2.0.0/link_command_modes.json",
+      "bytes": 2650
+    },
+    {
+      "path": "data/first-demo/g1/walk1_subject1.csv",
+      "bytes": 2670866
+    },
+    {
+      "path": "data/first-demo/provenance.json",
+      "bytes": 471
+    },
+    {
+      "path": "data/first-demo/walk1_subject1.csv",
+      "bytes": 2670866
+    },
+    {
+      "path": "data/first-demo/walk1_subject1_first10s.npz",
+      "bytes": 826887
+    },
+    {
+      "path": "deploy.env",
+      "bytes": 706
+    },
+    {
+      "path": "deployment/arm_gravity/README.md",
+      "bytes": 5116
+    },
+    {
+      "path": "deployment/arm_gravity/gravity.example.yaml",
+      "bytes": 418
+    },
+    {
+      "path": "deployment/arm_gravity/manifest.json",
+      "bytes": 1558
+    },
+    {
+      "path": "deployment/arm_gravity/overlay/models/gravity/g1_dex3.urdf",
+      "bytes": 51870
+    },
+    {
+      "path": "deployment/arm_gravity/overlay/models/gravity/g1_rubber.urdf",
+      "bytes": 34567
+    },
+    {
+      "path": "deployment/arm_gravity/overlay/src/g1_remote_action/arm_backend.py",
+      "bytes": 25041
+    },
+    {
+      "path": "deployment/arm_gravity/overlay/src/g1_remote_action/gravity_compensation.py",
+      "bytes": 7595
+    },
+    {
+      "path": "deployment/arm_gravity/overlay/src/g1_remote_action/protocol.py",
+      "bytes": 10545
+    },
+    {
+      "path": "deployment/arm_gravity/overlay/tests/gravity_fixture/audit.json",
+      "bytes": 8009
+    },
+    {
+      "path": "deployment/arm_gravity/overlay/tests/gravity_fixture/state.json",
+      "bytes": 4915
+    },
+    {
+      "path": "deployment/arm_gravity/overlay/tests/test_arm_gravity.py",
+      "bytes": 2840
+    },
+    {
+      "path": "deployment/arm_gravity/overlay/tests/test_gravity.py",
+      "bytes": 7118
+    },
+    {
+      "path": "deployment/holomotion_teleop/holomotion_teleop_mjviewer.py",
+      "bytes": 10308
+    },
+    {
+      "path": "deployment/holomotion_teleop/holomotion_teleop_node.py",
+      "bytes": 36482
+    },
+    {
+      "path": "deployment/holomotion_teleop/holomotion_teleop_setup.md",
+      "bytes": 4760
+    },
+    {
+      "path": "deployment/holomotion_teleop/setup_holomotion_teleop_x86_ubuntu2204.sh",
+      "bytes": 6420
+    },
+    {
+      "path": "deployment/holomotion_teleop/start_holoretarget.sh",
+      "bytes": 1516
+    },
+    {
+      "path": "deployment/holomotion_teleop/tests/test_holomotion_teleop_node.py",
+      "bytes": 2860
+    },
+    {
+      "path": "deployment/holomotion_teleop/view_holoretarget.sh",
+      "bytes": 947
+    },
+    {
+      "path": "deployment/holomotion_teleop/view_orin_reference.sh",
+      "bytes": 295
+    },
+    {
+      "path": "deployment/unitree_g1_ros2_29dof/launch_holomotion_29dof_docker.sh",
+      "bytes": 1161
+    },
+    {
+      "path": "deployment/unitree_g1_ros2_29dof/launch_profiles/orin_docker.yaml",
+      "bytes": 2755
+    },
+    {
+      "path": "deployment/unitree_g1_ros2_29dof/scripts/check_v2_motion_model.py",
+      "bytes": 4770
+    },
+    {
+      "path": "deployment/unitree_g1_ros2_29dof/scripts/control_ownership.py",
+      "bytes": 3909
+    },
+    {
+      "path": "deployment/unitree_g1_ros2_29dof/scripts/convert_legacy_offline_npz.py",
+      "bytes": 1130
+    },
+    {
+      "path": "deployment/unitree_g1_ros2_29dof/scripts/holomotion_v2_entrypoint.sh",
+      "bytes": 4815
+    },
+    {
+      "path": "deployment/unitree_g1_ros2_29dof/scripts/launch_runtime.sh",
+      "bytes": 6596
+    },
+    {
+      "path": "deployment/unitree_g1_ros2_29dof/scripts/launch_with_motion_model.sh",
+      "bytes": 1454
+    },
+    {
+      "path": "deployment/unitree_g1_ros2_29dof/scripts/run_g1ra_adapter.sh",
+      "bytes": 1998
+    },
+    {
+      "path": "deployment/unitree_g1_ros2_29dof/src/CMakeLists.txt",
+      "bytes": 1998
+    },
+    {
+      "path": "deployment/unitree_g1_ros2_29dof/src/config/g1_29dof_holomotion.yaml",
+      "bytes": 7884
+    },
+    {
+      "path": "deployment/unitree_g1_ros2_29dof/src/config/g1_29dof_holomotion_v2.yaml",
+      "bytes": 7859
+    },
+    {
+      "path": "deployment/unitree_g1_ros2_29dof/src/humanoid_policy/__init__.py",
+      "bytes": 0
+    },
+    {
+      "path": "deployment/unitree_g1_ros2_29dof/src/humanoid_policy/config.py",
+      "bytes": 21110
+    },
+    {
+      "path": "deployment/unitree_g1_ros2_29dof/src/humanoid_policy/cpu_affinity.py",
+      "bytes": 1667
+    },
+    {
+      "path": "deployment/unitree_g1_ros2_29dof/src/humanoid_policy/fk_warp.py",
+      "bytes": 5191
+    },
+    {
+      "path": "deployment/unitree_g1_ros2_29dof/src/humanoid_policy/g1ra_adapter_node.py",
+      "bytes": 12281
+    },
+    {
+      "path": "deployment/unitree_g1_ros2_29dof/src/humanoid_policy/launch_profile.py",
+      "bytes": 15655
+    },
+    {
+      "path": "deployment/unitree_g1_ros2_29dof/src/humanoid_policy/link_policy_contract.py",
+      "bytes": 20961
+    },
+    {
+      "path": "deployment/unitree_g1_ros2_29dof/src/humanoid_policy/link_reference.py",
+      "bytes": 2475
+    },
+    {
+      "path": "deployment/unitree_g1_ros2_29dof/src/humanoid_policy/local_retarget.py",
+      "bytes": 8962
+    },
+    {
+      "path": "deployment/unitree_g1_ros2_29dof/src/humanoid_policy/local_retarget_process.py",
+      "bytes": 5933
+    },
+    {
+      "path": "deployment/unitree_g1_ros2_29dof/src/humanoid_policy/local_retarget_worker.py",
+      "bytes": 4072
+    },
+    {
+      "path": "deployment/unitree_g1_ros2_29dof/src/humanoid_policy/motion_clip_library.py",
+      "bytes": 4051
+    },
+    {
+      "path": "deployment/unitree_g1_ros2_29dof/src/humanoid_policy/obs_builder/__init__.py",
+      "bytes": 137
+    },
+    {
+      "path": "deployment/unitree_g1_ros2_29dof/src/humanoid_policy/obs_builder/obs_builder.py",
+      "bytes": 12341
+    },
+    {
+      "path": "deployment/unitree_g1_ros2_29dof/src/humanoid_policy/observation.py",
+      "bytes": 13864
+    },
+    {
+      "path": "deployment/unitree_g1_ros2_29dof/src/humanoid_policy/observation_evaluator.py",
+      "bytes": 61654
+    },
+    {
+      "path": "deployment/unitree_g1_ros2_29dof/src/humanoid_policy/offline_motion_conversion.py",
+      "bytes": 5850
+    },
+    {
+      "path": "deployment/unitree_g1_ros2_29dof/src/humanoid_policy/offline_motion_reference.py",
+      "bytes": 22023
+    },
+    {
+      "path": "deployment/unitree_g1_ros2_29dof/src/humanoid_policy/onnx_policy.py",
+      "bytes": 19583
+    },
+    {
+      "path": "deployment/unitree_g1_ros2_29dof/src/humanoid_policy/policy_node_29dof.py",
+      "bytes": 77797
+    },
+    {
+      "path": "deployment/unitree_g1_ros2_29dof/src/humanoid_policy/policy_node_entrypoint.py",
+      "bytes": 189
+    },
+    {
+      "path": "deployment/unitree_g1_ros2_29dof/src/humanoid_policy/policy_runtime.py",
+      "bytes": 35521
+    },
+    {
+      "path": "deployment/unitree_g1_ros2_29dof/src/humanoid_policy/reference_queue.py",
+      "bytes": 10288
+    },
+    {
+      "path": "deployment/unitree_g1_ros2_29dof/src/humanoid_policy/reference_transport.py",
+      "bytes": 18250
+    },
+    {
+      "path": "deployment/unitree_g1_ros2_29dof/src/humanoid_policy/teleop_recorder.py",
+      "bytes": 7599
+    },
+    {
+      "path": "deployment/unitree_g1_ros2_29dof/src/humanoid_policy/utils/__init__.py",
+      "bytes": 0
+    },
+    {
+      "path": "deployment/unitree_g1_ros2_29dof/src/humanoid_policy/utils/command_helper.py",
+      "bytes": 1745
+    },
+    {
+      "path": "deployment/unitree_g1_ros2_29dof/src/humanoid_policy/utils/maths.py",
+      "bytes": 20209
+    },
+    {
+      "path": "deployment/unitree_g1_ros2_29dof/src/humanoid_policy/utils/motor_crc.py",
+      "bytes": 1498
+    },
+    {
+      "path": "deployment/unitree_g1_ros2_29dof/src/humanoid_policy/utils/remote_controller_filter.py",
+      "bytes": 3761
+    },
+    {
+      "path": "deployment/unitree_g1_ros2_29dof/src/humanoid_policy/utils/rotation_helper.py",
+      "bytes": 855
+    },
+    {
+      "path": "deployment/unitree_g1_ros2_29dof/src/humanoid_policy/utils/rotations.py",
+      "bytes": 19105
+    },
+    {
+      "path": "deployment/unitree_g1_ros2_29dof/src/humanoid_policy/vr_reference.py",
+      "bytes": 12003
+    },
+    {
+      "path": "deployment/unitree_g1_ros2_29dof/src/humanoid_policy/vr_reference_adapter.py",
+      "bytes": 9877
+    },
+    {
+      "path": "deployment/unitree_g1_ros2_29dof/src/include/common/motor_crc.h",
+      "bytes": 1921
+    },
+    {
+      "path": "deployment/unitree_g1_ros2_29dof/src/include/common/motor_crc_hg.h",
+      "bytes": 1029
+    },
+    {
+      "path": "deployment/unitree_g1_ros2_29dof/src/include/common/policy_start_guard.h",
+      "bytes": 438
+    },
+    {
+      "path": "deployment/unitree_g1_ros2_29dof/src/include/common/ros2_sport_client.h",
+      "bytes": 5305
+    },
+    {
+      "path": "deployment/unitree_g1_ros2_29dof/src/include/common/wireless_controller.h",
+      "bytes": 949
+    },
+    {
+      "path": "deployment/unitree_g1_ros2_29dof/src/launch/holomotion_29dof_launch.py",
+      "bytes": 5058
+    },
+    {
+      "path": "deployment/unitree_g1_ros2_29dof/src/models/.gitkeep",
+      "bytes": 0
+    },
+    {
+      "path": "deployment/unitree_g1_ros2_29dof/src/models/HoloMotion_motion_tracking_model_v2.0.0/config.yaml",
+      "bytes": 24553
+    },
+    {
+      "path": "deployment/unitree_g1_ros2_29dof/src/models/HoloMotion_motion_tracking_model_v2.0.0/link_command_modes.json",
+      "bytes": 2650
+    },
+    {
+      "path": "deployment/unitree_g1_ros2_29dof/src/motion_data/.gitkeep",
+      "bytes": 0
+    },
+    {
+      "path": "deployment/unitree_g1_ros2_29dof/src/package.xml",
+      "bytes": 1225
+    },
+    {
+      "path": "deployment/unitree_g1_ros2_29dof/src/resource/humanoid_control",
+      "bytes": 0
+    },
+    {
+      "path": "deployment/unitree_g1_ros2_29dof/src/setup.cfg",
+      "bytes": 101
+    },
+    {
+      "path": "deployment/unitree_g1_ros2_29dof/src/setup.py",
+      "bytes": 1788
+    },
+    {
+      "path": "deployment/unitree_g1_ros2_29dof/src/src/common/motor_crc.cpp",
+      "bytes": 1789
+    },
+    {
+      "path": "deployment/unitree_g1_ros2_29dof/src/src/common/motor_crc_hg.cpp",
+      "bytes": 1590
+    },
+    {
+      "path": "deployment/unitree_g1_ros2_29dof/src/src/common/ros2_sport_client.cpp",
+      "bytes": 5111
+    },
+    {
+      "path": "deployment/unitree_g1_ros2_29dof/src/src/common/wireless_controller.cpp",
+      "bytes": 1995
+    },
+    {
+      "path": "deployment/unitree_g1_ros2_29dof/src/src/main_node.cpp",
+      "bytes": 37280
+    },
+    {
+      "path": "deployment/unitree_g1_ros2_29dof/start_container.sh",
+      "bytes": 1839
+    },
+    {
+      "path": "deployment/unitree_g1_ros2_29dof/start_orin_local_pico.sh",
+      "bytes": 1206
+    },
+    {
+      "path": "deployment/unitree_g1_ros2_29dof/tests/test_control_ownership.py",
+      "bytes": 1476
+    },
+    {
+      "path": "deployment/unitree_g1_ros2_29dof/tests/test_deployment_config.py",
+      "bytes": 2371
+    },
+    {
+      "path": "deployment/unitree_g1_ros2_29dof/tests/test_link_policy_contract.py",
+      "bytes": 9032
+    },
+    {
+      "path": "deployment/unitree_g1_ros2_29dof/tests/test_local_retarget.py",
+      "bytes": 908
+    },
+    {
+      "path": "deployment/unitree_g1_ros2_29dof/tests/test_local_retarget_process.py",
+      "bytes": 2869
+    },
+    {
+      "path": "deployment/unitree_g1_ros2_29dof/tests/test_motion_clip_library.py",
+      "bytes": 5264
+    },
+    {
+      "path": "deployment/unitree_g1_ros2_29dof/tests/test_observation.py",
+      "bytes": 8975
+    },
+    {
+      "path": "deployment/unitree_g1_ros2_29dof/tests/test_observation_contract.py",
+      "bytes": 7657
+    },
+    {
+      "path": "deployment/unitree_g1_ros2_29dof/tests/test_observation_evaluator.py",
+      "bytes": 8382
+    },
+    {
+      "path": "deployment/unitree_g1_ros2_29dof/tests/test_offline_motion_conversion.py",
+      "bytes": 3457
+    },
+    {
+      "path": "deployment/unitree_g1_ros2_29dof/tests/test_offline_motion_reference.py",
+      "bytes": 7325
+    },
+    {
+      "path": "deployment/unitree_g1_ros2_29dof/tests/test_onnx_policy.py",
+      "bytes": 16430
+    },
+    {
+      "path": "deployment/unitree_g1_ros2_29dof/tests/test_policy_runtime.py",
+      "bytes": 21543
+    },
+    {
+      "path": "deployment/unitree_g1_ros2_29dof/tests/test_reference_queue.py",
+      "bytes": 3318
+    },
+    {
+      "path": "deployment/unitree_g1_ros2_29dof/tests/test_reference_transport.py",
+      "bytes": 2778
+    },
+    {
+      "path": "deployment/unitree_g1_ros2_29dof/tests/test_release_entrypoint.py",
+      "bytes": 3936
+    },
+    {
+      "path": "deployment/unitree_g1_ros2_29dof/tests/test_vr_reference.py",
+      "bytes": 3116
+    },
+    {
+      "path": "diagnostics/dex3-audit-2026-11-05/README.md",
+      "bytes": 5671
+    },
+    {
+      "path": "diagnostics/dex3-audit-2026-11-05/audit-result.json",
+      "bytes": 8009
+    },
+    {
+      "path": "diagnostics/dex3-audit-2026-11-05/audit_models.py",
+      "bytes": 10303
+    },
+    {
+      "path": "diagnostics/dex3-audit-2026-11-05/bridge-config-snapshot.json",
+      "bytes": 488
+    },
+    {
+      "path": "diagnostics/dex3-audit-2026-11-05/g1_body29_hand14.urdf",
+      "bytes": 51870
+    },
+    {
+      "path": "diagnostics/dex3-audit-2026-11-05/robot-state.json",
+      "bytes": 4915
+    },
+    {
+      "path": "diagnostics/dex3-audit-2026-11-05/unitree_dex3_left.urdf",
+      "bytes": 13980
+    },
+    {
+      "path": "diagnostics/dex3-audit-2026-11-05/unitree_dex3_right.urdf",
+      "bytes": 14031
+    },
+    {
+      "path": "diagnostics/gravity-implementation-2026-11-05/deployment-result.json",
+      "bytes": 3240
+    },
+    {
+      "path": "diagnostics/gravity-implementation-2026-11-05/remote-before/arm_backend.py",
+      "bytes": 20804
+    },
+    {
+      "path": "diagnostics/gravity-implementation-2026-11-05/remote-before/protocol.py",
+      "bytes": 10032
+    },
+    {
+      "path": "diagnostics/gravity-implementation-2026-11-05/remote-before/transport.py",
+      "bytes": 5525
+    },
+    {
+      "path": "diagnostics/jitter-filter-2026-11-05.json",
+      "bytes": 1393
+    },
+    {
+      "path": "diagnostics/limits-audit-2026-11-05/README.md",
+      "bytes": 6261
+    },
+    {
+      "path": "diagnostics/limits-audit-2026-11-05/audit_branches.py",
+      "bytes": 4036
+    },
+    {
+      "path": "diagnostics/limits-audit-2026-11-05/audit_ik.py",
+      "bytes": 7294
+    },
+    {
+      "path": "diagnostics/limits-audit-2026-11-05/audit_inputs.py",
+      "bytes": 2471
+    },
+    {
+      "path": "diagnostics/limits-audit-2026-11-05/audit_policy.py",
+      "bytes": 4450
+    },
+    {
+      "path": "diagnostics/limits-audit-2026-11-05/bounded-branches.json",
+      "bytes": 3276
+    },
+    {
+      "path": "diagnostics/limits-audit-2026-11-05/hello-ik-branches.png",
+      "bytes": 413467
+    },
+    {
+      "path": "diagnostics/limits-audit-2026-11-05/ik-results.json",
+      "bytes": 67865
+    },
+    {
+      "path": "diagnostics/limits-audit-2026-11-05/input-results.json",
+      "bytes": 2018
+    },
+    {
+      "path": "diagnostics/limits-audit-2026-11-05/policy-results.json",
+      "bytes": 1778479
+    },
+    {
+      "path": "diagnostics/limits-audit-2026-11-05/render_comparison.py",
+      "bytes": 2694
+    },
+    {
+      "path": "diagnostics/limits-audit-2026-11-05/static-arm-contacts.json",
+      "bytes": 5422
+    },
+    {
+      "path": "diagnostics/mink-ik-2026-11-06/README.md",
+      "bytes": 2920
+    },
+    {
+      "path": "diagnostics/mink-ik-2026-11-06/policy-results.json",
+      "bytes": 6613
+    },
+    {
+      "path": "diagnostics/mink-ik-2026-11-06/reference-results.json",
+      "bytes": 4425
+    },
+    {
+      "path": "diagnostics/mink-ik-2026-11-06/runtime-hello.jpg",
+      "bytes": 32211
+    },
+    {
+      "path": "diagnostics/mink-ik-2026-11-06/runtime-results.json",
+      "bytes": 60418
+    },
+    {
+      "path": "diagnostics/mink-ik-2026-11-06/runtime_smoke.py",
+      "bytes": 2922
+    },
+    {
+      "path": "diagnostics/mink-ik-2026-11-06/validate_mink.py",
+      "bytes": 3379
+    },
+    {
+      "path": "diagnostics/motion-review-2026-11-05/analysis.json",
+      "bytes": 6785
+    },
+    {
+      "path": "diagnostics/motion-review-2026-11-05/analyze.py",
+      "bytes": 5785
+    },
+    {
+      "path": "diagnostics/motion-review-2026-11-05/holomotion-motion-8765.jsonl",
+      "bytes": 514361
+    },
+    {
+      "path": "diagnostics/motion-review-2026-11-05/local-snapshot.json",
+      "bytes": 1557
+    },
+    {
+      "path": "diagnostics/motion-review-2026-11-05/targets-vs-measured.png",
+      "bytes": 308606
+    },
+    {
+      "path": "diagnostics/parallel-feedback-2026-11-05/final-status.json",
+      "bytes": 677
+    },
+    {
+      "path": "diagnostics/parallel-feedback-2026-11-05/frontend-controls.png",
+      "bytes": 42861
+    },
+    {
+      "path": "diagnostics/parallel-feedback-2026-11-05/frontend.png",
+      "bytes": 165118
+    },
+    {
+      "path": "diagnostics/parallel-feedback-2026-11-05/live-switch-test.json",
+      "bytes": 373
+    },
+    {
+      "path": "diagnostics/parallel-feedback-2026-11-05/offline-policy.json",
+      "bytes": 292
+    },
+    {
+      "path": "diagnostics/robot-model-2026-11-05/README.md",
+      "bytes": 2749
+    },
+    {
+      "path": "diagnostics/robot-model-2026-11-05/comparison.json",
+      "bytes": 8074
+    },
+    {
+      "path": "diagnostics/robot-model-2026-11-05/g1_29dof_rev_1_0.urdf",
+      "bytes": 34567
+    },
+    {
+      "path": "diagnostics/robot-model-2026-11-05/g1_29dof_rev_1_0_s100.urdf",
+      "bytes": 35881
+    },
+    {
+      "path": "diagnostics/robot-model-2026-11-05/robot_xr_g1_body29_hand14.urdf",
+      "bytes": 51870
+    },
+    {
+      "path": "diagnostics/simulation-restore-2026-11-05/runtime-check.json",
+      "bytes": 329
+    },
+    {
+      "path": "diagnostics/simulation-restore-2026-11-05/simulation-entry.png",
+      "bytes": 60907
+    },
+    {
+      "path": "docs/environment_setup.md",
+      "bytes": 5254
+    },
+    {
+      "path": "docs/evaluate_motion_tracking.md",
+      "bytes": 11551
+    },
+    {
+      "path": "docs/holomotion_motion_file_spec.md",
+      "bytes": 6290
+    },
+    {
+      "path": "docs/media/supermimic_training_loop_en.png",
+      "bytes": 1652392
+    },
+    {
+      "path": "docs/media/supermimic_training_progress.webp",
+      "bytes": 986168
+    },
+    {
+      "path": "docs/media/supermimic_training_reward_20261024.png",
+      "bytes": 121451
+    },
+    {
+      "path": "docs/motion_retargeting.md",
+      "bytes": 3680
+    },
+    {
+      "path": "docs/mujoco_sim2sim.md",
+      "bytes": 1372
+    },
+    {
+      "path": "docs/realworld_deployment.md",
+      "bytes": 13694
+    },
+    {
+      "path": "docs/supermimic.md",
+      "bytes": 20340
+    },
+    {
+      "path": "docs/supermimic.zh-CN.md",
+      "bytes": 19633
+    },
+    {
+      "path": "docs/supermimic_results.json",
+      "bytes": 6998
+    },
+    {
+      "path": "docs/train_motion_tracking.md",
+      "bytes": 7651
+    },
+    {
+      "path": "environments/environment_train_isaaclab_cu118.yaml",
+      "bytes": 231
+    },
+    {
+      "path": "environments/environment_train_isaaclab_cu128.yaml",
+      "bytes": 191
+    },
+    {
+      "path": "environments/requirements_base.txt",
+      "bytes": 688
+    },
+    {
+      "path": "environments/requirements_supermimic.txt",
+      "bytes": 352
+    },
+    {
+      "path": "environments/requirements_torch_cu118.txt",
+      "bytes": 151
+    },
+    {
+      "path": "environments/requirements_torch_cu128.txt",
+      "bytes": 229
+    },
+    {
+      "path": "holoboxing/.gitignore",
+      "bytes": 104
+    },
+    {
+      "path": "holoboxing/README.md",
+      "bytes": 40254
+    },
+    {
+      "path": "holoboxing/README.zh-CN.md",
+      "bytes": 37788
+    },
+    {
+      "path": "holoboxing/__init__.py",
+      "bytes": 87
+    },
+    {
+      "path": "holoboxing/__main__.py",
+      "bytes": 59
+    },
+    {
+      "path": "holoboxing/data/.gitignore",
+      "bytes": 92
+    },
+    {
+      "path": "holoboxing/data/__init__.py",
+      "bytes": 75
+    },
+    {
+      "path": "holoboxing/data/__main__.py",
+      "bytes": 48
+    },
+    {
+      "path": "holoboxing/data/cli.py",
+      "bytes": 4719
+    },
+    {
+      "path": "holoboxing/data/collection.py",
+      "bytes": 16429
+    },
+    {
+      "path": "holoboxing/data/common.py",
+      "bytes": 3305
+    },
+    {
+      "path": "holoboxing/data/contract.py",
+      "bytes": 5623
+    },
+    {
+      "path": "holoboxing/data/dataset.py",
+      "bytes": 12045
+    },
+    {
+      "path": "holoboxing/data/download.py",
+      "bytes": 14472
+    },
+    {
+      "path": "holoboxing/data/interhuman.py",
+      "bytes": 17193
+    },
+    {
+      "path": "holoboxing/data/prepare.py",
+      "bytes": 22701
+    },
+    {
+      "path": "holoboxing/data/profiles/interhuman.json",
+      "bytes": 3865681
+    },
+    {
+      "path": "holoboxing/data/profiles/interhuman_training_files.json",
+      "bytes": 5719
+    },
+    {
+      "path": "holoboxing/data/profiles/robostriker.json",
+      "bytes": 20624
+    },
+    {
+      "path": "holoboxing/data/records.py",
+      "bytes": 18536
+    },
+    {
+      "path": "holoboxing/data/requirements.txt",
+      "bytes": 97
+    },
+    {
+      "path": "holoboxing/data/retarget-requirements.txt",
+      "bytes": 273
+    },
+    {
+      "path": "holoboxing/data/robot.py",
+      "bytes": 3711
+    },
+    {
+      "path": "holoboxing/evaluation/__init__.py",
+      "bytes": 65
+    },
+    {
+      "path": "holoboxing/evaluation/benchmark.py",
+      "bytes": 8106
+    },
+    {
+      "path": "holoboxing/evaluation/build.sh",
+      "bytes": 254
+    },
+    {
+      "path": "holoboxing/evaluation/cli.py",
+      "bytes": 5173
+    },
+    {
+      "path": "holoboxing/evaluation/docker/Dockerfile",
+      "bytes": 3437
+    },
+    {
+      "path": "holoboxing/evaluation/docker/build-requirements.in",
+      "bytes": 637
+    },
+    {
+      "path": "holoboxing/evaluation/docker/requirements.in",
+      "bytes": 904
+    },
+    {
+      "path": "holoboxing/evaluation/export.sh",
+      "bytes": 1356
+    },
+    {
+      "path": "holoboxing/evaluation/export_hdf5.py",
+      "bytes": 13532
+    },
+    {
+      "path": "holoboxing/evaluation/frozen-model.json",
+      "bytes": 790
+    },
+    {
+      "path": "holoboxing/evaluation/io.py",
+      "bytes": 869
+    },
+    {
+      "path": "holoboxing/evaluation/match.py",
+      "bytes": 2464
+    },
+    {
+      "path": "holoboxing/evaluation/models.py",
+      "bytes": 7692
+    },
+    {
+      "path": "holoboxing/evaluation/qualification.py",
+      "bytes": 1425
+    },
+    {
+      "path": "holoboxing/evaluation/repeatability.py",
+      "bytes": 5765
+    },
+    {
+      "path": "holoboxing/evaluation/replay_schema/__init__.py",
+      "bytes": 265
+    },
+    {
+      "path": "holoboxing/evaluation/replay_schema/hdf5.py",
+      "bytes": 23157
+    },
+    {
+      "path": "holoboxing/evaluation/replay_schema/schema.py",
+      "bytes": 1470
+    },
+    {
+      "path": "holoboxing/evaluation/resources.py",
+      "bytes": 4022
+    },
+    {
+      "path": "holoboxing/evaluation/robot_models.py",
+      "bytes": 7636
+    },
+    {
+      "path": "holoboxing/evaluation/runtime/__init__.py",
+      "bytes": 55
+    },
+    {
+      "path": "holoboxing/evaluation/runtime/benchmark_state.py",
+      "bytes": 1714
+    },
+    {
+      "path": "holoboxing/evaluation/runtime/chain_benchmark.py",
+      "bytes": 11342
+    },
+    {
+      "path": "holoboxing/evaluation/runtime/collision_precision.py",
+      "bytes": 1051
+    },
+    {
+      "path": "holoboxing/evaluation/runtime/compiled_artifacts.py",
+      "bytes": 4816
+    },
+    {
+      "path": "holoboxing/evaluation/runtime/deterministic_physics.py",
+      "bytes": 8045
+    },
+    {
+      "path": "holoboxing/evaluation/runtime/fall_rules.py",
+      "bytes": 1100
+    },
+    {
+      "path": "holoboxing/evaluation/runtime/fast_runtime.py",
+      "bytes": 28293
+    },
+    {
+      "path": "holoboxing/evaluation/runtime/gpu_physics.py",
+      "bytes": 11334
+    },
+    {
+      "path": "holoboxing/evaluation/runtime/gpu_referee.py",
+      "bytes": 1557
+    },
+    {
+      "path": "holoboxing/evaluation/runtime/hand_hit_rules.py",
+      "bytes": 6047
+    },
+    {
+      "path": "holoboxing/evaluation/runtime/hand_rule_runtime.py",
+      "bytes": 5954
+    },
+    {
+      "path": "holoboxing/evaluation/runtime/holomotion_v2_runtime.py",
+      "bytes": 1833
+    },
+    {
+      "path": "holoboxing/evaluation/runtime/impulse_hit_rules.py",
+      "bytes": 4205
+    },
+    {
+      "path": "holoboxing/evaluation/runtime/lean_runtime.py",
+      "bytes": 19947
+    },
+    {
+      "path": "holoboxing/evaluation/runtime/lower.py",
+      "bytes": 12021
+    },
+    {
+      "path": "holoboxing/evaluation/runtime/match_runtime.py",
+      "bytes": 15670
+    },
+    {
+      "path": "holoboxing/evaluation/runtime/model_contract.py",
+      "bytes": 5579
+    },
+    {
+      "path": "holoboxing/evaluation/runtime/observation_export.py",
+      "bytes": 21826
+    },
+    {
+      "path": "holoboxing/evaluation/runtime/observation_fk.py",
+      "bytes": 3117
+    },
+    {
+      "path": "holoboxing/evaluation/runtime/onnx_device.py",
+      "bytes": 5446
+    },
+    {
+      "path": "holoboxing/evaluation/runtime/ordered_physics_collision.py",
+      "bytes": 16203
+    },
+    {
+      "path": "holoboxing/evaluation/runtime/ordered_physics_linear.py",
+      "bytes": 7814
+    },
+    {
+      "path": "holoboxing/evaluation/runtime/ordered_physics_rows.py",
+      "bytes": 5502
+    },
+    {
+      "path": "holoboxing/evaluation/runtime/ordered_physics_work.py",
+      "bytes": 12901
+    },
+    {
+      "path": "holoboxing/evaluation/runtime/ordered_topk.py",
+      "bytes": 10034
+    },
+    {
+      "path": "holoboxing/evaluation/runtime/physics_engine.py",
+      "bytes": 2086
+    },
+    {
+      "path": "holoboxing/evaluation/runtime/policy_output.py",
+      "bytes": 3259
+    },
+    {
+      "path": "holoboxing/evaluation/runtime/reference.py",
+      "bytes": 5294
+    },
+    {
+      "path": "holoboxing/evaluation/runtime/representation.py",
+      "bytes": 7172
+    },
+    {
+      "path": "holoboxing/evaluation/runtime/rules.py",
+      "bytes": 23732
+    },
+    {
+      "path": "holoboxing/evaluation/runtime/scene.py",
+      "bytes": 13966
+    },
+    {
+      "path": "holoboxing/evaluation/runtime/upper.py",
+      "bytes": 11396
+    },
+    {
+      "path": "holoboxing/evaluation/scene_contract.py",
+      "bytes": 5378
+    },
+    {
+      "path": "holoboxing/evaluation/scripts/build_image.py",
+      "bytes": 10413
+    },
+    {
+      "path": "holoboxing/evaluation/scripts/sync_robot_assets.py",
+      "bytes": 2063
+    },
+    {
+      "path": "holoboxing/evaluation/tests/resource_fixtures.py",
+      "bytes": 4137
+    },
+    {
+      "path": "holoboxing/evaluation/tests/test_benchmark_state.py",
+      "bytes": 2699
+    },
+    {
+      "path": "holoboxing/evaluation/tests/test_build_provenance.py",
+      "bytes": 1403
+    },
+    {
+      "path": "holoboxing/evaluation/tests/test_collision_precision.py",
+      "bytes": 3038
+    },
+    {
+      "path": "holoboxing/evaluation/tests/test_compiled_artifacts.py",
+      "bytes": 4047
+    },
+    {
+      "path": "holoboxing/evaluation/tests/test_control_deadline.py",
+      "bytes": 2301
+    },
+    {
+      "path": "holoboxing/evaluation/tests/test_deterministic_policies.py",
+      "bytes": 3153
+    },
+    {
+      "path": "holoboxing/evaluation/tests/test_export_hdf5.py",
+      "bytes": 5358
+    },
+    {
+      "path": "holoboxing/evaluation/tests/test_hand_hit_rules.py",
+      "bytes": 5794
+    },
+    {
+      "path": "holoboxing/evaluation/tests/test_impulse_hit_rules.py",
+      "bytes": 8842
+    },
+    {
+      "path": "holoboxing/evaluation/tests/test_launcher.py",
+      "bytes": 6830
+    },
+    {
+      "path": "holoboxing/evaluation/tests/test_model_download.py",
+      "bytes": 4362
+    },
+    {
+      "path": "holoboxing/evaluation/tests/test_observation_fk.py",
+      "bytes": 8724
+    },
+    {
+      "path": "holoboxing/evaluation/tests/test_observation_state_gpu.py",
+      "bytes": 12386
+    },
+    {
+      "path": "holoboxing/evaluation/tests/test_onnx_device.py",
+      "bytes": 1653
+    },
+    {
+      "path": "holoboxing/evaluation/tests/test_ordered_physics_plan.py",
+      "bytes": 3146
+    },
+    {
+      "path": "holoboxing/evaluation/tests/test_ordered_topk.py",
+      "bytes": 3480
+    },
+    {
+      "path": "holoboxing/evaluation/tests/test_policy_output.py",
+      "bytes": 3832
+    },
+    {
+      "path": "holoboxing/evaluation/tests/test_public_interfaces.py",
+      "bytes": 11260
+    },
+    {
+      "path": "holoboxing/evaluation/tests/test_repeatability.py",
+      "bytes": 2876
+    },
+    {
+      "path": "holoboxing/evaluation/tests/test_scene_contract.py",
+      "bytes": 7365
+    },
+    {
+      "path": "holoboxing/evaluation/tests/test_validation_cli.py",
+      "bytes": 1185
+    },
+    {
+      "path": "holoboxing/evaluation/tests/test_viewer_server.py",
+      "bytes": 3518
+    },
+    {
+      "path": "holoboxing/evaluation/validation.py",
+      "bytes": 6465
+    },
+    {
+      "path": "holoboxing/evaluation/viewer/build.mjs",
+      "bytes": 1596
+    },
+    {
+      "path": "holoboxing/evaluation/viewer/notices/h5wasm-LICENSE.txt",
+      "bytes": 7577
+    },
+    {
+      "path": "holoboxing/evaluation/viewer/notices/mediabunny-LICENSE.txt",
+      "bytes": 16726
+    },
+    {
+      "path": "holoboxing/evaluation/viewer/notices/mediabunny-SOURCE.txt",
+      "bytes": 467
+    },
+    {
+      "path": "holoboxing/evaluation/viewer/notices/react-LICENSE.txt",
+      "bytes": 1086
+    },
+    {
+      "path": "holoboxing/evaluation/viewer/notices/react-dom-LICENSE.txt",
+      "bytes": 1086
+    },
+    {
+      "path": "holoboxing/evaluation/viewer/notices/recorded-effects.txt",
+      "bytes": 701
+    },
+    {
+      "path": "holoboxing/evaluation/viewer/notices/three-LICENSE.txt",
+      "bytes": 1081
+    },
+    {
+      "path": "holoboxing/evaluation/viewer/package-lock.json",
+      "bytes": 20652
+    },
+    {
+      "path": "holoboxing/evaluation/viewer/package.json",
+      "bytes": 521
+    },
+    {
+      "path": "holoboxing/evaluation/viewer/src/index.tsx",
+      "bytes": 2129
+    },
+    {
+      "path": "holoboxing/evaluation/viewer/src/replay/G1ReplayCanvas.tsx",
+      "bytes": 5752
+    },
+    {
+      "path": "holoboxing/evaluation/viewer/src/replay/Hdf5ReplayReader.ts",
+      "bytes": 7693
+    },
+    {
+      "path": "holoboxing/evaluation/viewer/src/replay/LoadingStage.tsx",
+      "bytes": 975
+    },
+    {
+      "path": "holoboxing/evaluation/viewer/src/replay/ReplayPlayer.tsx",
+      "bytes": 15139
+    },
+    {
+      "path": "holoboxing/evaluation/viewer/src/replay/ReplayStateView.tsx",
+      "bytes": 1471
+    },
+    {
+      "path": "holoboxing/evaluation/viewer/src/replay/ReplayTransferActions.tsx",
+      "bytes": 1711
+    },
+    {
+      "path": "holoboxing/evaluation/viewer/src/replay/ReplayViewportTools.tsx",
+      "bytes": 1432
+    },
+    {
+      "path": "holoboxing/evaluation/viewer/src/replay/assetPaths.ts",
+      "bytes": 52
+    },
+    {
+      "path": "holoboxing/evaluation/viewer/src/replay/boxingArena.ts",
+      "bytes": 3550
+    },
+    {
+      "path": "holoboxing/evaluation/viewer/src/replay/exportMp4.ts",
+      "bytes": 5193
+    },
+    {
+      "path": "holoboxing/evaluation/viewer/src/replay/g1Assets.ts",
+      "bytes": 5660
+    },
+    {
+      "path": "holoboxing/evaluation/viewer/src/replay/g1Runtime.ts",
+      "bytes": 13584
+    },
+    {
+      "path": "holoboxing/evaluation/viewer/src/replay/hitEffects.ts",
+      "bytes": 6747
+    },
+    {
+      "path": "holoboxing/evaluation/viewer/src/replay/loadingStage.css",
+      "bytes": 1418
+    },
+    {
+      "path": "holoboxing/evaluation/viewer/src/replay/recordedEffects.ts",
+      "bytes": 205020
+    },
+    {
+      "path": "holoboxing/evaluation/viewer/src/replay/replay.css",
+      "bytes": 26614
+    },
+    {
+      "path": "holoboxing/evaluation/viewer/src/replay/replayAudio.ts",
+      "bytes": 3782
+    },
+    {
+      "path": "holoboxing/evaluation/viewer/src/replay/replayPerspective.ts",
+      "bytes": 457
+    },
+    {
+      "path": "holoboxing/evaluation/viewer/src/services/boxing.ts",
+      "bytes": 558
+    },
+    {
+      "path": "holoboxing/evaluation/viewer/src/style.css",
+      "bytes": 302
+    },
+    {
+      "path": "holoboxing/evaluation/viewer/tests/exportMp4.browser.mjs",
+      "bytes": 2096
+    },
+    {
+      "path": "holoboxing/evaluation/viewer/tests/exportMp4.fixture.ts",
+      "bytes": 8435
+    },
+    {
+      "path": "holoboxing/evaluation/viewer/tests/replayAudio.browser.mjs",
+      "bytes": 4913
+    },
+    {
+      "path": "holoboxing/evaluation/viewer/tests/replayAudio.fixture.tsx",
+      "bytes": 2241
+    },
+    {
+      "path": "holoboxing/evaluation/viewer_server.py",
+      "bytes": 4450
+    },
+    {
+      "path": "holoboxing/run.sh",
+      "bytes": 7693
+    },
+    {
+      "path": "holoboxing/training/README.md",
+      "bytes": 5034
+    },
+    {
+      "path": "holoboxing/training/__init__.py",
+      "bytes": 88
+    },
+    {
+      "path": "holoboxing/training/assets/robot_schema.json",
+      "bytes": 1677
+    },
+    {
+      "path": "holoboxing/training/checkpoint_io.py",
+      "bytes": 2235
+    },
+    {
+      "path": "holoboxing/training/cli.py",
+      "bytes": 872
+    },
+    {
+      "path": "holoboxing/training/configs/sample.json",
+      "bytes": 244
+    },
+    {
+      "path": "holoboxing/training/configs/selfplay.json",
+      "bytes": 244
+    },
+    {
+      "path": "holoboxing/training/configs/training.json",
+      "bytes": 1001
+    },
+    {
+      "path": "holoboxing/training/envs/__init__.py",
+      "bytes": 0
+    },
+    {
+      "path": "holoboxing/training/envs/control.py",
+      "bytes": 20184
+    },
+    {
+      "path": "holoboxing/training/envs/entities.py",
+      "bytes": 366
+    },
+    {
+      "path": "holoboxing/training/envs/mujoco_env.py",
+      "bytes": 27126
+    },
+    {
+      "path": "holoboxing/training/envs/mujoco_physics.py",
+      "bytes": 16997
+    },
+    {
+      "path": "holoboxing/training/envs/mujoco_rewards.py",
+      "bytes": 5899
+    },
+    {
+      "path": "holoboxing/training/envs/nonfinite.py",
+      "bytes": 1547
+    },
+    {
+      "path": "holoboxing/training/envs/onnx_lower.py",
+      "bytes": 7490
+    },
+    {
+      "path": "holoboxing/training/evaluate_native.py",
+      "bytes": 18050
+    },
+    {
+      "path": "holoboxing/training/evaluate_prior.py",
+      "bytes": 5403
+    },
+    {
+      "path": "holoboxing/training/export.py",
+      "bytes": 8832
+    },
+    {
+      "path": "holoboxing/training/motion_prior.py",
+      "bytes": 4277
+    },
+    {
+      "path": "holoboxing/training/native_robostriker.py",
+      "bytes": 8728
+    },
+    {
+      "path": "holoboxing/training/opponent_pool.py",
+      "bytes": 5588
+    },
+    {
+      "path": "holoboxing/training/prepare_prior.py",
+      "bytes": 4785
+    },
+    {
+      "path": "holoboxing/training/prior_data.py",
+      "bytes": 5514
+    },
+    {
+      "path": "holoboxing/training/requirements.txt",
+      "bytes": 465
+    },
+    {
+      "path": "holoboxing/training/resources.py",
+      "bytes": 2286
+    },
+    {
+      "path": "holoboxing/training/rsl_rl/LICENSE",
+      "bytes": 1632
+    },
+    {
+      "path": "holoboxing/training/rsl_rl/__init__.py",
+      "bytes": 0
+    },
+    {
+      "path": "holoboxing/training/rsl_rl/algorithms/__init__.py",
+      "bytes": 0
+    },
+    {
+      "path": "holoboxing/training/rsl_rl/algorithms/ppo.py",
+      "bytes": 15583
+    },
+    {
+      "path": "holoboxing/training/rsl_rl/modules/__init__.py",
+      "bytes": 0
+    },
+    {
+      "path": "holoboxing/training/rsl_rl/modules/actor_critic.py",
+      "bytes": 10813
+    },
+    {
+      "path": "holoboxing/training/rsl_rl/modules/amp.py",
+      "bytes": 10600
+    },
+    {
+      "path": "holoboxing/training/rsl_rl/modules/amp_discriminator.py",
+      "bytes": 4126
+    },
+    {
+      "path": "holoboxing/training/rsl_rl/modules/competition.py",
+      "bytes": 1040
+    },
+    {
+      "path": "holoboxing/training/rsl_rl/modules/exploration.py",
+      "bytes": 6423
+    },
+    {
+      "path": "holoboxing/training/rsl_rl/modules/normalization.py",
+      "bytes": 4003
+    },
+    {
+      "path": "holoboxing/training/rsl_rl/modules/normalizer.py",
+      "bytes": 1582
+    },
+    {
+      "path": "holoboxing/training/rsl_rl/runners/__init__.py",
+      "bytes": 0
+    },
+    {
+      "path": "holoboxing/training/rsl_rl/runners/on_policy_runner.py",
+      "bytes": 23604
+    },
+    {
+      "path": "holoboxing/training/rsl_rl/runners/resume.py",
+      "bytes": 15142
+    },
+    {
+      "path": "holoboxing/training/rsl_rl/storage/__init__.py",
+      "bytes": 0
+    },
+    {
+      "path": "holoboxing/training/rsl_rl/storage/circular_buffer.py",
+      "bytes": 2818
+    },
+    {
+      "path": "holoboxing/training/rsl_rl/storage/rollout_storage.py",
+      "bytes": 7456
+    },
+    {
+      "path": "holoboxing/training/scripts/__init__.py",
+      "bytes": 0
+    },
+    {
+      "path": "holoboxing/training/scripts/common.py",
+      "bytes": 1583
+    },
+    {
+      "path": "holoboxing/training/scripts/train_mujoco.py",
+      "bytes": 5535
+    },
+    {
+      "path": "holoboxing/training/select_prior.py",
+      "bytes": 3169
+    },
+    {
+      "path": "holoboxing/training/spherical_actor.py",
+      "bytes": 4602
+    },
+    {
+      "path": "holoboxing/training/spherical_rl.py",
+      "bytes": 2870
+    },
+    {
+      "path": "holoboxing/training/standing_reference.py",
+      "bytes": 2314
+    },
+    {
+      "path": "holoboxing/training/supervised/__init__.py",
+      "bytes": 140
+    },
+    {
+      "path": "holoboxing/training/supervised/data.py",
+      "bytes": 3002
+    },
+    {
+      "path": "holoboxing/training/supervised/statistics.py",
+      "bytes": 4304
+    },
+    {
+      "path": "holoboxing/training/supervised/training.py",
+      "bytes": 16686
+    },
+    {
+      "path": "holoboxing/training/tasks/__init__.py",
+      "bytes": 0
+    },
+    {
+      "path": "holoboxing/training/tasks/combat/__init__.py",
+      "bytes": 0
+    },
+    {
+      "path": "holoboxing/training/tasks/combat/config/__init__.py",
+      "bytes": 0
+    },
+    {
+      "path": "holoboxing/training/tasks/combat/config/sandbag.py",
+      "bytes": 6285
+    },
+    {
+      "path": "holoboxing/training/tasks/combat/mdp/__init__.py",
+      "bytes": 0
+    },
+    {
+      "path": "holoboxing/training/tasks/combat/mdp/geometry.py",
+      "bytes": 5499
+    },
+    {
+      "path": "holoboxing/training/tasks/combat/mdp/observations.py",
+      "bytes": 5006
+    },
+    {
+      "path": "holoboxing/training/tasks/combat/mdp/rewards.py",
+      "bytes": 35272
+    },
+    {
+      "path": "holoboxing/training/time_budget.py",
+      "bytes": 5601
+    },
+    {
+      "path": "holoboxing/training/train_prior.py",
+      "bytes": 13295
+    },
+    {
+      "path": "holoboxing/training/train_rl.py",
+      "bytes": 3927
+    },
+    {
+      "path": "holoboxing/training/train_sl.py",
+      "bytes": 4094
+    },
+    {
+      "path": "holoboxing/training/validation_stop.py",
+      "bytes": 2500
+    },
+    {
+      "path": "holomotion/config/algo/ppo.yaml",
+      "bytes": 2638
+    },
+    {
+      "path": "holomotion/config/algo/ppo_tf.yaml",
+      "bytes": 2008
+    },
+    {
+      "path": "holomotion/config/algo/reference_ppo.yaml",
+      "bytes": 588
+    },
+    {
+      "path": "holomotion/config/algo/supermimic.yaml",
+      "bytes": 1005
+    },
+    {
+      "path": "holomotion/config/data_curation/joints2smpl.yaml",
+      "bytes": 0
+    },
+    {
+      "path": "holomotion/config/data_curation/smplify_base.yaml",
+      "bytes": 0
+    },
+    {
+      "path": "holomotion/config/env/domain_randomization/NO_domain_rand.yaml",
+      "bytes": 1645
+    },
+    {
+      "path": "holomotion/config/env/domain_randomization/domain_rand_medium.yaml",
+      "bytes": 3104
+    },
+    {
+      "path": "holomotion/config/env/domain_randomization/domain_rand_small.yaml",
+      "bytes": 3131
+    },
+    {
+      "path": "holomotion/config/env/domain_randomization/domain_rand_strong.yaml",
+      "bytes": 3125
+    },
+    {
+      "path": "holomotion/config/env/motion_tracking.yaml",
+      "bytes": 5865
+    },
+    {
+      "path": "holomotion/config/env/observations/motion_tracking/obs_motion_tracking_link.yaml",
+      "bytes": 8896
+    },
+    {
+      "path": "holomotion/config/env/observations/motion_tracking/obs_motion_tracking_mlp.yaml",
+      "bytes": 10572
+    },
+    {
+      "path": "holomotion/config/env/observations/motion_tracking/obs_motion_tracking_tf-moe.yaml",
+      "bytes": 11288
+    },
+    {
+      "path": "holomotion/config/env/observations/velocity_tracking/obs_velocity_tracking.yaml",
+      "bytes": 2922
+    },
+    {
+      "path": "holomotion/config/env/rewards/motion_tracking/rew_motion_tracking.yaml",
+      "bytes": 2497
+    },
+    {
+      "path": "holomotion/config/env/rewards/velocity_tracking/rew_velocity_tracking.yaml",
+      "bytes": 3602
+    },
+    {
+      "path": "holomotion/config/env/terminations/NO_termination.yaml",
+      "bytes": 38
+    },
+    {
+      "path": "holomotion/config/env/terminations/termination_motion_tracking.yaml",
+      "bytes": 181
+    },
+    {
+      "path": "holomotion/config/env/terminations/termination_velocity_tracking.yaml",
+      "bytes": 189
+    },
+    {
+      "path": "holomotion/config/env/terrain/isaaclab_plane.yaml",
+      "bytes": 1255
+    },
+    {
+      "path": "holomotion/config/env/terrain/isaaclab_rough.yaml",
+      "bytes": 1479
+    },
+    {
+      "path": "holomotion/config/env/velocity_tracking.yaml",
+      "bytes": 2053
+    },
+    {
+      "path": "holomotion/config/evaluation/eval_isaaclab.yaml",
+      "bytes": 2597
+    },
+    {
+      "path": "holomotion/config/evaluation/eval_mujoco_sim2sim.yaml",
+      "bytes": 3952
+    },
+    {
+      "path": "holomotion/config/evaluation/eval_velocity_tracking.yaml",
+      "bytes": 2365
+    },
+    {
+      "path": "holomotion/config/modules/motion_tracking/motion_tracking_link_tf-moe.yaml",
+      "bytes": 4129
+    },
+    {
+      "path": "holomotion/config/modules/motion_tracking/motion_tracking_mlp.yaml",
+      "bytes": 3560
+    },
+    {
+      "path": "holomotion/config/modules/motion_tracking/motion_tracking_tf-moe.yaml",
+      "bytes": 5618
+    },
+    {
+      "path": "holomotion/config/modules/velocity_tracking/velocity_tracking_mlp.yaml",
+      "bytes": 2107
+    },
+    {
+      "path": "holomotion/config/motion_retargeting/gmr_to_holomotion.yaml",
+      "bytes": 1045
+    },
+    {
+      "path": "holomotion/config/motion_retargeting/holomotion_preprocess.yaml",
+      "bytes": 827
+    },
+    {
+      "path": "holomotion/config/motion_retargeting/kinematic_filter.yaml",
+      "bytes": 574
+    },
+    {
+      "path": "holomotion/config/motion_retargeting/pack_hdf5_database.yaml",
+      "bytes": 1135
+    },
+    {
+      "path": "holomotion/config/motion_retargeting/pack_hdf5_v2.yaml",
+      "bytes": 370
+    },
+    {
+      "path": "holomotion/config/motion_retargeting/unitree_G1_29dof_retargeting.yaml",
+      "bytes": 436
+    },
+    {
+      "path": "holomotion/config/mujoco_eval/sim2sim.yaml",
+      "bytes": 782
+    },
+    {
+      "path": "holomotion/config/robot/unitree/G1/29dof/29dof_training_isaaclab.yaml",
+      "bytes": 15395
+    },
+    {
+      "path": "holomotion/config/robot/unitree/G1/29dof/29dof_training_isaaclab_s100.yaml",
+      "bytes": 177
+    },
+    {
+      "path": "holomotion/config/training/motion_tracking/motion_tracking_v2_0_0.yaml",
+      "bytes": 6572
+    },
+    {
+      "path": "holomotion/config/training/motion_tracking/reference_ppo.yaml",
+      "bytes": 512
+    },
+    {
+      "path": "holomotion/config/training/motion_tracking/supermimic.yaml",
+      "bytes": 506
+    },
+    {
+      "path": "holomotion/config/training/motion_tracking/supermimic_30min.yaml",
+      "bytes": 337
+    },
+    {
+      "path": "holomotion/config/training/train_base.yaml",
+      "bytes": 450
+    },
+    {
+      "path": "holomotion/config/training/velocity_tracking/train_g1_29dof_velocity_tracking_mlp.yaml",
+      "bytes": 1080
+    },
+    {
+      "path": "holomotion/scripts/data_curation/convert_to_amass.sh",
+      "bytes": 275
+    },
+    {
+      "path": "holomotion/scripts/data_curation/filter_smpl_data.sh",
+      "bytes": 1375
+    },
+    {
+      "path": "holomotion/scripts/data_curation/video_to_smpl_gvhmr.sh",
+      "bytes": 1163
+    },
+    {
+      "path": "holomotion/scripts/data_curation/visualize_smpl_npz.sh",
+      "bytes": 803
+    },
+    {
+      "path": "holomotion/scripts/evaluation/calc_offline_eval_metrics.sh",
+      "bytes": 1112
+    },
+    {
+      "path": "holomotion/scripts/evaluation/eval_motion_tracking.sh",
+      "bytes": 1405
+    },
+    {
+      "path": "holomotion/scripts/evaluation/eval_mujoco_sim2sim.sh",
+      "bytes": 1953
+    },
+    {
+      "path": "holomotion/scripts/evaluation/eval_reference_policy.py",
+      "bytes": 9218
+    },
+    {
+      "path": "holomotion/scripts/evaluation/eval_velocity_tracking.sh",
+      "bytes": 1210
+    },
+    {
+      "path": "holomotion/scripts/evaluation/mean_process_5metrics.py",
+      "bytes": 11447
+    },
+    {
+      "path": "holomotion/scripts/evaluation/multi_model_metrics_analysis.sh",
+      "bytes": 841
+    },
+    {
+      "path": "holomotion/scripts/motion_retargeting/pack_hdf5_v2.sh",
+      "bytes": 1041
+    },
+    {
+      "path": "holomotion/scripts/motion_retargeting/run_holomotion_preprocessing.sh",
+      "bytes": 1226
+    },
+    {
+      "path": "holomotion/scripts/motion_retargeting/run_kinematic_filter.sh",
+      "bytes": 859
+    },
+    {
+      "path": "holomotion/scripts/motion_retargeting/run_motion_viz_mujoco.sh",
+      "bytes": 1062
+    },
+    {
+      "path": "holomotion/scripts/training/download_v1_4_checkpoint.py",
+      "bytes": 4468
+    },
+    {
+      "path": "holomotion/scripts/training/prepare_supermimic_lafan1.py",
+      "bytes": 5075
+    },
+    {
+      "path": "holomotion/scripts/training/train_motion_tracking.sh",
+      "bytes": 1831
+    },
+    {
+      "path": "holomotion/scripts/training/train_reference_ppo.py",
+      "bytes": 1146
+    },
+    {
+      "path": "holomotion/scripts/training/train_supermimic.py",
+      "bytes": 4169
+    },
+    {
+      "path": "holomotion/scripts/training/train_velocity_tracking.sh",
+      "bytes": 1284
+    },
+    {
+      "path": "holomotion/src/algo/__init__.py",
+      "bytes": 636
+    },
+    {
+      "path": "holomotion/src/algo/algo_base.py",
+      "bytes": 33829
+    },
+    {
+      "path": "holomotion/src/algo/algo_utils.py",
+      "bytes": 22575
+    },
+    {
+      "path": "holomotion/src/algo/ppo.py",
+      "bytes": 84080
+    },
+    {
+      "path": "holomotion/src/algo/ppo_tf.py",
+      "bytes": 104820
+    },
+    {
+      "path": "holomotion/src/algo/reference_ppo/__init__.py",
+      "bytes": 59
+    },
+    {
+      "path": "holomotion/src/algo/reference_ppo/algorithm.py",
+      "bytes": 1577
+    },
+    {
+      "path": "holomotion/src/algo/reference_ppo/config.py",
+      "bytes": 3498
+    },
+    {
+      "path": "holomotion/src/algo/reference_ppo/learner.py",
+      "bytes": 7722
+    },
+    {
+      "path": "holomotion/src/algo/reference_ppo/training.py",
+      "bytes": 18766
+    },
+    {
+      "path": "holomotion/src/algo/supermimic/LICENSE.vibed",
+      "bytes": 1080
+    },
+    {
+      "path": "holomotion/src/algo/supermimic/__init__.py",
+      "bytes": 66
+    },
+    {
+      "path": "holomotion/src/algo/supermimic/algorithm.py",
+      "bytes": 2312
+    },
+    {
+      "path": "holomotion/src/algo/supermimic/backends.py",
+      "bytes": 1160
+    },
+    {
+      "path": "holomotion/src/algo/supermimic/buffer.py",
+      "bytes": 5444
+    },
+    {
+      "path": "holomotion/src/algo/supermimic/cache_pressure.py",
+      "bytes": 3459
+    },
+    {
+      "path": "holomotion/src/algo/supermimic/checkpoint.py",
+      "bytes": 3720
+    },
+    {
+      "path": "holomotion/src/algo/supermimic/config.py",
+      "bytes": 6299
+    },
+    {
+      "path": "holomotion/src/algo/supermimic/diagnostics.py",
+      "bytes": 3598
+    },
+    {
+      "path": "holomotion/src/algo/supermimic/evaluation.py",
+      "bytes": 3837
+    },
+    {
+      "path": "holomotion/src/algo/supermimic/imagination.py",
+      "bytes": 7865
+    },
+    {
+      "path": "holomotion/src/algo/supermimic/learner.py",
+      "bytes": 10684
+    },
+    {
+      "path": "holomotion/src/algo/supermimic/monitoring.py",
+      "bytes": 5404
+    },
+    {
+      "path": "holomotion/src/algo/supermimic/networks.py",
+      "bytes": 6103
+    },
+    {
+      "path": "holomotion/src/algo/supermimic/policy_progress.py",
+      "bytes": 3860
+    },
+    {
+      "path": "holomotion/src/algo/supermimic/runtime.py",
+      "bytes": 7424
+    },
+    {
+      "path": "holomotion/src/algo/supermimic/schedule.py",
+      "bytes": 9085
+    },
+    {
+      "path": "holomotion/src/algo/supermimic/training.py",
+      "bytes": 27622
+    },
+    {
+      "path": "holomotion/src/algo/supermimic/upstream.json",
+      "bytes": 1711
+    },
+    {
+      "path": "holomotion/src/data_curation/.gitignore",
+      "bytes": 12
+    },
+    {
+      "path": "holomotion/src/data_curation/__init__.py",
+      "bytes": 636
+    },
+    {
+      "path": "holomotion/src/data_curation/data_smplify.py",
+      "bytes": 3140
+    },
+    {
+      "path": "holomotion/src/data_curation/filter/filter.py",
+      "bytes": 8116
+    },
+    {
+      "path": "holomotion/src/data_curation/filter/label_data.py",
+      "bytes": 11817
+    },
+    {
+      "path": "holomotion/src/data_curation/smpl_npz_to_html.py",
+      "bytes": 7311
+    },
+    {
+      "path": "holomotion/src/data_curation/smplify/__init__.py",
+      "bytes": 636
+    },
+    {
+      "path": "holomotion/src/data_curation/smplify/smplify_humanact12.py",
+      "bytes": 5568
+    },
+    {
+      "path": "holomotion/src/data_curation/smplify/smplify_motionmillion.py",
+      "bytes": 9917
+    },
+    {
+      "path": "holomotion/src/data_curation/smplify/smplify_motionx.py",
+      "bytes": 3516
+    },
+    {
+      "path": "holomotion/src/data_curation/smplify/smplify_omomo.py",
+      "bytes": 12909
+    },
+    {
+      "path": "holomotion/src/data_curation/smplify/smplify_zjumocap.py",
+      "bytes": 4320
+    },
+    {
+      "path": "holomotion/src/data_curation/templates/index_wooden_static.html",
+      "bytes": 26303
+    },
+    {
+      "path": "holomotion/src/data_curation/video_to_smpl_gvhmr.py",
+      "bytes": 20541
+    },
+    {
+      "path": "holomotion/src/data_curation/vison_mocap/joints2smpl.py",
+      "bytes": 4941
+    },
+    {
+      "path": "holomotion/src/data_curation/visualize_smpl_npz.py",
+      "bytes": 10567
+    },
+    {
+      "path": "holomotion/src/env/__init__.py",
+      "bytes": 636
+    },
+    {
+      "path": "holomotion/src/env/isaaclab_components/__init__.py",
+      "bytes": 1899
+    },
+    {
+      "path": "holomotion/src/env/isaaclab_components/isaaclab_actions.py",
+      "bytes": 3175
+    },
+    {
+      "path": "holomotion/src/env/isaaclab_components/isaaclab_curriculum.py",
+      "bytes": 23849
+    },
+    {
+      "path": "holomotion/src/env/isaaclab_components/isaaclab_domain_rand.py",
+      "bytes": 10474
+    },
+    {
+      "path": "holomotion/src/env/isaaclab_components/isaaclab_motion_tracking_command.py",
+      "bytes": 142376
+    },
+    {
+      "path": "holomotion/src/env/isaaclab_components/isaaclab_observation.py",
+      "bytes": 76389
+    },
+    {
+      "path": "holomotion/src/env/isaaclab_components/isaaclab_rewards.py",
+      "bytes": 100845
+    },
+    {
+      "path": "holomotion/src/env/isaaclab_components/isaaclab_scene.py",
+      "bytes": 27734
+    },
+    {
+      "path": "holomotion/src/env/isaaclab_components/isaaclab_simulator.py",
+      "bytes": 1514
+    },
+    {
+      "path": "holomotion/src/env/isaaclab_components/isaaclab_termination.py",
+      "bytes": 16231
+    },
+    {
+      "path": "holomotion/src/env/isaaclab_components/isaaclab_terrain.py",
+      "bytes": 21963
+    },
+    {
+      "path": "holomotion/src/env/isaaclab_components/isaaclab_utils.py",
+      "bytes": 3443
+    },
+    {
+      "path": "holomotion/src/env/isaaclab_components/isaaclab_velocity_tracking_command.py",
+      "bytes": 16266
+    },
+    {
+      "path": "holomotion/src/env/isaaclab_components/unitree_actuators.py",
+      "bytes": 12053
+    },
+    {
+      "path": "holomotion/src/env/link_augmented_motion_tracking.py",
+      "bytes": 6777
+    },
+    {
+      "path": "holomotion/src/env/mode_masked_motion_tracking.py",
+      "bytes": 3307
+    },
+    {
+      "path": "holomotion/src/env/motion_tracking.py",
+      "bytes": 24904
+    },
+    {
+      "path": "holomotion/src/env/reference_tracking/LICENSE.vibed",
+      "bytes": 1080
+    },
+    {
+      "path": "holomotion/src/env/reference_tracking/__init__.py",
+      "bytes": 77
+    },
+    {
+      "path": "holomotion/src/env/reference_tracking/isaac_backend.py",
+      "bytes": 25294
+    },
+    {
+      "path": "holomotion/src/env/reference_tracking/kinematics.py",
+      "bytes": 4525
+    },
+    {
+      "path": "holomotion/src/env/reference_tracking/mdp.py",
+      "bytes": 8398
+    },
+    {
+      "path": "holomotion/src/env/reference_tracking/model.py",
+      "bytes": 3667
+    },
+    {
+      "path": "holomotion/src/env/reference_tracking/motion.py",
+      "bytes": 10574
+    },
+    {
+      "path": "holomotion/src/env/reference_tracking/robot.py",
+      "bytes": 3425
+    },
+    {
+      "path": "holomotion/src/env/reference_tracking/rotations.py",
+      "bytes": 5914
+    },
+    {
+      "path": "holomotion/src/env/reference_tracking/task.py",
+      "bytes": 931
+    },
+    {
+      "path": "holomotion/src/env/reference_tracking/warp_backend.py",
+      "bytes": 14001
+    },
+    {
+      "path": "holomotion/src/env/velocity_tracking.py",
+      "bytes": 15290
+    },
+    {
+      "path": "holomotion/src/evaluation/__init__.py",
+      "bytes": 636
+    },
+    {
+      "path": "holomotion/src/evaluation/aggregate_evaluation_results.py",
+      "bytes": 13740
+    },
+    {
+      "path": "holomotion/src/evaluation/checkpoint_onnx_parity.py",
+      "bytes": 14915
+    },
+    {
+      "path": "holomotion/src/evaluation/eval_motion_tracking.py",
+      "bytes": 6086
+    },
+    {
+      "path": "holomotion/src/evaluation/eval_motion_tracking_single.py",
+      "bytes": 11911
+    },
+    {
+      "path": "holomotion/src/evaluation/eval_mujoco_sim2sim.py",
+      "bytes": 187705
+    },
+    {
+      "path": "holomotion/src/evaluation/eval_velocity_tracking.py",
+      "bytes": 5427
+    },
+    {
+      "path": "holomotion/src/evaluation/find_worst_clips.py",
+      "bytes": 3046
+    },
+    {
+      "path": "holomotion/src/evaluation/metrics.py",
+      "bytes": 57988
+    },
+    {
+      "path": "holomotion/src/evaluation/mujoco_hdf5_evaluation.py",
+      "bytes": 25912
+    },
+    {
+      "path": "holomotion/src/evaluation/mujoco_metric_tracker.py",
+      "bytes": 8477
+    },
+    {
+      "path": "holomotion/src/evaluation/multi_model_metrics_report.py",
+      "bytes": 15807
+    },
+    {
+      "path": "holomotion/src/evaluation/obs/__init__.py",
+      "bytes": 137
+    },
+    {
+      "path": "holomotion/src/evaluation/obs/mujoco_link_adapter.py",
+      "bytes": 8737
+    },
+    {
+      "path": "holomotion/src/evaluation/obs/obs_builder.py",
+      "bytes": 8875
+    },
+    {
+      "path": "holomotion/src/evaluation/ray_evaluator_actor.py",
+      "bytes": 3400
+    },
+    {
+      "path": "holomotion/src/evaluation/ray_metrics_postprocess.py",
+      "bytes": 2629
+    },
+    {
+      "path": "holomotion/src/evaluation/reference_tracking/__init__.py",
+      "bytes": 78
+    },
+    {
+      "path": "holomotion/src/evaluation/reference_tracking/canonical_gpu/__init__.py",
+      "bytes": 65
+    },
+    {
+      "path": "holomotion/src/evaluation/reference_tracking/canonical_gpu/backend.py",
+      "bytes": 796
+    },
+    {
+      "path": "holomotion/src/evaluation/reference_tracking/canonical_gpu/dispatch_pin.json",
+      "bytes": 5722
+    },
+    {
+      "path": "holomotion/src/evaluation/reference_tracking/canonical_gpu/driver.py",
+      "bytes": 12683
+    },
+    {
+      "path": "holomotion/src/evaluation/reference_tracking/canonical_gpu/hessian.py",
+      "bytes": 2917
+    },
+    {
+      "path": "holomotion/src/evaluation/reference_tracking/canonical_gpu/private_host.py",
+      "bytes": 3282
+    },
+    {
+      "path": "holomotion/src/evaluation/reference_tracking/canonical_gpu/protocol_pin.json",
+      "bytes": 390
+    },
+    {
+      "path": "holomotion/src/evaluation/reference_tracking/canonical_gpu/row_kernels.py",
+      "bytes": 5416
+    },
+    {
+      "path": "holomotion/src/evaluation/reference_tracking/canonical_gpu/source_pin.json",
+      "bytes": 4969
+    },
+    {
+      "path": "holomotion/src/evaluation/reference_tracking/evaluation.py",
+      "bytes": 6823
+    },
+    {
+      "path": "holomotion/src/evaluation/reference_tracking/isaac_evaluation.py",
+      "bytes": 1436
+    },
+    {
+      "path": "holomotion/src/modules/__init__.py",
+      "bytes": 636
+    },
+    {
+      "path": "holomotion/src/modules/agent_modules.py",
+      "bytes": 99454
+    },
+    {
+      "path": "holomotion/src/modules/network_modules.py",
+      "bytes": 207573
+    },
+    {
+      "path": "holomotion/src/motion_retargeting/__init__.py",
+      "bytes": 636
+    },
+    {
+      "path": "holomotion/src/motion_retargeting/holomotion_preprocess.py",
+      "bytes": 38370
+    },
+    {
+      "path": "holomotion/src/motion_retargeting/kinematic_filter.py",
+      "bytes": 8935
+    },
+    {
+      "path": "holomotion/src/motion_retargeting/pack_hdf5_v2.py",
+      "bytes": 21066
+    },
+    {
+      "path": "holomotion/src/motion_retargeting/utils/__init__.py",
+      "bytes": 636
+    },
+    {
+      "path": "holomotion/src/motion_retargeting/utils/_schema.json",
+      "bytes": 812
+    },
+    {
+      "path": "holomotion/src/motion_retargeting/utils/rotation_conversions.py",
+      "bytes": 20092
+    },
+    {
+      "path": "holomotion/src/motion_retargeting/utils/torch_humanoid_batch.py",
+      "bytes": 24802
+    },
+    {
+      "path": "holomotion/src/motion_retargeting/utils/visualize_with_mujoco.py",
+      "bytes": 20011
+    },
+    {
+      "path": "holomotion/src/motion_tracking/__init__.py",
+      "bytes": 1594
+    },
+    {
+      "path": "holomotion/src/motion_tracking/actor_observation.py",
+      "bytes": 19982
+    },
+    {
+      "path": "holomotion/src/motion_tracking/global_tracking_rewards.py",
+      "bytes": 5713
+    },
+    {
+      "path": "holomotion/src/motion_tracking/link_actor_packing.py",
+      "bytes": 6561
+    },
+    {
+      "path": "holomotion/src/motion_tracking/link_command_state.py",
+      "bytes": 14313
+    },
+    {
+      "path": "holomotion/src/motion_tracking/link_feature_noise.py",
+      "bytes": 4712
+    },
+    {
+      "path": "holomotion/src/motion_tracking/link_fk.py",
+      "bytes": 8470
+    },
+    {
+      "path": "holomotion/src/motion_tracking/link_mode_mask.py",
+      "bytes": 9565
+    },
+    {
+      "path": "holomotion/src/motion_tracking/link_observation.py",
+      "bytes": 15617
+    },
+    {
+      "path": "holomotion/src/motion_tracking/reference_observation.py",
+      "bytes": 12908
+    },
+    {
+      "path": "holomotion/src/training/__init__.py",
+      "bytes": 636
+    },
+    {
+      "path": "holomotion/src/training/data_production/__init__.py",
+      "bytes": 42
+    },
+    {
+      "path": "holomotion/src/training/data_production/distributed_robot_h5.py",
+      "bytes": 55454
+    },
+    {
+      "path": "holomotion/src/training/data_production/robot_h5.py",
+      "bytes": 18648
+    },
+    {
+      "path": "holomotion/src/training/failure_replay.py",
+      "bytes": 13939
+    },
+    {
+      "path": "holomotion/src/training/h5_dataloader.py",
+      "bytes": 146354
+    },
+    {
+      "path": "holomotion/src/training/reference_fk.py",
+      "bytes": 23199
+    },
+    {
+      "path": "holomotion/src/training/source_adaptive_runtime.py",
+      "bytes": 11905
+    },
+    {
+      "path": "holomotion/src/training/source_adaptive_sampling.py",
+      "bytes": 30411
+    },
+    {
+      "path": "holomotion/src/training/train.py",
+      "bytes": 5921
+    },
+    {
+      "path": "holomotion/src/utils/__init__.py",
+      "bytes": 636
+    },
+    {
+      "path": "holomotion/src/utils/artifacts.py",
+      "bytes": 525
+    },
+    {
+      "path": "holomotion/src/utils/config.py",
+      "bytes": 7149
+    },
+    {
+      "path": "holomotion/src/utils/frame_utils.py",
+      "bytes": 4658
+    },
+    {
+      "path": "holomotion/src/utils/g1_variants.py",
+      "bytes": 16664
+    },
+    {
+      "path": "holomotion/src/utils/isaac_utils/__init__.py",
+      "bytes": 636
+    },
+    {
+      "path": "holomotion/src/utils/isaac_utils/maths.py",
+      "bytes": 2269
+    },
+    {
+      "path": "holomotion/src/utils/isaac_utils/rotations.py",
+      "bytes": 24047
+    },
+    {
+      "path": "holomotion/src/utils/isaac_utils/setup.py",
+      "bytes": 1018
+    },
+    {
+      "path": "holomotion/src/utils/onnx_export.py",
+      "bytes": 5728
+    },
+    {
+      "path": "holomotion/src/utils/reference_prefix.py",
+      "bytes": 1356
+    },
+    {
+      "path": "holomotion/src/utils/torch_utils.py",
+      "bytes": 29119
+    },
+    {
+      "path": "holomotion/src/utils/unitree_g1_actuator_calculator.py",
+      "bytes": 10599
+    },
+    {
+      "path": "holomotion/tests/__init__.py",
+      "bytes": 0
+    },
+    {
+      "path": "holoretarget/README.md",
+      "bytes": 2192
+    },
+    {
+      "path": "holoretarget/__init__.py",
+      "bytes": 391
+    },
+    {
+      "path": "holoretarget/_engine_impl.py",
+      "bytes": 79030
+    },
+    {
+      "path": "holoretarget/_gpu_targets.py",
+      "bytes": 22801
+    },
+    {
+      "path": "holoretarget/assets/THIRD_PARTY_NOTICES.md",
+      "bytes": 453
+    },
+    {
+      "path": "holoretarget/assets/target_configs/smplx_to_g1.json",
+      "bytes": 6784
+    },
+    {
+      "path": "holoretarget/assets/unitree_g1/LICENSE",
+      "bytes": 1558
+    },
+    {
+      "path": "holoretarget/assets/unitree_g1/README.md",
+      "bytes": 2034
+    },
+    {
+      "path": "holoretarget/assets/unitree_g1/g1_mocap_29dof.xml",
+      "bytes": 27123
+    },
+    {
+      "path": "holoretarget/assets/unitree_g1/meshes/head_link.STL",
+      "bytes": 932784
+    },
+    {
+      "path": "holoretarget/assets/unitree_g1/meshes/left_ankle_pitch_link.STL",
+      "bytes": 71184
+    },
+    {
+      "path": "holoretarget/assets/unitree_g1/meshes/left_ankle_roll_link.STL",
+      "bytes": 653384
+    },
+    {
+      "path": "holoretarget/assets/unitree_g1/meshes/left_elbow_link.STL",
+      "bytes": 88784
+    },
+    {
+      "path": "holoretarget/assets/unitree_g1/meshes/left_hip_pitch_link.STL",
+      "bytes": 181684
+    },
+    {
+      "path": "holoretarget/assets/unitree_g1/meshes/left_hip_roll_link.STL",
+      "bytes": 192184
+    },
+    {
+      "path": "holoretarget/assets/unitree_g1/meshes/left_hip_yaw_link.STL",
+      "bytes": 296284
+    },
+    {
+      "path": "holoretarget/assets/unitree_g1/meshes/left_knee_link.STL",
+      "bytes": 854884
+    },
+    {
+      "path": "holoretarget/assets/unitree_g1/meshes/left_rubber_hand.STL",
+      "bytes": 2287484
+    },
+    {
+      "path": "holoretarget/assets/unitree_g1/meshes/left_shoulder_pitch_link.STL",
+      "bytes": 176784
+    },
+    {
+      "path": "holoretarget/assets/unitree_g1/meshes/left_shoulder_roll_link.STL",
+      "bytes": 400284
+    },
+    {
+      "path": "holoretarget/assets/unitree_g1/meshes/left_shoulder_yaw_link.STL",
+      "bytes": 249184
+    },
+    {
+      "path": "holoretarget/assets/unitree_g1/meshes/left_wrist_pitch_link.STL",
+      "bytes": 85984
+    },
+    {
+      "path": "holoretarget/assets/unitree_g1/meshes/left_wrist_roll_link.STL",
+      "bytes": 356184
+    },
+    {
+      "path": "holoretarget/assets/unitree_g1/meshes/left_wrist_yaw_link.STL",
+      "bytes": 318684
+    },
+    {
+      "path": "holoretarget/assets/unitree_g1/meshes/logo_link.STL",
+      "bytes": 243384
+    },
+    {
+      "path": "holoretarget/assets/unitree_g1/meshes/pelvis.STL",
+      "bytes": 1060884
+    },
+    {
+      "path": "holoretarget/assets/unitree_g1/meshes/pelvis_contour_link.STL",
+      "bytes": 1805184
+    },
+    {
+      "path": "holoretarget/assets/unitree_g1/meshes/right_ankle_pitch_link.STL",
+      "bytes": 71184
+    },
+    {
+      "path": "holoretarget/assets/unitree_g1/meshes/right_ankle_roll_link.STL",
+      "bytes": 653784
+    },
+    {
+      "path": "holoretarget/assets/unitree_g1/meshes/right_elbow_link.STL",
+      "bytes": 88784
+    },
+    {
+      "path": "holoretarget/assets/unitree_g1/meshes/right_hip_pitch_link.STL",
+      "bytes": 181284
+    },
+    {
+      "path": "holoretarget/assets/unitree_g1/meshes/right_hip_roll_link.STL",
+      "bytes": 192684
+    },
+    {
+      "path": "holoretarget/assets/unitree_g1/meshes/right_hip_yaw_link.STL",
+      "bytes": 296284
+    },
+    {
+      "path": "holoretarget/assets/unitree_g1/meshes/right_knee_link.STL",
+      "bytes": 852284
+    },
+    {
+      "path": "holoretarget/assets/unitree_g1/meshes/right_rubber_hand.STL",
+      "bytes": 2192684
+    },
+    {
+      "path": "holoretarget/assets/unitree_g1/meshes/right_shoulder_pitch_link.STL",
+      "bytes": 176784
+    },
+    {
+      "path": "holoretarget/assets/unitree_g1/meshes/right_shoulder_roll_link.STL",
+      "bytes": 401884
+    },
+    {
+      "path": "holoretarget/assets/unitree_g1/meshes/right_shoulder_yaw_link.STL",
+      "bytes": 249984
+    },
+    {
+      "path": "holoretarget/assets/unitree_g1/meshes/right_wrist_pitch_link.STL",
+      "bytes": 79584
+    },
+    {
+      "path": "holoretarget/assets/unitree_g1/meshes/right_wrist_roll_link.STL",
+      "bytes": 356084
+    },
+    {
+      "path": "holoretarget/assets/unitree_g1/meshes/right_wrist_yaw_link.STL",
+      "bytes": 341484
+    },
+    {
+      "path": "holoretarget/assets/unitree_g1/meshes/torso_link_rev_1_0.STL",
+      "bytes": 2570584
+    },
+    {
+      "path": "holoretarget/assets/unitree_g1/meshes/waist_roll_link_rev_1_0.STL",
+      "bytes": 85884
+    },
+    {
+      "path": "holoretarget/assets/unitree_g1/meshes/waist_yaw_link_rev_1_0.STL",
+      "bytes": 619984
+    },
+    {
+      "path": "holoretarget/config.py",
+      "bytes": 1191
+    },
+    {
+      "path": "holoretarget/online.py",
+      "bytes": 4007
+    },
+    {
+      "path": "holoretarget/schema.py",
+      "bytes": 1304
+    },
+    {
+      "path": "holosmpl/README.md",
+      "bytes": 5216
+    },
+    {
+      "path": "holosmpl/__init__.py",
+      "bytes": 73
+    },
+    {
+      "path": "holosmpl/__main__.py",
+      "bytes": 107
+    },
+    {
+      "path": "holosmpl/cli.py",
+      "bytes": 28045
+    },
+    {
+      "path": "holosmpl/converters/__init__.py",
+      "bytes": 44
+    },
+    {
+      "path": "holosmpl/converters/bvh_family/LICENSE_lafan_to_smplx.txt",
+      "bytes": 1074
+    },
+    {
+      "path": "holosmpl/converters/bvh_family/THIRD_PARTY_NOTICES.md",
+      "bytes": 475
+    },
+    {
+      "path": "holosmpl/converters/bvh_family/__init__.py",
+      "bytes": 42
+    },
+    {
+      "path": "holosmpl/converters/bvh_family/base.py",
+      "bytes": 161
+    },
+    {
+      "path": "holosmpl/converters/bvh_family/chingmu.py",
+      "bytes": 2133
+    },
+    {
+      "path": "holosmpl/converters/bvh_family/lafan1.py",
+      "bytes": 14762
+    },
+    {
+      "path": "holosmpl/converters/bvh_family/noitom.py",
+      "bytes": 22262
+    },
+    {
+      "path": "holosmpl/converters/pico/__init__.py",
+      "bytes": 20
+    },
+    {
+      "path": "holosmpl/converters/pico/adapter.py",
+      "bytes": 13969
+    },
+    {
+      "path": "holosmpl/converters/pico/timebase.py",
+      "bytes": 166
+    },
+    {
+      "path": "holosmpl/converters/smpl_family/__init__.py",
+      "bytes": 36
+    },
+    {
+      "path": "holosmpl/converters/smpl_family/amass.py",
+      "bytes": 8726
+    },
+    {
+      "path": "holosmpl/converters/smpl_family/base.py",
+      "bytes": 158
+    },
+    {
+      "path": "holosmpl/converters/smpl_family/bones_seed_smpl.py",
+      "bytes": 8684
+    },
+    {
+      "path": "holosmpl/converters/smpl_family/bones_seed_smpl_axis_policy.py",
+      "bytes": 232
+    },
+    {
+      "path": "holosmpl/converters/smpl_family/custom_smplx.py",
+      "bytes": 18509
+    },
+    {
+      "path": "holosmpl/converters/smpl_family/gvhmr.py",
+      "bytes": 9932
+    },
+    {
+      "path": "holosmpl/converters/smpl_family/motionmillion.py",
+      "bytes": 7776
+    },
+    {
+      "path": "holosmpl/converters/smpl_family/omomo.py",
+      "bytes": 9002
+    },
+    {
+      "path": "holosmpl/converters/smpl_to_body_poses.py",
+      "bytes": 8261
+    },
+    {
+      "path": "holosmpl/distributed_holosmpl_h5.py",
+      "bytes": 34592
+    },
+    {
+      "path": "holosmpl/sources.py",
+      "bytes": 4556
+    },
+    {
+      "path": "holosmpl/supported_datasets/__init__.py",
+      "bytes": 58
+    },
+    {
+      "path": "holosmpl/supported_datasets/amass/README.md",
+      "bytes": 509
+    },
+    {
+      "path": "holosmpl/supported_datasets/bones_seed_smpl/README.md",
+      "bytes": 905
+    },
+    {
+      "path": "holosmpl/supported_datasets/custom_smplx/README.md",
+      "bytes": 1101
+    },
+    {
+      "path": "holosmpl/supported_datasets/lafan1/README.md",
+      "bytes": 501
+    },
+    {
+      "path": "holosmpl/supported_datasets/motionmillion/README.md",
+      "bytes": 865
+    },
+    {
+      "path": "holosmpl/supported_datasets/omomo/README.md",
+      "bytes": 822
+    },
+    {
+      "path": "holosmpl/supported_datasets/registry.py",
+      "bytes": 2302
+    },
+    {
+      "path": "holosmpl/supported_devices/__init__.py",
+      "bytes": 58
+    },
+    {
+      "path": "holosmpl/supported_devices/camera/README.md",
+      "bytes": 2805
+    },
+    {
+      "path": "holosmpl/supported_devices/chingmu/README.md",
+      "bytes": 289
+    },
+    {
+      "path": "holosmpl/supported_devices/noitom/README.md",
+      "bytes": 291
+    },
+    {
+      "path": "holosmpl/supported_devices/pico4_ultra_enterprise/README.md",
+      "bytes": 440
+    },
+    {
+      "path": "holosmpl/supported_devices/registry.py",
+      "bytes": 1505
+    },
+    {
+      "path": "holosmpl/visualization/__init__.py",
+      "bytes": 41
+    },
+    {
+      "path": "holosmpl/visualization/body_model.py",
+      "bytes": 7691
+    },
+    {
+      "path": "holosmpl/visualization/canonical_loader.py",
+      "bytes": 1823
+    },
+    {
+      "path": "holosmpl/visualization/formal_loader.py",
+      "bytes": 2793
+    },
+    {
+      "path": "holosmpl/visualization/geometry.py",
+      "bytes": 3734
+    },
+    {
+      "path": "holosmpl/visualization/render.py",
+      "bytes": 5385
+    },
+    {
+      "path": "holosmpl/visualization/render_canonical_video.py",
+      "bytes": 8966
+    },
+    {
+      "path": "holosmpl/visualization/render_formal_video.py",
+      "bytes": 8434
+    },
+    {
+      "path": "holosmpl/visualization/report.py",
+      "bytes": 2646
+    },
+    {
+      "path": "holosmpl/visualization/video_render.py",
+      "bytes": 15327
+    },
+    {
+      "path": "holosmpl/visualization/visualize_canonical.py",
+      "bytes": 5570
+    },
+    {
+      "path": "holosmpl/workflows/__init__.py",
+      "bytes": 29
+    },
+    {
+      "path": "holosmpl/workflows/build_manifest.py",
+      "bytes": 178
+    },
+    {
+      "path": "holosmpl/workflows/combine_formal_h5.py",
+      "bytes": 6914
+    },
+    {
+      "path": "holosmpl/workflows/combine_npz_roots.py",
+      "bytes": 11735
+    },
+    {
+      "path": "holosmpl/workflows/convert_dataset.py",
+      "bytes": 22478
+    },
+    {
+      "path": "holosmpl/workflows/convert_formal.py",
+      "bytes": 15275
+    },
+    {
+      "path": "holosmpl/workflows/convert_shard.py",
+      "bytes": 177
+    },
+    {
+      "path": "holosmpl/workflows/direct_formal_h5.py",
+      "bytes": 24093
+    },
+    {
+      "path": "holosmpl/workflows/inspect_smoke_data.py",
+      "bytes": 15420
+    },
+    {
+      "path": "holosmpl/workflows/pack_formal_h5.py",
+      "bytes": 15337
+    },
+    {
+      "path": "holosmpl/workflows/raw_to_holosmpl.py",
+      "bytes": 3203
+    },
+    {
+      "path": "pyproject.toml",
+      "bytes": 3905
+    },
+    {
+      "path": "tests/benchmark_legacy_onnx_attention.py",
+      "bytes": 4260
+    },
+    {
+      "path": "tests/benchmark_moe_router_export.py",
+      "bytes": 4949
+    },
+    {
+      "path": "tests/test_actor_export_config.py",
+      "bytes": 26610
+    },
+    {
+      "path": "tests/test_algo_base_iteration_logging.py",
+      "bytes": 1175
+    },
+    {
+      "path": "tests/test_boxing_bound_session.py",
+      "bytes": 2254
+    },
+    {
+      "path": "tests/test_boxing_data_selection.py",
+      "bytes": 11954
+    },
+    {
+      "path": "tests/test_boxing_export_parity.py",
+      "bytes": 1366
+    },
+    {
+      "path": "tests/test_boxing_motion_prior.py",
+      "bytes": 6399
+    },
+    {
+      "path": "tests/test_boxing_native_evaluation.py",
+      "bytes": 11853
+    },
+    {
+      "path": "tests/test_boxing_native_opponent.py",
+      "bytes": 3884
+    },
+    {
+      "path": "tests/test_boxing_prior_selection.py",
+      "bytes": 6963
+    },
+    {
+      "path": "tests/test_boxing_spherical_imitation.py",
+      "bytes": 8574
+    },
+    {
+      "path": "tests/test_boxing_spherical_ppo.py",
+      "bytes": 4910
+    },
+    {
+      "path": "tests/test_boxing_standalone_environment.py",
+      "bytes": 7613
+    },
+    {
+      "path": "tests/test_boxing_supervised_cli_config.py",
+      "bytes": 3277
+    },
+    {
+      "path": "tests/test_boxing_supervised_resume.py",
+      "bytes": 3918
+    },
+    {
+      "path": "tests/test_boxing_time_budget.py",
+      "bytes": 6735
+    },
+    {
+      "path": "tests/test_boxing_training_splits.py",
+      "bytes": 5802
+    },
+    {
+      "path": "tests/test_boxing_training_stages.py",
+      "bytes": 10910
+    },
+    {
+      "path": "tests/test_boxing_tutorial_outputs.py",
+      "bytes": 864
+    },
+    {
+      "path": "tests/test_cache_curriculum_sampler.py",
+      "bytes": 15767
+    },
+    {
+      "path": "tests/test_canonical_active_contact_rows.py",
+      "bytes": 1722
+    },
+    {
+      "path": "tests/test_canonical_gpu_evaluation.py",
+      "bytes": 5357
+    },
+    {
+      "path": "tests/test_canonical_integer_contact_key.py",
+      "bytes": 4146
+    },
+    {
+      "path": "tests/test_checkpoint_onnx_parity.py",
+      "bytes": 8275
+    },
+    {
+      "path": "tests/test_domain_rand_config_builder.py",
+      "bytes": 3783
+    },
+    {
+      "path": "tests/test_eval_mujoco_action_delay.py",
+      "bytes": 3837
+    },
+    {
+      "path": "tests/test_eval_mujoco_contact_export.py",
+      "bytes": 6855
+    },
+    {
+      "path": "tests/test_eval_mujoco_use_gpu.py",
+      "bytes": 3125
+    },
+    {
+      "path": "tests/test_eval_onnx_io_dump.py",
+      "bytes": 15986
+    },
+    {
+      "path": "tests/test_evaluation_metrics.py",
+      "bytes": 16260
+    },
+    {
+      "path": "tests/test_failure_replay.py",
+      "bytes": 7113
+    },
+    {
+      "path": "tests/test_failure_replay_command_contract.py",
+      "bytes": 13141
+    },
+    {
+      "path": "tests/test_g1_modular_assets.py",
+      "bytes": 2866
+    },
+    {
+      "path": "tests/test_global_tracking_rewards.py",
+      "bytes": 6633
+    },
+    {
+      "path": "tests/test_hand_payload_domain_rand.py",
+      "bytes": 1803
+    },
+    {
+      "path": "tests/test_holoretarget_newton.py",
+      "bytes": 2306
+    },
+    {
+      "path": "tests/test_holoretarget_robot_h5.py",
+      "bytes": 9353
+    },
+    {
+      "path": "tests/test_isaaclab_scene_multi_urdf.py",
+      "bytes": 8605
+    },
+    {
+      "path": "tests/test_isaaclab_termination.py",
+      "bytes": 10450
+    },
+    {
+      "path": "tests/test_link_actor_packing_contract.py",
+      "bytes": 5708
+    },
+    {
+      "path": "tests/test_link_all_modes_config.py",
+      "bytes": 6790
+    },
+    {
+      "path": "tests/test_link_feature_noise.py",
+      "bytes": 3964
+    },
+    {
+      "path": "tests/test_link_mode_mask.py",
+      "bytes": 6393
+    },
+    {
+      "path": "tests/test_link_observation_builder.py",
+      "bytes": 6492
+    },
+    {
+      "path": "tests/test_link_observation_config_switch.py",
+      "bytes": 12146
+    },
+    {
+      "path": "tests/test_link_observation_contract.py",
+      "bytes": 8883
+    },
+    {
+      "path": "tests/test_link_tracking_extensions.py",
+      "bytes": 10826
+    },
+    {
+      "path": "tests/test_link_training_runtime_contract.py",
+      "bytes": 7450
+    },
+    {
+      "path": "tests/test_mean_process_5metrics.py",
+      "bytes": 4134
+    },
+    {
+      "path": "tests/test_mlp_checkpointing.py",
+      "bytes": 1517
+    },
+    {
+      "path": "tests/test_mode_masked_env_runtime.py",
+      "bytes": 5869
+    },
+    {
+      "path": "tests/test_motion_actor_observation.py",
+      "bytes": 8554
+    },
+    {
+      "path": "tests/test_motion_cache_gather_state.py",
+      "bytes": 10010
+    },
+    {
+      "path": "tests/test_motion_cache_startup.py",
+      "bytes": 5559
+    },
+    {
+      "path": "tests/test_motion_tracking_timing.py",
+      "bytes": 14524
+    },
+    {
+      "path": "tests/test_mujoco_evaluation_metrics.py",
+      "bytes": 14933
+    },
+    {
+      "path": "tests/test_mujoco_hdf5_evaluation.py",
+      "bytes": 15159
+    },
+    {
+      "path": "tests/test_obs_norm_compile.py",
+      "bytes": 1235
+    },
+    {
+      "path": "tests/test_observation_frames.py",
+      "bytes": 12738
+    },
+    {
+      "path": "tests/test_onnx_attention_export.py",
+      "bytes": 7212
+    },
+    {
+      "path": "tests/test_onnx_export.py",
+      "bytes": 1892
+    },
+    {
+      "path": "tests/test_ppo_checkpoint_sigma_override.py",
+      "bytes": 10351
+    },
+    {
+      "path": "tests/test_ppo_entropy_annealing.py",
+      "bytes": 4065
+    },
+    {
+      "path": "tests/test_ppo_symmetry_loss.py",
+      "bytes": 11098
+    },
+    {
+      "path": "tests/test_ppo_tf_action_mean_butterworth.py",
+      "bytes": 1987
+    },
+    {
+      "path": "tests/test_ppo_tf_aux_keybody.py",
+      "bytes": 34701
+    },
+    {
+      "path": "tests/test_ref_router_actor.py",
+      "bytes": 8123
+    },
+    {
+      "path": "tests/test_ref_router_seq_actor.py",
+      "bytes": 26176
+    },
+    {
+      "path": "tests/test_reference_motion_config_wiring.py",
+      "bytes": 2206
+    },
+    {
+      "path": "tests/test_reference_observation.py",
+      "bytes": 2443
+    },
+    {
+      "path": "tests/test_reference_policy_evaluation_cli.py",
+      "bytes": 3845
+    },
+    {
+      "path": "tests/test_reference_ppo_config.py",
+      "bytes": 2340
+    },
+    {
+      "path": "tests/test_reference_ppo_math.py",
+      "bytes": 4600
+    },
+    {
+      "path": "tests/test_reference_tracking_ownership.py",
+      "bytes": 2217
+    },
+    {
+      "path": "tests/test_root_rel_rewards.py",
+      "bytes": 37142
+    },
+    {
+      "path": "tests/test_source_adaptive_cache_contract.py",
+      "bytes": 7360
+    },
+    {
+      "path": "tests/test_source_adaptive_controller.py",
+      "bytes": 9977
+    },
+    {
+      "path": "tests/test_source_adaptive_runtime.py",
+      "bytes": 11579
+    },
+    {
+      "path": "tests/test_source_fixed_cache_contract.py",
+      "bytes": 5385
+    },
+    {
+      "path": "tests/test_source_fixed_sampler.py",
+      "bytes": 3634
+    },
+    {
+      "path": "tests/test_supermimic_cache_pressure.py",
+      "bytes": 2067
+    },
+    {
+      "path": "tests/test_supermimic_config.py",
+      "bytes": 3718
+    },
+    {
+      "path": "tests/test_supermimic_isaac_backend.py",
+      "bytes": 5592
+    },
+    {
+      "path": "tests/test_supermimic_monitoring.py",
+      "bytes": 3347
+    },
+    {
+      "path": "tests/test_supermimic_policy_progress.py",
+      "bytes": 4099
+    },
+    {
+      "path": "tests/test_supermimic_reference.py",
+      "bytes": 10869
+    },
+    {
+      "path": "tests/test_supermimic_resume.py",
+      "bytes": 7039
+    },
+    {
+      "path": "tests/test_supermimic_runtime.py",
+      "bytes": 2318
+    },
+    {
+      "path": "tests/test_supermimic_schedule.py",
+      "bytes": 4282
+    },
+    {
+      "path": "tests/test_unitree_actuators.py",
+      "bytes": 17132
+    },
+    {
+      "path": "tests/test_v2_0_action_order_contract.py",
+      "bytes": 1275
+    },
+    {
+      "path": "tests/test_visualize_with_mujoco.py",
+      "bytes": 1435
+    },
+    {
+      "path": "tests/test_weighted_bin_dataset_ratios.py",
+      "bytes": 2879
+    },
+    {
+      "path": "train.env",
+      "bytes": 2018
+    },
+    {
+      "path": "webcam_teleop/.gitignore",
+      "bytes": 31
+    },
+    {
+      "path": "webcam_teleop/.vscode/extensions.json",
+      "bytes": 63
+    },
+    {
+      "path": "webcam_teleop/.vscode/settings.json",
+      "bytes": 292
+    },
+    {
+      "path": "webcam_teleop/.vscode/tasks.json",
+      "bytes": 550
+    },
+    {
+      "path": "webcam_teleop/DDS_README.md",
+      "bytes": 5930
+    },
+    {
+      "path": "webcam_teleop/README.md",
+      "bytes": 16578
+    },
+    {
+      "path": "webcam_teleop/alignment.py",
+      "bytes": 2948
+    },
+    {
+      "path": "webcam_teleop/dds_backend.py",
+      "bytes": 8255
+    },
+    {
+      "path": "webcam_teleop/download_resources.py",
+      "bytes": 1986
+    },
+    {
+      "path": "webcam_teleop/fetch_dds_source.py",
+      "bytes": 707
+    },
+    {
+      "path": "webcam_teleop/g1ra_backend.py",
+      "bytes": 18464
+    },
+    {
+      "path": "webcam_teleop/mink_ik.py",
+      "bytes": 6490
+    },
+    {
+      "path": "webcam_teleop/motion_diagnostics.py",
+      "bytes": 3233
+    },
+    {
+      "path": "webcam_teleop/parallel_simulation.py",
+      "bytes": 3069
+    },
+    {
+      "path": "webcam_teleop/pose_http.py",
+      "bytes": 6362
+    },
+    {
+      "path": "webcam_teleop/prepare_first_demo.py",
+      "bytes": 2894
+    },
+    {
+      "path": "webcam_teleop/requirements-ik.txt",
+      "bytes": 123
+    },
+    {
+      "path": "webcam_teleop/requirements-tested.txt",
+      "bytes": 5210
+    },
+    {
+      "path": "webcam_teleop/retarget.py",
+      "bytes": 11444
+    },
+    {
+      "path": "webcam_teleop/retarget_config.py",
+      "bytes": 5070
+    },
+    {
+      "path": "webcam_teleop/retarget_config.yaml",
+      "bytes": 3119
+    },
+    {
+      "path": "webcam_teleop/server.py",
+      "bytes": 47878
+    },
+    {
+      "path": "webcam_teleop/setup_dds.sh",
+      "bytes": 1171
+    },
+    {
+      "path": "webcam_teleop/start.sh",
+      "bytes": 144
+    },
+    {
+      "path": "webcam_teleop/start_dds.sh",
+      "bytes": 813
+    },
+    {
+      "path": "webcam_teleop/start_sim.sh",
+      "bytes": 861
+    },
+    {
+      "path": "webcam_teleop/tests/arm_pose_fixtures.py",
+      "bytes": 2413
+    },
+    {
+      "path": "webcam_teleop/tests/benchmark_tracking.py",
+      "bytes": 4659
+    },
+    {
+      "path": "webcam_teleop/tests/integrated-dds-results.json",
+      "bytes": 214
+    },
+    {
+      "path": "webcam_teleop/tests/synthetic-results.json",
+      "bytes": 22982
+    },
+    {
+      "path": "webcam_teleop/tests/synthetic_http.py",
+      "bytes": 2835
+    },
+    {
+      "path": "webcam_teleop/tests/test_alignment.py",
+      "bytes": 3977
+    },
+    {
+      "path": "webcam_teleop/tests/test_alignment_controls.py",
+      "bytes": 8818
+    },
+    {
+      "path": "webcam_teleop/tests/test_g1ra_start_pose.py",
+      "bytes": 9290
+    },
+    {
+      "path": "webcam_teleop/tests/test_integrated_dds.py",
+      "bytes": 3612
+    },
+    {
+      "path": "webcam_teleop/tests/test_mink_ik.py",
+      "bytes": 4511
+    },
+    {
+      "path": "webcam_teleop/tests/test_motion_diagnostics.py",
+      "bytes": 1660
+    },
+    {
+      "path": "webcam_teleop/tests/test_parallel_simulation.py",
+      "bytes": 3911
+    },
+    {
+      "path": "webcam_teleop/tests/test_tracking_filter.py",
+      "bytes": 3530
+    },
+    {
+      "path": "webcam_teleop/tests/test_tracking_retarget.py",
+      "bytes": 3216
+    },
+    {
+      "path": "webcam_teleop/tracking_filter.py",
+      "bytes": 5021
+    },
+    {
+      "path": "webcam_teleop/vendor/SOURCE.json",
+      "bytes": 271
+    },
+    {
+      "path": "webcam_teleop/vendor/unitree_sdk2_python/.gitignore",
+      "bytes": 296
+    },
+    {
+      "path": "webcam_teleop/vendor/unitree_sdk2_python/LICENSE",
+      "bytes": 1559
+    },
+    {
+      "path": "webcam_teleop/vendor/unitree_sdk2_python/README zh.md",
+      "bytes": 4747
+    },
+    {
+      "path": "webcam_teleop/vendor/unitree_sdk2_python/README.md",
+      "bytes": 5550
+    },
+    {
+      "path": "webcam_teleop/vendor/unitree_sdk2_python/example/a2/audio/a2_audio_client_example.py",
+      "bytes": 1075
+    },
+    {
+      "path": "webcam_teleop/vendor/unitree_sdk2_python/example/a2/audio/a2_audio_client_play_wav.py",
+      "bytes": 1111
+    },
+    {
+      "path": "webcam_teleop/vendor/unitree_sdk2_python/example/a2/audio/test.wav",
+      "bytes": 132246
+    },
+    {
+      "path": "webcam_teleop/vendor/unitree_sdk2_python/example/a2/audio/wav.py",
+      "bytes": 6351
+    },
+    {
+      "path": "webcam_teleop/vendor/unitree_sdk2_python/example/a2/sport/a2_sport_client.py",
+      "bytes": 5053
+    },
+    {
+      "path": "webcam_teleop/vendor/unitree_sdk2_python/example/a2/sport/a2_sport_state.py",
+      "bytes": 1336
+    },
+    {
+      "path": "webcam_teleop/vendor/unitree_sdk2_python/example/as2/sport/as2_sport_client.py",
+      "bytes": 5184
+    },
+    {
+      "path": "webcam_teleop/vendor/unitree_sdk2_python/example/as2/sport/as2_sport_state.py",
+      "bytes": 1335
+    },
+    {
+      "path": "webcam_teleop/vendor/unitree_sdk2_python/example/b2/camera/camera_opencv.py",
+      "bytes": 1625
+    },
+    {
+      "path": "webcam_teleop/vendor/unitree_sdk2_python/example/b2/camera/capture_image.py",
+      "bytes": 1573
+    },
+    {
+      "path": "webcam_teleop/vendor/unitree_sdk2_python/example/b2/high_level/b2_sport_client.py",
+      "bytes": 3623
+    },
+    {
+      "path": "webcam_teleop/vendor/unitree_sdk2_python/example/b2/low_level/b2_stand_example.py",
+      "bytes": 6319
+    },
+    {
+      "path": "webcam_teleop/vendor/unitree_sdk2_python/example/b2/low_level/unitree_legged_const.py",
+      "bytes": 345
+    },
+    {
+      "path": "webcam_teleop/vendor/unitree_sdk2_python/example/b2w/camera/camera_opencv.py",
+      "bytes": 1625
+    },
+    {
+      "path": "webcam_teleop/vendor/unitree_sdk2_python/example/b2w/camera/capture_image.py",
+      "bytes": 1573
+    },
+    {
+      "path": "webcam_teleop/vendor/unitree_sdk2_python/example/b2w/high_level/b2w_sport_client.py",
+      "bytes": 3171
+    },
+    {
+      "path": "webcam_teleop/vendor/unitree_sdk2_python/example/b2w/low_level/b2w_stand_example.py",
+      "bytes": 7403
+    },
+    {
+      "path": "webcam_teleop/vendor/unitree_sdk2_python/example/b2w/low_level/unitree_legged_const.py",
+      "bytes": 485
+    },
+    {
+      "path": "webcam_teleop/vendor/unitree_sdk2_python/example/g1/audio/g1_audio_client_example.py",
+      "bytes": 1284
+    },
+    {
+      "path": "webcam_teleop/vendor/unitree_sdk2_python/example/g1/audio/g1_audio_client_play_wav.py",
+      "bytes": 1094
+    },
+    {
+      "path": "webcam_teleop/vendor/unitree_sdk2_python/example/g1/audio/test.wav",
+      "bytes": 132246
+    },
+    {
+      "path": "webcam_teleop/vendor/unitree_sdk2_python/example/g1/audio/wav.py",
+      "bytes": 6351
+    },
+    {
+      "path": "webcam_teleop/vendor/unitree_sdk2_python/example/g1/high_level/g1_arm5_sdk_dds_example.py",
+      "bytes": 6840
+    },
+    {
+      "path": "webcam_teleop/vendor/unitree_sdk2_python/example/g1/high_level/g1_arm7_sdk_dds_example.py",
+      "bytes": 6961
+    },
+    {
+      "path": "webcam_teleop/vendor/unitree_sdk2_python/example/g1/high_level/g1_arm_action_example.py",
+      "bytes": 5417
+    },
+    {
+      "path": "webcam_teleop/vendor/unitree_sdk2_python/example/g1/high_level/g1_loco_client_example.py",
+      "bytes": 4018
+    },
+    {
+      "path": "webcam_teleop/vendor/unitree_sdk2_python/example/g1/low_level/g1_low_level_example.py",
+      "bytes": 7366
+    },
+    {
+      "path": "webcam_teleop/vendor/unitree_sdk2_python/example/g1/readme.md",
+      "bytes": 172
+    },
+    {
+      "path": "webcam_teleop/vendor/unitree_sdk2_python/example/go2/front_camera/camera_opencv.py",
+      "bytes": 1095
+    },
+    {
+      "path": "webcam_teleop/vendor/unitree_sdk2_python/example/go2/front_camera/capture_image.py",
+      "bytes": 736
+    },
+    {
+      "path": "webcam_teleop/vendor/unitree_sdk2_python/example/go2/high_level/go2_sport_client.py",
+      "bytes": 5141
+    },
+    {
+      "path": "webcam_teleop/vendor/unitree_sdk2_python/example/go2/high_level/go2_utlidar_switch.py",
+      "bytes": 1120
+    },
+    {
+      "path": "webcam_teleop/vendor/unitree_sdk2_python/example/go2/low_level/go2_stand_example.py",
+      "bytes": 6601
+    },
+    {
+      "path": "webcam_teleop/vendor/unitree_sdk2_python/example/go2/low_level/unitree_legged_const.py",
+      "bytes": 345
+    },
+    {
+      "path": "webcam_teleop/vendor/unitree_sdk2_python/example/go2w/high_level/go2w_sport_client.py",
+      "bytes": 3163
+    },
+    {
+      "path": "webcam_teleop/vendor/unitree_sdk2_python/example/go2w/low_level/go2w_stand_example.py",
+      "bytes": 7372
+    },
+    {
+      "path": "webcam_teleop/vendor/unitree_sdk2_python/example/go2w/low_level/unitree_legged_const.py",
+      "bytes": 485
+    },
+    {
+      "path": "webcam_teleop/vendor/unitree_sdk2_python/example/h1/high_level/h1_loco_client_example.py",
+      "bytes": 2971
+    },
+    {
+      "path": "webcam_teleop/vendor/unitree_sdk2_python/example/h1/low_level/h1_low_level_example.py",
+      "bytes": 5322
+    },
+    {
+      "path": "webcam_teleop/vendor/unitree_sdk2_python/example/h1/low_level/unitree_legged_const.py",
+      "bytes": 90
+    },
+    {
+      "path": "webcam_teleop/vendor/unitree_sdk2_python/example/h1_2/low_level/h1_2_low_level_example.py",
+      "bytes": 7653
+    },
+    {
+      "path": "webcam_teleop/vendor/unitree_sdk2_python/example/h2/high_level/h2_arm_sdk_dds_example.py",
+      "bytes": 7260
+    },
+    {
+      "path": "webcam_teleop/vendor/unitree_sdk2_python/example/h2/high_level/h2_loco_client_example.py",
+      "bytes": 3423
+    },
+    {
+      "path": "webcam_teleop/vendor/unitree_sdk2_python/example/h2/low_level/h2_ankle_swing_example.py",
+      "bytes": 8380
+    },
+    {
+      "path": "webcam_teleop/vendor/unitree_sdk2_python/example/helloworld/publisher.py",
+      "bytes": 689
+    },
+    {
+      "path": "webcam_teleop/vendor/unitree_sdk2_python/example/helloworld/subscriber.py",
+      "bytes": 526
+    },
+    {
+      "path": "webcam_teleop/vendor/unitree_sdk2_python/example/helloworld/user_data.py",
+      "bytes": 251
+    },
+    {
+      "path": "webcam_teleop/vendor/unitree_sdk2_python/example/motionSwitcher/motion_switcher_example.py",
+      "bytes": 922
+    },
+    {
+      "path": "webcam_teleop/vendor/unitree_sdk2_python/example/obstacles_avoid/obstacles_avoid_move.py",
+      "bytes": 1074
+    },
+    {
+      "path": "webcam_teleop/vendor/unitree_sdk2_python/example/obstacles_avoid/obstacles_avoid_switch.py",
+      "bytes": 2842
+    },
+    {
+      "path": "webcam_teleop/vendor/unitree_sdk2_python/example/r1/high_level/r1_loco_client_example.py",
+      "bytes": 3776
+    },
+    {
+      "path": "webcam_teleop/vendor/unitree_sdk2_python/example/r1/low_level/r1_A5_low_level_example.py",
+      "bytes": 5592
+    },
+    {
+      "path": "webcam_teleop/vendor/unitree_sdk2_python/example/r1/low_level/r1_A7_low_level_example.py",
+      "bytes": 6338
+    },
+    {
+      "path": "webcam_teleop/vendor/unitree_sdk2_python/example/r1/low_level/r1_low_level_example.py",
+      "bytes": 7532
+    },
+    {
+      "path": "webcam_teleop/vendor/unitree_sdk2_python/example/vui_client/vui_client_example.py",
+      "bytes": 1957
+    },
+    {
+      "path": "webcam_teleop/vendor/unitree_sdk2_python/example/wireless_controller/wireless_controller.py",
+      "bytes": 3917
+    },
+    {
+      "path": "webcam_teleop/vendor/unitree_sdk2_python/pyproject.toml",
+      "bytes": 89
+    },
+    {
+      "path": "webcam_teleop/vendor/unitree_sdk2_python/setup.py",
+      "bytes": 711
+    },
+    {
+      "path": "webcam_teleop/vendor/unitree_sdk2_python/unitree_sdk2py/__init__.py",
+      "bytes": 218
+    },
+    {
+      "path": "webcam_teleop/vendor/unitree_sdk2_python/unitree_sdk2py/a2/__init__.py",
+      "bytes": 2
+    },
+    {
+      "path": "webcam_teleop/vendor/unitree_sdk2_python/unitree_sdk2py/a2/audio/__init__.py",
+      "bytes": 0
+    },
+    {
+      "path": "webcam_teleop/vendor/unitree_sdk2_python/unitree_sdk2py/a2/audio/audio_api.py",
+      "bytes": 420
+    },
+    {
+      "path": "webcam_teleop/vendor/unitree_sdk2_python/unitree_sdk2py/a2/audio/audio_client.py",
+      "bytes": 2321
+    },
+    {
+      "path": "webcam_teleop/vendor/unitree_sdk2_python/unitree_sdk2py/a2/sport/__init__.py",
+      "bytes": 0
+    },
+    {
+      "path": "webcam_teleop/vendor/unitree_sdk2_python/unitree_sdk2py/a2/sport/sport_api.py",
+      "bytes": 974
+    },
+    {
+      "path": "webcam_teleop/vendor/unitree_sdk2_python/unitree_sdk2py/a2/sport/sport_client.py",
+      "bytes": 5761
+    },
+    {
+      "path": "webcam_teleop/vendor/unitree_sdk2_python/unitree_sdk2py/as2/__init__.py",
+      "bytes": 2
+    },
+    {
+      "path": "webcam_teleop/vendor/unitree_sdk2_python/unitree_sdk2py/as2/sport/sport_api.py",
+      "bytes": 1014
+    },
+    {
+      "path": "webcam_teleop/vendor/unitree_sdk2_python/unitree_sdk2py/as2/sport/sport_client.py",
+      "bytes": 6054
+    },
+    {
+      "path": "webcam_teleop/vendor/unitree_sdk2_python/unitree_sdk2py/b2/__init__.py",
+      "bytes": 0
+    },
+    {
+      "path": "webcam_teleop/vendor/unitree_sdk2_python/unitree_sdk2py/b2/back_video/__init__.py",
+      "bytes": 0
+    },
+    {
+      "path": "webcam_teleop/vendor/unitree_sdk2_python/unitree_sdk2py/b2/back_video/back_video_api.py",
+      "bytes": 209
+    },
+    {
+      "path": "webcam_teleop/vendor/unitree_sdk2_python/unitree_sdk2py/b2/back_video/back_video_client.py",
+      "bytes": 540
+    },
+    {
+      "path": "webcam_teleop/vendor/unitree_sdk2_python/unitree_sdk2py/b2/front_video/__init__.py",
+      "bytes": 0
+    },
+    {
+      "path": "webcam_teleop/vendor/unitree_sdk2_python/unitree_sdk2py/b2/front_video/front_video_api.py",
+      "bytes": 213
+    },
+    {
+      "path": "webcam_teleop/vendor/unitree_sdk2_python/unitree_sdk2py/b2/front_video/front_video_client.py",
+      "bytes": 546
+    },
+    {
+      "path": "webcam_teleop/vendor/unitree_sdk2_python/unitree_sdk2py/b2/robot_state/__init__.py",
+      "bytes": 0
+    },
+    {
+      "path": "webcam_teleop/vendor/unitree_sdk2_python/unitree_sdk2py/b2/robot_state/robot_state_api.py",
+      "bytes": 497
+    },
+    {
+      "path": "webcam_teleop/vendor/unitree_sdk2_python/unitree_sdk2py/b2/robot_state/robot_state_client.py",
+      "bytes": 3108
+    },
+    {
+      "path": "webcam_teleop/vendor/unitree_sdk2_python/unitree_sdk2py/b2/sport/__init__.py",
+      "bytes": 0
+    },
+    {
+      "path": "webcam_teleop/vendor/unitree_sdk2_python/unitree_sdk2py/b2/sport/sport_api.py",
+      "bytes": 1208
+    },
+    {
+      "path": "webcam_teleop/vendor/unitree_sdk2_python/unitree_sdk2py/b2/sport/sport_client.py",
+      "bytes": 6666
+    },
+    {
+      "path": "webcam_teleop/vendor/unitree_sdk2_python/unitree_sdk2py/b2/vui/__init__.py",
+      "bytes": 0
+    },
+    {
+      "path": "webcam_teleop/vendor/unitree_sdk2_python/unitree_sdk2py/b2/vui/vui_api.py",
+      "bytes": 303
+    },
+    {
+      "path": "webcam_teleop/vendor/unitree_sdk2_python/unitree_sdk2py/b2/vui/vui_client.py",
+      "bytes": 2137
+    },
+    {
+      "path": "webcam_teleop/vendor/unitree_sdk2_python/unitree_sdk2py/comm/__init__.py",
+      "bytes": 0
+    },
+    {
+      "path": "webcam_teleop/vendor/unitree_sdk2_python/unitree_sdk2py/comm/motion_switcher/__init__.py",
+      "bytes": 0
+    },
+    {
+      "path": "webcam_teleop/vendor/unitree_sdk2_python/unitree_sdk2py/comm/motion_switcher/motion_switcher_api.py",
+      "bytes": 538
+    },
+    {
+      "path": "webcam_teleop/vendor/unitree_sdk2_python/unitree_sdk2py/comm/motion_switcher/motion_switcher_client.py",
+      "bytes": 1409
+    },
+    {
+      "path": "webcam_teleop/vendor/unitree_sdk2_python/unitree_sdk2py/g1/__init__.py",
+      "bytes": 0
+    },
+    {
+      "path": "webcam_teleop/vendor/unitree_sdk2_python/unitree_sdk2py/g1/arm/__init__.py",
+      "bytes": 0
+    },
+    {
+      "path": "webcam_teleop/vendor/unitree_sdk2_python/unitree_sdk2py/g1/arm/g1_arm_action_api.py",
+      "bytes": 254
+    },
+    {
+      "path": "webcam_teleop/vendor/unitree_sdk2_python/unitree_sdk2py/g1/arm/g1_arm_action_client.py",
+      "bytes": 1344
+    },
+    {
+      "path": "webcam_teleop/vendor/unitree_sdk2_python/unitree_sdk2py/g1/audio/__init__.py",
+      "bytes": 0
+    },
+    {
+      "path": "webcam_teleop/vendor/unitree_sdk2_python/unitree_sdk2py/g1/audio/g1_audio_api.py",
+      "bytes": 398
+    },
+    {
+      "path": "webcam_teleop/vendor/unitree_sdk2_python/unitree_sdk2py/g1/audio/g1_audio_client.py",
+      "bytes": 2270
+    },
+    {
+      "path": "webcam_teleop/vendor/unitree_sdk2_python/unitree_sdk2py/g1/loco/__init__.py",
+      "bytes": 0
+    },
+    {
+      "path": "webcam_teleop/vendor/unitree_sdk2_python/unitree_sdk2py/g1/loco/g1_loco_api.py",
+      "bytes": 879
+    },
+    {
+      "path": "webcam_teleop/vendor/unitree_sdk2_python/unitree_sdk2py/g1/loco/g1_loco_client.py",
+      "bytes": 5224
+    },
+    {
+      "path": "webcam_teleop/vendor/unitree_sdk2_python/unitree_sdk2py/go2/__init__.py",
+      "bytes": 0
+    },
+    {
+      "path": "webcam_teleop/vendor/unitree_sdk2_python/unitree_sdk2py/go2/obstacles_avoid/__init__.py",
+      "bytes": 0
+    },
+    {
+      "path": "webcam_teleop/vendor/unitree_sdk2_python/unitree_sdk2py/go2/obstacles_avoid/obstacles_avoid_api.py",
+      "bytes": 337
+    },
+    {
+      "path": "webcam_teleop/vendor/unitree_sdk2_python/unitree_sdk2py/go2/obstacles_avoid/obstacles_avoid_client.py",
+      "bytes": 2359
+    },
+    {
+      "path": "webcam_teleop/vendor/unitree_sdk2_python/unitree_sdk2py/go2/robot_state/__init__.py",
+      "bytes": 0
+    },
+    {
+      "path": "webcam_teleop/vendor/unitree_sdk2_python/unitree_sdk2py/go2/robot_state/robot_state_api.py",
+      "bytes": 371
+    },
+    {
+      "path": "webcam_teleop/vendor/unitree_sdk2_python/unitree_sdk2py/go2/robot_state/robot_state_client.py",
+      "bytes": 2106
+    },
+    {
+      "path": "webcam_teleop/vendor/unitree_sdk2_python/unitree_sdk2py/go2/sport/__init__.py",
+      "bytes": 0
+    },
+    {
+      "path": "webcam_teleop/vendor/unitree_sdk2_python/unitree_sdk2py/go2/sport/sport_api.py",
+      "bytes": 1440
+    },
+    {
+      "path": "webcam_teleop/vendor/unitree_sdk2_python/unitree_sdk2py/go2/sport/sport_client.py",
+      "bytes": 10949
+    },
+    {
+      "path": "webcam_teleop/vendor/unitree_sdk2_python/unitree_sdk2py/go2/video/__init__.py",
+      "bytes": 0
+    },
+    {
+      "path": "webcam_teleop/vendor/unitree_sdk2_python/unitree_sdk2py/go2/video/video_api.py",
+      "bytes": 171
+    },
+    {
+      "path": "webcam_teleop/vendor/unitree_sdk2_python/unitree_sdk2py/go2/video/video_client.py",
+      "bytes": 482
+    },
+    {
+      "path": "webcam_teleop/vendor/unitree_sdk2_python/unitree_sdk2py/go2/vui/__init__.py",
+      "bytes": 0
+    },
+    {
+      "path": "webcam_teleop/vendor/unitree_sdk2_python/unitree_sdk2py/go2/vui/vui_api.py",
+      "bytes": 303
+    },
+    {
+      "path": "webcam_teleop/vendor/unitree_sdk2_python/unitree_sdk2py/go2/vui/vui_client.py",
+      "bytes": 2137
+    },
+    {
+      "path": "webcam_teleop/vendor/unitree_sdk2_python/unitree_sdk2py/h1/__init__.py",
+      "bytes": 0
+    },
+    {
+      "path": "webcam_teleop/vendor/unitree_sdk2_python/unitree_sdk2py/h1/loco/__init__.py",
+      "bytes": 0
+    },
+    {
+      "path": "webcam_teleop/vendor/unitree_sdk2_python/unitree_sdk2py/h1/loco/h1_loco_api.py",
+      "bytes": 600
+    },
+    {
+      "path": "webcam_teleop/vendor/unitree_sdk2_python/unitree_sdk2py/h1/loco/h1_loco_client.py",
+      "bytes": 2439
+    },
+    {
+      "path": "webcam_teleop/vendor/unitree_sdk2_python/unitree_sdk2py/h2/__init__.py",
+      "bytes": 0
+    },
+    {
+      "path": "webcam_teleop/vendor/unitree_sdk2_python/unitree_sdk2py/h2/loco/__init__.py",
+      "bytes": 0
+    },
+    {
+      "path": "webcam_teleop/vendor/unitree_sdk2_python/unitree_sdk2py/h2/loco/h2_loco_api.py",
+      "bytes": 995
+    },
+    {
+      "path": "webcam_teleop/vendor/unitree_sdk2_python/unitree_sdk2py/h2/loco/h2_loco_client.py",
+      "bytes": 7618
+    },
+    {
+      "path": "webcam_teleop/vendor/unitree_sdk2_python/unitree_sdk2py/idl/__init__.py",
+      "bytes": 271
+    },
+    {
+      "path": "webcam_teleop/vendor/unitree_sdk2_python/unitree_sdk2py/idl/builtin_interfaces/__init__.py",
+      "bytes": 167
+    },
+    {
+      "path": "webcam_teleop/vendor/unitree_sdk2_python/unitree_sdk2py/idl/builtin_interfaces/msg/__init__.py",
+      "bytes": 173
+    },
+    {
+      "path": "webcam_teleop/vendor/unitree_sdk2_python/unitree_sdk2py/idl/builtin_interfaces/msg/dds_/_Time_.py",
+      "bytes": 625
+    },
+    {
+      "path": "webcam_teleop/vendor/unitree_sdk2_python/unitree_sdk2py/idl/builtin_interfaces/msg/dds_/__init__.py",
+      "bytes": 186
+    },
+    {
+      "path": "webcam_teleop/vendor/unitree_sdk2_python/unitree_sdk2py/idl/default.py",
+      "bytes": 10522
+    },
+    {
+      "path": "webcam_teleop/vendor/unitree_sdk2_python/unitree_sdk2py/idl/geometry_msgs/__init__.py",
+      "bytes": 162
+    },
+    {
+      "path": "webcam_teleop/vendor/unitree_sdk2_python/unitree_sdk2py/idl/geometry_msgs/msg/__init__.py",
+      "bytes": 168
+    },
+    {
+      "path": "webcam_teleop/vendor/unitree_sdk2_python/unitree_sdk2py/idl/geometry_msgs/msg/dds_/_Point32_.py",
+      "bytes": 635
+    },
+    {
+      "path": "webcam_teleop/vendor/unitree_sdk2_python/unitree_sdk2py/idl/geometry_msgs/msg/dds_/_PointStamped_.py",
+      "bytes": 760
+    },
+    {
+      "path": "webcam_teleop/vendor/unitree_sdk2_python/unitree_sdk2py/idl/geometry_msgs/msg/dds_/_Point_.py",
+      "bytes": 629
+    },
+    {
+      "path": "webcam_teleop/vendor/unitree_sdk2_python/unitree_sdk2py/idl/geometry_msgs/msg/dds_/_Pose2D_.py",
+      "bytes": 636
+    },
+    {
+      "path": "webcam_teleop/vendor/unitree_sdk2_python/unitree_sdk2py/idl/geometry_msgs/msg/dds_/_PoseStamped_.py",
+      "bytes": 756
+    },
+    {
+      "path": "webcam_teleop/vendor/unitree_sdk2_python/unitree_sdk2py/idl/geometry_msgs/msg/dds_/_PoseWithCovarianceStamped_.py",
+      "bytes": 812
+    },
+    {
+      "path": "webcam_teleop/vendor/unitree_sdk2_python/unitree_sdk2py/idl/geometry_msgs/msg/dds_/_PoseWithCovariance_.py",
+      "bytes": 712
+    },
+    {
+      "path": "webcam_teleop/vendor/unitree_sdk2_python/unitree_sdk2py/idl/geometry_msgs/msg/dds_/_Pose_.py",
+      "bytes": 701
+    },
+    {
+      "path": "webcam_teleop/vendor/unitree_sdk2_python/unitree_sdk2py/idl/geometry_msgs/msg/dds_/_QuaternionStamped_.py",
+      "bytes": 786
+    },
+    {
+      "path": "webcam_teleop/vendor/unitree_sdk2_python/unitree_sdk2py/idl/geometry_msgs/msg/dds_/_Quaternion_.py",
+      "bytes": 665
+    },
+    {
+      "path": "webcam_teleop/vendor/unitree_sdk2_python/unitree_sdk2py/idl/geometry_msgs/msg/dds_/_TwistStamped_.py",
+      "bytes": 761
+    },
+    {
+      "path": "webcam_teleop/vendor/unitree_sdk2_python/unitree_sdk2py/idl/geometry_msgs/msg/dds_/_TwistWithCovarianceStamped_.py",
+      "bytes": 817
+    },
+    {
+      "path": "webcam_teleop/vendor/unitree_sdk2_python/unitree_sdk2py/idl/geometry_msgs/msg/dds_/_TwistWithCovariance_.py",
+      "bytes": 717
+    },
+    {
+      "path": "webcam_teleop/vendor/unitree_sdk2_python/unitree_sdk2py/idl/geometry_msgs/msg/dds_/_Twist_.py",
+      "bytes": 697
+    },
+    {
+      "path": "webcam_teleop/vendor/unitree_sdk2_python/unitree_sdk2py/idl/geometry_msgs/msg/dds_/_Vector3_.py",
+      "bytes": 635
+    },
+    {
+      "path": "webcam_teleop/vendor/unitree_sdk2_python/unitree_sdk2py/idl/geometry_msgs/msg/dds_/__init__.py",
+      "bytes": 1043
+    },
+    {
+      "path": "webcam_teleop/vendor/unitree_sdk2_python/unitree_sdk2py/idl/nav_msgs/__init__.py",
+      "bytes": 157
+    },
+    {
+      "path": "webcam_teleop/vendor/unitree_sdk2_python/unitree_sdk2py/idl/nav_msgs/msg/__init__.py",
+      "bytes": 163
+    },
+    {
+      "path": "webcam_teleop/vendor/unitree_sdk2_python/unitree_sdk2py/idl/nav_msgs/msg/dds_/_MapMetaData_.py",
+      "bytes": 882
+    },
+    {
+      "path": "webcam_teleop/vendor/unitree_sdk2_python/unitree_sdk2py/idl/nav_msgs/msg/dds_/_OccupancyGrid_.py",
+      "bytes": 788
+    },
+    {
+      "path": "webcam_teleop/vendor/unitree_sdk2_python/unitree_sdk2py/idl/nav_msgs/msg/dds_/_Odometry_.py",
+      "bytes": 882
+    },
+    {
+      "path": "webcam_teleop/vendor/unitree_sdk2_python/unitree_sdk2py/idl/nav_msgs/msg/dds_/__init__.py",
+      "bytes": 306
+    },
+    {
+      "path": "webcam_teleop/vendor/unitree_sdk2_python/unitree_sdk2py/idl/sensor_msgs/__init__.py",
+      "bytes": 160
+    },
+    {
+      "path": "webcam_teleop/vendor/unitree_sdk2_python/unitree_sdk2py/idl/sensor_msgs/msg/__init__.py",
+      "bytes": 166
+    },
+    {
+      "path": "webcam_teleop/vendor/unitree_sdk2_python/unitree_sdk2py/idl/sensor_msgs/msg/dds_/PointField_Constants/_PointField_.py",
+      "bytes": 550
+    },
+    {
+      "path": "webcam_teleop/vendor/unitree_sdk2_python/unitree_sdk2py/idl/sensor_msgs/msg/dds_/PointField_Constants/__init__.py",
+      "bytes": 344
+    },
+    {
+      "path": "webcam_teleop/vendor/unitree_sdk2_python/unitree_sdk2py/idl/sensor_msgs/msg/dds_/_PointCloud2_.py",
+      "bytes": 957
+    },
+    {
+      "path": "webcam_teleop/vendor/unitree_sdk2_python/unitree_sdk2py/idl/sensor_msgs/msg/dds_/_PointField_.py",
+      "bytes": 664
+    },
+    {
+      "path": "webcam_teleop/vendor/unitree_sdk2_python/unitree_sdk2py/idl/sensor_msgs/msg/dds_/__init__.py",
+      "bytes": 312
+    },
+    {
+      "path": "webcam_teleop/vendor/unitree_sdk2_python/unitree_sdk2py/idl/std_msgs/__init__.py",
+      "bytes": 157
+    },
+    {
+      "path": "webcam_teleop/vendor/unitree_sdk2_python/unitree_sdk2py/idl/std_msgs/msg/__init__.py",
+      "bytes": 163
+    },
+    {
+      "path": "webcam_teleop/vendor/unitree_sdk2_python/unitree_sdk2py/idl/std_msgs/msg/dds_/_Header_.py",
+      "bytes": 701
+    },
+    {
+      "path": "webcam_teleop/vendor/unitree_sdk2_python/unitree_sdk2py/idl/std_msgs/msg/dds_/_String_.py",
+      "bytes": 568
+    },
+    {
+      "path": "webcam_teleop/vendor/unitree_sdk2_python/unitree_sdk2py/idl/std_msgs/msg/dds_/__init__.py",
+      "bytes": 223
+    },
+    {
+      "path": "webcam_teleop/vendor/unitree_sdk2_python/unitree_sdk2py/idl/unitree_api/__init__.py",
+      "bytes": 160
+    },
+    {
+      "path": "webcam_teleop/vendor/unitree_sdk2_python/unitree_sdk2py/idl/unitree_api/msg/__init__.py",
+      "bytes": 166
+    },
+    {
+      "path": "webcam_teleop/vendor/unitree_sdk2_python/unitree_sdk2py/idl/unitree_api/msg/dds_/_RequestHeader_.py",
+      "bytes": 793
+    },
+    {
+      "path": "webcam_teleop/vendor/unitree_sdk2_python/unitree_sdk2py/idl/unitree_api/msg/dds_/_RequestIdentity_.py",
+      "bytes": 634
+    },
+    {
+      "path": "webcam_teleop/vendor/unitree_sdk2_python/unitree_sdk2py/idl/unitree_api/msg/dds_/_RequestLease_.py",
+      "bytes": 601
+    },
+    {
+      "path": "webcam_teleop/vendor/unitree_sdk2_python/unitree_sdk2py/idl/unitree_api/msg/dds_/_RequestPolicy_.py",
+      "bytes": 628
+    },
+    {
+      "path": "webcam_teleop/vendor/unitree_sdk2_python/unitree_sdk2py/idl/unitree_api/msg/dds_/_Request_.py",
+      "bytes": 693
+    },
+    {
+      "path": "webcam_teleop/vendor/unitree_sdk2_python/unitree_sdk2py/idl/unitree_api/msg/dds_/_ResponseHeader_.py",
+      "bytes": 730
+    },
+    {
+      "path": "webcam_teleop/vendor/unitree_sdk2_python/unitree_sdk2py/idl/unitree_api/msg/dds_/_ResponseStatus_.py",
+      "bytes": 609
+    },
+    {
+      "path": "webcam_teleop/vendor/unitree_sdk2_python/unitree_sdk2py/idl/unitree_api/msg/dds_/_Response_.py",
+      "bytes": 692
+    },
+    {
+      "path": "webcam_teleop/vendor/unitree_sdk2_python/unitree_sdk2py/idl/unitree_api/msg/dds_/__init__.py",
+      "bytes": 616
+    },
+    {
+      "path": "webcam_teleop/vendor/unitree_sdk2_python/unitree_sdk2py/idl/unitree_go/__init__.py",
+      "bytes": 159
+    },
+    {
+      "path": "webcam_teleop/vendor/unitree_sdk2_python/unitree_sdk2py/idl/unitree_go/msg/__init__.py",
+      "bytes": 165
+    },
+    {
+      "path": "webcam_teleop/vendor/unitree_sdk2_python/unitree_sdk2py/idl/unitree_go/msg/dds_/_AudioData_.py",
+      "bytes": 636
+    },
+    {
+      "path": "webcam_teleop/vendor/unitree_sdk2_python/unitree_sdk2py/idl/unitree_go/msg/dds_/_BmsCmd_.py",
+      "bytes": 622
+    },
+    {
+      "path": "webcam_teleop/vendor/unitree_sdk2_python/unitree_sdk2py/idl/unitree_go/msg/dds_/_BmsState_.py",
+      "bytes": 844
+    },
+    {
+      "path": "webcam_teleop/vendor/unitree_sdk2_python/unitree_sdk2py/idl/unitree_go/msg/dds_/_Error_.py",
+      "bytes": 606
+    },
+    {
+      "path": "webcam_teleop/vendor/unitree_sdk2_python/unitree_sdk2py/idl/unitree_go/msg/dds_/_Go2FrontVideoData_.py",
+      "bytes": 751
+    },
+    {
+      "path": "webcam_teleop/vendor/unitree_sdk2_python/unitree_sdk2py/idl/unitree_go/msg/dds_/_HeightMap_.py",
+      "bytes": 773
+    },
+    {
+      "path": "webcam_teleop/vendor/unitree_sdk2_python/unitree_sdk2py/idl/unitree_go/msg/dds_/_IMUState_.py",
+      "bytes": 774
+    },
+    {
+      "path": "webcam_teleop/vendor/unitree_sdk2_python/unitree_sdk2py/idl/unitree_go/msg/dds_/_InterfaceConfig_.py",
+      "bytes": 673
+    },
+    {
+      "path": "webcam_teleop/vendor/unitree_sdk2_python/unitree_sdk2py/idl/unitree_go/msg/dds_/_LidarState_.py",
+      "bytes": 1141
+    },
+    {
+      "path": "webcam_teleop/vendor/unitree_sdk2_python/unitree_sdk2py/idl/unitree_go/msg/dds_/_LowCmd_.py",
+      "bytes": 1104
+    },
+    {
+      "path": "webcam_teleop/vendor/unitree_sdk2_python/unitree_sdk2py/idl/unitree_go/msg/dds_/_LowState_.py",
+      "bytes": 1426
+    },
+    {
+      "path": "webcam_teleop/vendor/unitree_sdk2_python/unitree_sdk2py/idl/unitree_go/msg/dds_/_MotorCmd_.py",
+      "bytes": 740
+    },
+    {
+      "path": "webcam_teleop/vendor/unitree_sdk2_python/unitree_sdk2py/idl/unitree_go/msg/dds_/_MotorCmds_.py",
+      "bytes": 626
+    },
+    {
+      "path": "webcam_teleop/vendor/unitree_sdk2_python/unitree_sdk2py/idl/unitree_go/msg/dds_/_MotorState_.py",
+      "bytes": 859
+    },
+    {
+      "path": "webcam_teleop/vendor/unitree_sdk2_python/unitree_sdk2py/idl/unitree_go/msg/dds_/_MotorStates_.py",
+      "bytes": 636
+    },
+    {
+      "path": "webcam_teleop/vendor/unitree_sdk2_python/unitree_sdk2py/idl/unitree_go/msg/dds_/_PathPoint_.py",
+      "bytes": 734
+    },
+    {
+      "path": "webcam_teleop/vendor/unitree_sdk2_python/unitree_sdk2py/idl/unitree_go/msg/dds_/_Req_.py",
+      "bytes": 579
+    },
+    {
+      "path": "webcam_teleop/vendor/unitree_sdk2_python/unitree_sdk2py/idl/unitree_go/msg/dds_/_Res_.py",
+      "bytes": 617
+    },
+    {
+      "path": "webcam_teleop/vendor/unitree_sdk2_python/unitree_sdk2py/idl/unitree_go/msg/dds_/_SportModeState_.py",
+      "bytes": 1289
+    },
+    {
+      "path": "webcam_teleop/vendor/unitree_sdk2_python/unitree_sdk2py/idl/unitree_go/msg/dds_/_TimeSpec_.py",
+      "bytes": 613
+    },
+    {
+      "path": "webcam_teleop/vendor/unitree_sdk2_python/unitree_sdk2py/idl/unitree_go/msg/dds_/_UwbState_.py",
+      "bytes": 1084
+    },
+    {
+      "path": "webcam_teleop/vendor/unitree_sdk2_python/unitree_sdk2py/idl/unitree_go/msg/dds_/_UwbSwitch_.py",
+      "bytes": 594
+    },
+    {
+      "path": "webcam_teleop/vendor/unitree_sdk2_python/unitree_sdk2py/idl/unitree_go/msg/dds_/_WirelessController_.py",
+      "bytes": 707
+    },
+    {
+      "path": "webcam_teleop/vendor/unitree_sdk2_python/unitree_sdk2py/idl/unitree_go/msg/dds_/__init__.py",
+      "bytes": 1307
+    },
+    {
+      "path": "webcam_teleop/vendor/unitree_sdk2_python/unitree_sdk2py/idl/unitree_hg/.idlpy_manifest",
+      "bytes": 187
+    },
+    {
+      "path": "webcam_teleop/vendor/unitree_sdk2_python/unitree_sdk2py/idl/unitree_hg/__init__.py",
+      "bytes": 159
+    },
+    {
+      "path": "webcam_teleop/vendor/unitree_sdk2_python/unitree_sdk2py/idl/unitree_hg/msg/.idlpy_manifest",
+      "bytes": 198
+    },
+    {
+      "path": "webcam_teleop/vendor/unitree_sdk2_python/unitree_sdk2py/idl/unitree_hg/msg/__init__.py",
+      "bytes": 165
+    },
+    {
+      "path": "webcam_teleop/vendor/unitree_sdk2_python/unitree_sdk2py/idl/unitree_hg/msg/dds_/.idlpy_manifest",
+      "bytes": 265
+    },
+    {
+      "path": "webcam_teleop/vendor/unitree_sdk2_python/unitree_sdk2py/idl/unitree_hg/msg/dds_/_BmsCmd_.py",
+      "bytes": 623
+    },
+    {
+      "path": "webcam_teleop/vendor/unitree_sdk2_python/unitree_sdk2py/idl/unitree_hg/msg/dds_/_BmsState_.py",
+      "bytes": 992
+    },
+    {
+      "path": "webcam_teleop/vendor/unitree_sdk2_python/unitree_sdk2py/idl/unitree_hg/msg/dds_/_HandCmd_.py",
+      "bytes": 687
+    },
+    {
+      "path": "webcam_teleop/vendor/unitree_sdk2_python/unitree_sdk2py/idl/unitree_hg/msg/dds_/_HandState_.py",
+      "bytes": 1012
+    },
+    {
+      "path": "webcam_teleop/vendor/unitree_sdk2_python/unitree_sdk2py/idl/unitree_hg/msg/dds_/_IMUState_.py",
+      "bytes": 774
+    },
+    {
+      "path": "webcam_teleop/vendor/unitree_sdk2_python/unitree_sdk2py/idl/unitree_hg/msg/dds_/_LowCmd_.py",
+      "bytes": 762
+    },
+    {
+      "path": "webcam_teleop/vendor/unitree_sdk2_python/unitree_sdk2py/idl/unitree_hg/msg/dds_/_LowState_.py",
+      "bytes": 953
+    },
+    {
+      "path": "webcam_teleop/vendor/unitree_sdk2_python/unitree_sdk2py/idl/unitree_hg/msg/dds_/_MainBoardState_.py",
+      "bytes": 754
+    },
+    {
+      "path": "webcam_teleop/vendor/unitree_sdk2_python/unitree_sdk2py/idl/unitree_hg/msg/dds_/_MotorCmd_.py",
+      "bytes": 724
+    },
+    {
+      "path": "webcam_teleop/vendor/unitree_sdk2_python/unitree_sdk2py/idl/unitree_hg/msg/dds_/_MotorState_.py",
+      "bytes": 867
+    },
+    {
+      "path": "webcam_teleop/vendor/unitree_sdk2_python/unitree_sdk2py/idl/unitree_hg/msg/dds_/_PressSensorState_.py",
+      "bytes": 732
+    },
+    {
+      "path": "webcam_teleop/vendor/unitree_sdk2_python/unitree_sdk2py/idl/unitree_hg/msg/dds_/__init__.py",
+      "bytes": 696
+    },
+    {
+      "path": "webcam_teleop/vendor/unitree_sdk2_python/unitree_sdk2py/r1/loco/r1_loco_api.py",
+      "bytes": 301
+    },
+    {
+      "path": "webcam_teleop/vendor/unitree_sdk2_python/unitree_sdk2py/r1/loco/r1_loco_client.py",
+      "bytes": 2453
+    },
+    {
+      "path": "webcam_teleop/vendor/unitree_sdk2_python/unitree_sdk2py/rpc/__init__.py",
+      "bytes": 0
+    },
+    {
+      "path": "webcam_teleop/vendor/unitree_sdk2_python/unitree_sdk2py/rpc/client.py",
+      "bytes": 4032
+    },
+    {
+      "path": "webcam_teleop/vendor/unitree_sdk2_python/unitree_sdk2py/rpc/client_base.py",
+      "bytes": 5078
+    },
+    {
+      "path": "webcam_teleop/vendor/unitree_sdk2_python/unitree_sdk2py/rpc/client_stub.py",
+      "bytes": 2363
+    },
+    {
+      "path": "webcam_teleop/vendor/unitree_sdk2_python/unitree_sdk2py/rpc/internal.py",
+      "bytes": 743
+    },
+    {
+      "path": "webcam_teleop/vendor/unitree_sdk2_python/unitree_sdk2py/rpc/lease_client.py",
+      "bytes": 2883
+    },
+    {
+      "path": "webcam_teleop/vendor/unitree_sdk2_python/unitree_sdk2py/rpc/lease_server.py",
+      "bytes": 4163
+    },
+    {
+      "path": "webcam_teleop/vendor/unitree_sdk2_python/unitree_sdk2py/rpc/request_future.py",
+      "bytes": 1149
+    },
+    {
+      "path": "webcam_teleop/vendor/unitree_sdk2_python/unitree_sdk2py/rpc/server.py",
+      "bytes": 4070
+    },
+    {
+      "path": "webcam_teleop/vendor/unitree_sdk2_python/unitree_sdk2py/rpc/server_base.py",
+      "bytes": 991
+    },
+    {
+      "path": "webcam_teleop/vendor/unitree_sdk2_python/unitree_sdk2py/rpc/server_stub.py",
+      "bytes": 2688
+    },
+    {
+      "path": "webcam_teleop/vendor/unitree_sdk2_python/unitree_sdk2py/test/client/obstacles_avoid_client_example.py",
+      "bytes": 2764
+    },
+    {
+      "path": "webcam_teleop/vendor/unitree_sdk2_python/unitree_sdk2py/test/client/robot_service_client_example.py",
+      "bytes": 1594
+    },
+    {
+      "path": "webcam_teleop/vendor/unitree_sdk2_python/unitree_sdk2py/test/client/sport_client_example.py",
+      "bytes": 3182
+    },
+    {
+      "path": "webcam_teleop/vendor/unitree_sdk2_python/unitree_sdk2py/test/client/video_client_example.py",
+      "bytes": 724
+    },
+    {
+      "path": "webcam_teleop/vendor/unitree_sdk2_python/unitree_sdk2py/test/client/vui_client_example.py",
+      "bytes": 1879
+    },
+    {
+      "path": "webcam_teleop/vendor/unitree_sdk2_python/unitree_sdk2py/test/crc/test_crc.py",
+      "bytes": 715
+    },
+    {
+      "path": "webcam_teleop/vendor/unitree_sdk2_python/unitree_sdk2py/test/helloworld/helloworld.py",
+      "bytes": 148
+    },
+    {
+      "path": "webcam_teleop/vendor/unitree_sdk2_python/unitree_sdk2py/test/helloworld/publisher.py",
+      "bytes": 500
+    },
+    {
+      "path": "webcam_teleop/vendor/unitree_sdk2_python/unitree_sdk2py/test/helloworld/subscriber.py",
+      "bytes": 373
+    },
+    {
+      "path": "webcam_teleop/vendor/unitree_sdk2_python/unitree_sdk2py/test/lowlevel/lowlevel_control.py",
+      "bytes": 1966
+    },
+    {
+      "path": "webcam_teleop/vendor/unitree_sdk2_python/unitree_sdk2py/test/lowlevel/read_lowstate.py",
+      "bytes": 784
+    },
+    {
+      "path": "webcam_teleop/vendor/unitree_sdk2_python/unitree_sdk2py/test/lowlevel/sub_lowstate.py",
+      "bytes": 448
+    },
+    {
+      "path": "webcam_teleop/vendor/unitree_sdk2_python/unitree_sdk2py/test/lowlevel/unitree_go2_const.py",
+      "bytes": 345
+    },
+    {
+      "path": "webcam_teleop/vendor/unitree_sdk2_python/unitree_sdk2py/test/rpc/test_api.py",
+      "bytes": 143
+    },
+    {
+      "path": "webcam_teleop/vendor/unitree_sdk2_python/unitree_sdk2py/test/rpc/test_client_example.py",
+      "bytes": 1496
+    },
+    {
+      "path": "webcam_teleop/vendor/unitree_sdk2_python/unitree_sdk2py/test/rpc/test_server_example.py",
+      "bytes": 1017
+    },
+    {
+      "path": "webcam_teleop/vendor/unitree_sdk2_python/unitree_sdk2py/utils/__init__.py",
+      "bytes": 0
+    },
+    {
+      "path": "webcam_teleop/vendor/unitree_sdk2_python/unitree_sdk2py/utils/bqueue.py",
+      "bytes": 1603
+    },
+    {
+      "path": "webcam_teleop/vendor/unitree_sdk2_python/unitree_sdk2py/utils/clib_lookup.py",
+      "bytes": 386
+    },
+    {
+      "path": "webcam_teleop/vendor/unitree_sdk2_python/unitree_sdk2py/utils/crc.py",
+      "bytes": 8585
+    },
+    {
+      "path": "webcam_teleop/vendor/unitree_sdk2_python/unitree_sdk2py/utils/future.py",
+      "bytes": 2960
+    },
+    {
+      "path": "webcam_teleop/vendor/unitree_sdk2_python/unitree_sdk2py/utils/hz_sample.py",
+      "bytes": 643
+    },
+    {
+      "path": "webcam_teleop/vendor/unitree_sdk2_python/unitree_sdk2py/utils/joystick.py",
+      "bytes": 8216
+    },
+    {
+      "path": "webcam_teleop/vendor/unitree_sdk2_python/unitree_sdk2py/utils/lib/crc_aarch64.so",
+      "bytes": 7928
+    },
+    {
+      "path": "webcam_teleop/vendor/unitree_sdk2_python/unitree_sdk2py/utils/lib/crc_amd64.so",
+      "bytes": 15136
+    },
+    {
+      "path": "webcam_teleop/vendor/unitree_sdk2_python/unitree_sdk2py/utils/singleton.py",
+      "bytes": 247
+    },
+    {
+      "path": "webcam_teleop/vendor/unitree_sdk2_python/unitree_sdk2py/utils/thread.py",
+      "bytes": 2688
+    },
+    {
+      "path": "webcam_teleop/vendor/unitree_sdk2_python/unitree_sdk2py/utils/timerfd.py",
+      "bytes": 1319
+    },
+    {
+      "path": "webcam_teleop/web/app.js",
+      "bytes": 14561
+    },
+    {
+      "path": "webcam_teleop/web/index.html",
+      "bytes": 5291
+    },
+    {
+      "path": "webcam_teleop/web/pose-worker.js",
+      "bytes": 1577
+    },
+    {
+      "path": "webcam_teleop/web/vendor/README.md",
+      "bytes": 9259
+    },
+    {
+      "path": "webcam_teleop/web/vendor/package.json",
+      "bytes": 1192
+    },
+    {
+      "path": "webcam_teleop/web/vendor/vision.d.ts",
+      "bytes": 132859
+    },
+    {
+      "path": "webcam_teleop/web/vendor/vision_bundle.cjs",
+      "bytes": 156244
+    },
+    {
+      "path": "webcam_teleop/web/vendor/vision_bundle.cjs.map",
+      "bytes": 391546
+    },
+    {
+      "path": "webcam_teleop/web/vendor/vision_bundle.js",
+      "bytes": 156165
+    },
+    {
+      "path": "webcam_teleop/web/vendor/vision_bundle.mjs",
+      "bytes": 156139
+    },
+    {
+      "path": "webcam_teleop/web/vendor/vision_bundle.mjs.map",
+      "bytes": 391546
+    },
+    {
+      "path": "webcam_teleop/web/vendor/wasm/vision_wasm_internal.js",
+      "bytes": 334128
+    },
+    {
+      "path": "webcam_teleop/web/vendor/wasm/vision_wasm_internal.wasm",
+      "bytes": 13519922
+    },
+    {
+      "path": "webcam_teleop/web/vendor/wasm/vision_wasm_module_internal.js",
+      "bytes": 334166
+    },
+    {
+      "path": "webcam_teleop/web/vendor/wasm/vision_wasm_module_internal.wasm",
+      "bytes": 13519940
+    },
+    {
+      "path": "webcam_teleop/web/vendor/wasm/vision_wasm_nosimd_internal.js",
+      "bytes": 333931
+    },
+    {
+      "path": "webcam_teleop/web/vendor/wasm/vision_wasm_nosimd_internal.wasm",
+      "bytes": 12627509
+    },
+    {
+      "path": "webcam_teleop/代码学习指南.md",
+      "bytes": 14118
+    },
+    {
+      "path": "待研发方案-骨架接入宇树官方遥操.md",
+      "bytes": 10342
+    }
+  ]
+}

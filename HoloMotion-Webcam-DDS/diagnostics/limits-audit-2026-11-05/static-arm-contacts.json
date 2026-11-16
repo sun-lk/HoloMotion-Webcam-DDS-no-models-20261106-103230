@@ -1,0 +1,278 @@
+{
+  "current": [
+    {
+      "bodies": [
+        "left_shoulder_roll_link",
+        "torso_link"
+      ],
+      "distance_m": -0.039839770237457696
+    },
+    {
+      "bodies": [
+        "torso_link",
+        "left_shoulder_yaw_link"
+      ],
+      "distance_m": -0.10807862173894744
+    },
+    {
+      "bodies": [
+        "torso_link",
+        "left_shoulder_yaw_link"
+      ],
+      "distance_m": -0.10806105477559902
+    },
+    {
+      "bodies": [
+        "torso_link",
+        "left_shoulder_yaw_link"
+      ],
+      "distance_m": -0.1080744037651062
+    },
+    {
+      "bodies": [
+        "torso_link",
+        "left_shoulder_yaw_link"
+      ],
+      "distance_m": -0.10808928531220739
+    },
+    {
+      "bodies": [
+        "torso_link",
+        "left_shoulder_yaw_link"
+      ],
+      "distance_m": -0.04846400228465504
+    },
+    {
+      "bodies": [
+        "torso_link",
+        "left_shoulder_yaw_link"
+      ],
+      "distance_m": -0.04846187675768381
+    },
+    {
+      "bodies": [
+        "torso_link",
+        "left_shoulder_yaw_link"
+      ],
+      "distance_m": -0.04842755158454127
+    },
+    {
+      "bodies": [
+        "torso_link",
+        "left_elbow_link"
+      ],
+      "distance_m": -0.08410111857940737
+    },
+    {
+      "bodies": [
+        "torso_link",
+        "left_elbow_link"
+      ],
+      "distance_m": -0.08412370778152824
+    },
+    {
+      "bodies": [
+        "torso_link",
+        "left_elbow_link"
+      ],
+      "distance_m": -0.08409646496276621
+    },
+    {
+      "bodies": [
+        "right_shoulder_roll_link",
+        "torso_link"
+      ],
+      "distance_m": -0.03984975929092533
+    },
+    {
+      "bodies": [
+        "torso_link",
+        "right_shoulder_yaw_link"
+      ],
+      "distance_m": -0.10803538933832327
+    },
+    {
+      "bodies": [
+        "torso_link",
+        "right_shoulder_yaw_link"
+      ],
+      "distance_m": -0.10801649899520954
+    },
+    {
+      "bodies": [
+        "torso_link",
+        "right_shoulder_yaw_link"
+      ],
+      "distance_m": -0.10801285928969048
+    },
+    {
+      "bodies": [
+        "torso_link",
+        "right_shoulder_yaw_link"
+      ],
+      "distance_m": -0.108034510203863
+    },
+    {
+      "bodies": [
+        "torso_link",
+        "right_shoulder_yaw_link"
+      ],
+      "distance_m": -0.04843641936020065
+    },
+    {
+      "bodies": [
+        "torso_link",
+        "right_shoulder_yaw_link"
+      ],
+      "distance_m": -0.048486327477034526
+    },
+    {
+      "bodies": [
+        "torso_link",
+        "right_shoulder_yaw_link"
+      ],
+      "distance_m": -0.04849043057448068
+    },
+    {
+      "bodies": [
+        "torso_link",
+        "right_elbow_link"
+      ],
+      "distance_m": -0.08411257227363168
+    },
+    {
+      "bodies": [
+        "torso_link",
+        "right_elbow_link"
+      ],
+      "distance_m": -0.08411227286106772
+    },
+    {
+      "bodies": [
+        "torso_link",
+        "right_elbow_link"
+      ],
+      "distance_m": -0.0840730933536142
+    },
+    {
+      "bodies": [
+        "torso_link",
+        "right_elbow_link"
+      ],
+      "distance_m": -0.08408240786918904
+    },
+    {
+      "bodies": [
+        "left_shoulder_yaw_link",
+        "right_shoulder_yaw_link"
+      ],
+      "distance_m": -0.06919835628971664
+    },
+    {
+      "bodies": [
+        "left_shoulder_yaw_link",
+        "right_shoulder_yaw_link"
+      ],
+      "distance_m": -0.06926908187539305
+    },
+    {
+      "bodies": [
+        "left_shoulder_yaw_link",
+        "right_shoulder_yaw_link"
+      ],
+      "distance_m": -0.06922165017751114
+    },
+    {
+      "bodies": [
+        "left_shoulder_yaw_link",
+        "right_shoulder_yaw_link"
+      ],
+      "distance_m": -0.06915082979690307
+    },
+    {
+      "bodies": [
+        "left_shoulder_yaw_link",
+        "right_elbow_link"
+      ],
+      "distance_m": -0.026301415381976768
+    },
+    {
+      "bodies": [
+        "left_shoulder_yaw_link",
+        "right_elbow_link"
+      ],
+      "distance_m": -0.026230169220191286
+    },
+    {
+      "bodies": [
+        "left_shoulder_yaw_link",
+        "right_elbow_link"
+      ],
+      "distance_m": -0.02624162376558309
+    },
+    {
+      "bodies": [
+        "left_shoulder_yaw_link",
+        "right_elbow_link"
+      ],
+      "distance_m": -0.02630679658800912
+    },
+    {
+      "bodies": [
+        "left_elbow_link",
+        "right_shoulder_yaw_link"
+      ],
+      "distance_m": -0.026209731093037605
+    },
+    {
+      "bodies": [
+        "left_elbow_link",
+        "right_shoulder_yaw_link"
+      ],
+      "distance_m": -0.026282814887233885
+    },
+    {
+      "bodies": [
+        "left_elbow_link",
+        "right_shoulder_yaw_link"
+      ],
+      "distance_m": -0.026182661191176272
+    },
+    {
+      "bodies": [
+        "left_elbow_link",
+        "right_shoulder_yaw_link"
+      ],
+      "distance_m": -0.02609853165859181
+    },
+    {
+      "bodies": [
+        "left_elbow_link",
+        "right_elbow_link"
+      ],
+      "distance_m": -0.015631988218963555
+    },
+    {
+      "bodies": [
+        "left_elbow_link",
+        "right_elbow_link"
+      ],
+      "distance_m": -0.01565669925281556
+    },
+    {
+      "bodies": [
+        "left_elbow_link",
+        "right_elbow_link"
+      ],
+      "distance_m": -0.015680135096256227
+    },
+    {
+      "bodies": [
+        "left_elbow_link",
+        "right_elbow_link"
+      ],
+      "distance_m": -0.01563183494286899
+    }
+  ],
+  "better_initial_branch": []
+}

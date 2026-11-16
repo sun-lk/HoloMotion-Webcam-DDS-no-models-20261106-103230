@@ -1,0 +1,11 @@
+{
+  "no_network_or_robot_io": true,
+  "onnx_policy_steps": 40,
+  "simulation_steps": 40,
+  "captured_action_frames": 41,
+  "measured_data_unchanged": true,
+  "feedback_source": "simulation",
+  "simulation_time_s": 0.8000000000000006,
+  "pelvis_height_m": 0.752065399942588,
+  "finite": true
+}

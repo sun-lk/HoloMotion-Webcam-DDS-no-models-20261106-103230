@@ -1,0 +1,22 @@
+{
+  "files": {
+    "src/g1_remote_action/arm_backend.py": "99dce92a86efa2c7f6651a6908db62e4bdddb660a8f4cb1400689b776c7c74cf",
+    "src/g1_remote_action/core.py": "a5e7656833d85d7f387ac35d4831342751f7624f4929d681c19f9b9194e6187a",
+    "src/g1_remote_action/protocol.py": "b4c37af044efec55068d338bdf2f407eddac249c4562311e6f4a8ccbda21b12f",
+    "src/g1_remote_action/gravity_compensation.py": "a3287dadfb94434e0a8a423dd5dd19d1045eaacb347d1ae88d06788d3da5a7cb",
+    "models/gravity/g1_dex3.urdf": "8bbf006633fc50b616f665c7a970780cc296577a0adfd7d28b049e751c238735",
+    "models/gravity/g1_rubber.urdf": "58c6bf2b1f4d2ecf10e853dfb4f3377234bed6329019382a3b5e28fd27ec56e9",
+    "tests/test_gravity.py": "44e1ee49e9a1d90761257fc83ec4b04eda64f9c6d566ad48fbfcaf422827aff2",
+    "tests/test_arm_gravity.py": "896ab0e89c60bf4e56a037fb06266b9013feb64a0032e9bde29ec00ac8812900",
+    "tests/gravity_fixture/state.json": "92d0e4005625b8fe8ee6586eefcff4bbd9ea3cbad662ec069bec37fa02d2de4b",
+    "tests/gravity_fixture/audit.json": "732b7a4b4b2d8eee2241827800cef566f3220549f2c33c37855ab1c04ca246e8"
+  },
+  "enabled_on_deploy": false,
+  "robot": "unitree@192.168.110.165",
+  "baseline_hashes": {
+    "arm_backend.py": "67eb6f65e18655d02c5632d0066e973e0da1f43941d9877b24342a5b00ba3dda",
+    "protocol.py": "e6350538cfc06d6a9381fa83818737f0cf2ce6f83a03e2a31c414f7f73ff5986",
+    "core.py": "607d438b083bdbe3ad27ae0ee36819b6f6baef1aba6821a5c239cd33a74269b1"
+  },
+  "baseline_config_sha256": "0a7e497c10a81148a05a355016b9b9d5e8317183a5d69432fd6ea0d34ae7d7dc"
+}

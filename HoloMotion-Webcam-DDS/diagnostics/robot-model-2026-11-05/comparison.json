@@ -1,0 +1,292 @@
+{
+  "models": {
+    "local_holo": {
+      "path": "assets\\robots\\unitree\\G1\\29dof\\g1_29dof_rev_1_0.urdf",
+      "sha256": "58c6bf2b1f4d2ecf10e853dfb4f3377234bed6329019382a3b5e28fd27ec56e9",
+      "joint_count": 38,
+      "movable_joint_count": 29,
+      "link_count": 35,
+      "total_mass": 33.34114202
+    },
+    "robot_holo": {
+      "path": "diagnostics\\robot-model-2026-11-05\\g1_29dof_rev_1_0.urdf",
+      "sha256": "58c6bf2b1f4d2ecf10e853dfb4f3377234bed6329019382a3b5e28fd27ec56e9",
+      "joint_count": 38,
+      "movable_joint_count": 29,
+      "link_count": 35,
+      "total_mass": 33.34114202
+    },
+    "robot_s100": {
+      "path": "diagnostics\\robot-model-2026-11-05\\g1_29dof_rev_1_0_s100.urdf",
+      "sha256": "0b5f2dd8192af528ef405ecb3db60c55ef1a5ec9e01cae15d9a9a73f1e22b26a",
+      "joint_count": 39,
+      "movable_joint_count": 29,
+      "link_count": 36,
+      "total_mass": 33.94114202
+    },
+    "robot_xr": {
+      "path": "diagnostics\\robot-model-2026-11-05\\robot_xr_g1_body29_hand14.urdf",
+      "sha256": "8bbf006633fc50b616f665c7a970780cc296577a0adfd7d28b049e751c238735",
+      "joint_count": 52,
+      "movable_joint_count": 43,
+      "link_count": 49,
+      "total_mass": 34.394234
+    }
+  },
+  "comparisons": {
+    "robot_holo": {
+      "joints": {
+        "only_local": [],
+        "only_robot": [],
+        "differences": {}
+      },
+      "links": {
+        "only_local": [],
+        "only_robot": [],
+        "differences": {}
+      }
+    },
+    "robot_s100": {
+      "joints": {
+        "only_local": [],
+        "only_robot": [
+          "s100_joint"
+        ],
+        "differences": {}
+      },
+      "links": {
+        "only_local": [],
+        "only_robot": [
+          "shell_support"
+        ],
+        "differences": {}
+      }
+    },
+    "robot_xr": {
+      "joints": {
+        "only_local": [],
+        "only_robot": [
+          "left_hand_index_0_joint",
+          "left_hand_index_1_joint",
+          "left_hand_middle_0_joint",
+          "left_hand_middle_1_joint",
+          "left_hand_thumb_0_joint",
+          "left_hand_thumb_1_joint",
+          "left_hand_thumb_2_joint",
+          "right_hand_index_0_joint",
+          "right_hand_index_1_joint",
+          "right_hand_middle_0_joint",
+          "right_hand_middle_1_joint",
+          "right_hand_thumb_0_joint",
+          "right_hand_thumb_1_joint",
+          "right_hand_thumb_2_joint"
+        ],
+        "differences": {
+          "left_ankle_pitch_joint": {
+            "limit": {
+              "local": {
+                "lower": -0.87267,
+                "upper": 0.5236,
+                "effort": 35.0,
+                "velocity": 30.0
+              },
+              "robot": {
+                "lower": -0.87267,
+                "upper": 0.5236,
+                "effort": 50.0,
+                "velocity": 37.0
+              }
+            }
+          },
+          "left_ankle_roll_joint": {
+            "limit": {
+              "local": {
+                "lower": -0.2618,
+                "upper": 0.2618,
+                "effort": 35.0,
+                "velocity": 30.0
+              },
+              "robot": {
+                "lower": -0.2618,
+                "upper": 0.2618,
+                "effort": 50.0,
+                "velocity": 37.0
+              }
+            }
+          },
+          "left_hand_palm_joint": {
+            "child": {
+              "local": "left_rubber_hand",
+              "robot": "left_hand_palm_link"
+            }
+          },
+          "right_ankle_pitch_joint": {
+            "limit": {
+              "local": {
+                "lower": -0.87267,
+                "upper": 0.5236,
+                "effort": 35.0,
+                "velocity": 30.0
+              },
+              "robot": {
+                "lower": -0.87267,
+                "upper": 0.5236,
+                "effort": 50.0,
+                "velocity": 37.0
+              }
+            }
+          },
+          "right_ankle_roll_joint": {
+            "limit": {
+              "local": {
+                "lower": -0.2618,
+                "upper": 0.2618,
+                "effort": 35.0,
+                "velocity": 30.0
+              },
+              "robot": {
+                "lower": -0.2618,
+                "upper": 0.2618,
+                "effort": 50.0,
+                "velocity": 37.0
+              }
+            }
+          },
+          "right_hand_palm_joint": {
+            "child": {
+              "local": "right_rubber_hand",
+              "robot": "right_hand_palm_link"
+            }
+          },
+          "waist_pitch_joint": {
+            "limit": {
+              "local": {
+                "lower": -0.52,
+                "upper": 0.52,
+                "effort": 35.0,
+                "velocity": 30.0
+              },
+              "robot": {
+                "lower": -0.52,
+                "upper": 0.52,
+                "effort": 50.0,
+                "velocity": 37.0
+              }
+            }
+          },
+          "waist_roll_joint": {
+            "limit": {
+              "local": {
+                "lower": -0.52,
+                "upper": 0.52,
+                "effort": 35.0,
+                "velocity": 30.0
+              },
+              "robot": {
+                "lower": -0.52,
+                "upper": 0.52,
+                "effort": 50.0,
+                "velocity": 37.0
+              }
+            }
+          }
+        }
+      },
+      "links": {
+        "only_local": [
+          "left_rubber_hand",
+          "right_rubber_hand"
+        ],
+        "only_robot": [
+          "left_hand_index_0_link",
+          "left_hand_index_1_link",
+          "left_hand_middle_0_link",
+          "left_hand_middle_1_link",
+          "left_hand_palm_link",
+          "left_hand_thumb_0_link",
+          "left_hand_thumb_1_link",
+          "left_hand_thumb_2_link",
+          "right_hand_index_0_link",
+          "right_hand_index_1_link",
+          "right_hand_middle_0_link",
+          "right_hand_middle_1_link",
+          "right_hand_palm_link",
+          "right_hand_thumb_0_link",
+          "right_hand_thumb_1_link",
+          "right_hand_thumb_2_link"
+        ],
+        "differences": {}
+      }
+    }
+  },
+  "supplement": {
+    "mjcf_total_mass": 35.112142,
+    "mjcf_mass_differences": {
+      "waist_yaw_link": {
+        "urdf": 0.214,
+        "mjcf": 0.244
+      },
+      "waist_roll_link": {
+        "urdf": 0.086,
+        "mjcf": 0.047
+      },
+      "torso_link": {
+        "urdf": 6.78,
+        "mjcf": 9.598
+      },
+      "left_wrist_roll_link": {
+        "urdf": 0.08544498,
+        "mjcf": 0.085445
+      },
+      "left_wrist_pitch_link": {
+        "urdf": 0.48404956,
+        "mjcf": 0.48405
+      },
+      "left_wrist_yaw_link": {
+        "urdf": 0.08457647,
+        "mjcf": 0.254576
+      },
+      "right_wrist_roll_link": {
+        "urdf": 0.08544498,
+        "mjcf": 0.085445
+      },
+      "right_wrist_pitch_link": {
+        "urdf": 0.48404956,
+        "mjcf": 0.48405
+      },
+      "right_wrist_yaw_link": {
+        "urdf": 0.08457647,
+        "mjcf": 0.254576
+      }
+    },
+    "mjcf_missing_urdf_inertials": [
+      "head_link",
+      "left_rubber_hand",
+      "logo_link",
+      "pelvis_contour_link",
+      "right_rubber_hand"
+    ],
+    "fixed_merged_mass_differences": {
+      "pelvis": {
+        "urdf_fixed_merged": 3.814,
+        "mjcf": 3.813,
+        "delta_kg": -0.0009999999999998899
+      },
+      "waist_yaw_link": {
+        "urdf_fixed_merged": 0.214,
+        "mjcf": 0.244,
+        "delta_kg": 0.03
+      },
+      "waist_roll_link": {
+        "urdf_fixed_merged": 0.086,
+        "mjcf": 0.047,
+        "delta_kg": -0.03899999999999999
+      },
+      "torso_link": {
+        "urdf_fixed_merged": 7.817,
+        "mjcf": 9.598,
+        "delta_kg": 1.7810000000000006
+      }
+    }
+  }
+}

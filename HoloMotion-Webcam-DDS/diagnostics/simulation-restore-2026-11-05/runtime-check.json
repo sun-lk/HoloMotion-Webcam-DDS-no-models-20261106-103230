@@ -1,0 +1,17 @@
+{
+  "backend": "direct",
+  "requires_robot": false,
+  "auto_calibration": true,
+  "policy_steps": 281,
+  "min_pelvis_height_m": 0.75,
+  "shoulder_reference_range_rad": [
+    0,
+    1.142
+  ],
+  "shoulder_actual_range_rad": [
+    0,
+    1.084
+  ],
+  "jpeg_rendered": true,
+  "scope": "synthetic camera input, local physics only"
+}

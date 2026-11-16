@@ -1,0 +1,12 @@
+{
+  "upstream": "https://github.com/HorizonRobotics/HoloMotion",
+  "commit": "adaacd50ada6ba9338f6c3f539093f85453e2554",
+  "addition": "webcam_teleop",
+  "scope": "standing upper-body simulation prototype",
+  "excluded": [
+    "weights",
+    "environment",
+    "git history",
+    "personal recordings"
+  ]
+}

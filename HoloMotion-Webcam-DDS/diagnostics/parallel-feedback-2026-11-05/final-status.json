@@ -1,0 +1,23 @@
+{
+  "ready": true,
+  "backend": "g1ra",
+  "display_source": "robot",
+  "feedback_source": "simulation",
+  "feedback_pending": false,
+  "render_source": "robot",
+  "render_available": true,
+  "running": false,
+  "robot_enabled": true,
+  "action_sent": 2060,
+  "local_simulation": {
+    "steps": 2055,
+    "error": null,
+    "pelvis_height": 0.772,
+    "fallen": false
+  },
+  "error": "\u65e0\u6cd5\u83b7\u53d6\u65b0\u9c9c\u5b9e\u673a\u59ff\u6001\uff0c\u5df2\u6682\u505c\uff1b\u8bf7\u6062\u590d\u53cd\u9988\u540e\u91cd\u65b0\u5f00\u59cb",
+  "unit_tests_passed": 51,
+  "offline_onnx_steps": 40,
+  "user_live_controls_observed": true,
+  "our_initial_switch_test_action_frames": 0
+}

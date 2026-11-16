@@ -1,0 +1,42 @@
+{
+  "baseline_commit": "3cf849f",
+  "scope": "synthetic reference/IK only; no policy or real robot",
+  "camera_hz": 20,
+  "control_hz": 50,
+  "static_noise_std_m": 0.003,
+  "seed": 20261105,
+  "cases": {
+    "static_straight": {
+      "baseline_joint_rate_rms_deg_s": 10.73381725341936,
+      "filtered_joint_rate_rms_deg_s": 0.11242349228319086,
+      "rate_rms_reduction_percent": 98.95262338058367,
+      "baseline_max_joint_std_deg": 4.52443023614554,
+      "filtered_max_joint_std_deg": 0.03179162021885658,
+      "mean_wrist_reference_difference_mm": [
+        2.2541125249115237,
+        2.1812137085772485
+      ]
+    },
+    "static_raised": {
+      "baseline_joint_rate_rms_deg_s": 13.801612067853554,
+      "filtered_joint_rate_rms_deg_s": 1.0869178898593645,
+      "rate_rms_reduction_percent": 92.12470337149243,
+      "baseline_max_joint_std_deg": 4.524430236145538,
+      "filtered_max_joint_std_deg": 0.37123268645466634,
+      "mean_wrist_reference_difference_mm": [
+        3.2027079196964108,
+        2.1812137085772467
+      ]
+    },
+    "slow_sweep": {
+      "measured_joint": "left_shoulder_roll_joint",
+      "baseline_half_sweep_s": 3.74,
+      "filtered_half_sweep_s": 3.8600000000000003,
+      "additional_half_sweep_delay_ms": 120.00000000000011,
+      "mean_wrist_reference_difference_mm": [
+        0.4319646134207482,
+        2.4029080008678703
+      ]
+    }
+  }
+}
